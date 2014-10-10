@@ -1,4 +1,4 @@
-=== JoomSky - excelling web design and development ===
+=== JS Support Ticket ===
 Contributors: ahmad@joomsky.com
 Donate link: http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-pro-wp
 Tags: support ticket,support, ticket,helpdesk, help, desk, ticketing system, moniter desk
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 JS Support Ticket is a powerful and easy to use support system that helps you to provide support system elegantly.
 
 == Description ==
-JS Support Ticket is a trusted open source ticket system. JS Support ticket is a simple, easy to use, web-based customer support system. User can create ticket from front-end. JS support ticket comes packed with lot features than most of the expensive(and complex) support ticket system on market. The best part is, It’s completely free
+JS Support Ticket is a trusted open source ticket system. JS Support ticket is a simple, easy to use, web-based customer support system. User can create ticket from front-end. JS support ticket comes packed with lot features than most of the expensive(and complex) support ticket system on market. The best part is, It completely free
 [Plugin Homepage](http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-wp/) 
 [Demo](http://jssupportticket.joomshark.com/)
 
@@ -79,8 +79,8 @@ JS Support Ticket allows your customers to attach files with their messages.
 
 = Automatic installation =
 
-Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t need to leave your web browser. To do an automatic install of JS Support Ticket, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
-In the search field type “JS Support Ticket” and click Search Plugins. Once you’ve found our help desk plugin you can view details about it such as the the point release, rating and description. Most importantly of course, you can install it by simply clicking “Install Now”.
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you don not need to leave your web browser. To do an automatic install of JS Support Ticket, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+In the search field type  JS Support Ticket  and click Search Plugins. Once you have found our help desk plugin you can view details about it such as the the point release, rating and description. Most importantly of course, you can install it by simply clicking  Install Now.
 
 = Manual installation =
 
@@ -130,7 +130,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Frequently Asked Questions ==
 
-= Is user can open support ticket from front-end
+= Is user can open support ticket from front-end =
 Yes, user can open ticket from site.
 
 = Will JS Support Ticket work with my theme? =
