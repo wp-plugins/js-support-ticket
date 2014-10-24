@@ -1,8 +1,8 @@
 === JS Support Ticket ===
-Contributors: ahmad@joomsky.com
+Contributors: JoomSky.com
 Donate link: http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-pro-wp
 Tags: support ticket,support, ticket,helpdesk, help, desk, ticketing system, moniter desk
-Requires at least: 3.8
+Requires at least: 3.5
 Tested up to: 4.0
 Stable tag: 1.0.0
 License: GPLv2
@@ -11,9 +11,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 JS Support Ticket is a powerful and easy to use support system that helps you to provide support system elegantly.
 
 == Description ==
-JS Support Ticket is a trusted open source ticket system. JS Support ticket is a simple, easy to use, web-based customer support system. User can create ticket from front-end. JS support ticket comes packed with lot features than most of the expensive(and complex) support ticket system on market. The best part is, It completely free
-[Plugin Homepage](http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-wp/) 
-[Demo](http://jssupportticket.joomshark.com/)
+JS Support Ticket is a trusted open source ticket system. JS Support ticket is a simple, easy to use, web-based customer support system. User can create ticket from front-end. JS support ticket comes packed with lot features than most of the expensive(and complex) support ticket system on market. The best part is, It completely free.  
+ [Plugin Homepage](http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-wp/) 
+ [Demo](http://jssupportticket.joomshark.com/)
 
 = Major Features =
 
