@@ -1,17 +1,4 @@
 <?php
-/**
- * @package JS Support Ticket
- * @version 1.0
- */
-/*
-Plugin Name: JS Support Ticket
-Plugin URI: http://www.joomsky.com
-Description: Help Desk plugin for the wordpress
-Author: Ahmed Bilal
-Version: 1.0
-Author URI: http://www.joomsky.com
-*/
-
 if(!defined('ABSPATH')) die('Restricted Access');
 
 class activation{
@@ -112,7 +99,7 @@ class activation{
 		if($runConfig == 0){
 			$systememail = get_option('admin_email');
 			$query = "INSERT INTO `".jssupportticket::$_db->prefix."js_ticket_email` (`autoresponse`, `priorityid`, `email`, `name`, `uid`, `password`, `status`, `mailhost`, `mailprotocol`, `mailencryption`, `mailport`, `mailfetchfrequency`, `mailfetchmaximum`, `maildeleted`, `mailerrors`, `maillasterror`, `maillastfetch`, `smtpactive`, `smtphost`, `smtpport`, `smtpsecure`, `smtpauthencation`, `created`, `updated`) VALUES
-						(1, 31, 'admin@admin.com', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-10-02 10:38:48', '0000-00-00 00:00:00');";
+						(1, 31, '".$systememail."', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2014-10-02 10:38:48', '0000-00-00 00:00:00');";
 			jssupportticket::$_db->query($query);
 			$emailid = jssupportticket::$_db->insert_id;
 			$query = "INSERT INTO `".jssupportticket::$_db->prefix."js_ticket_config` (`configname`, `configvalue`, `configfor`) VALUES
@@ -121,13 +108,13 @@ class activation{
 						('offline_message', 'JS Support Ticket is now offline, please come back soon.', 'default'),
 						('data_directory', 'jssupportticketdata', 'default'),
 						('date_format', 'd-m-Y', 'default'),
-						('ticket_overdue', '10', 'default'),
-						('ticket_auto_close', '7', 'default'),
+						('ticket_overdue', '5', 'default'),
+						('ticket_auto_close', '5', 'default'),
 						('no_of_attachement', '2', 'default'),
-						('file_maximum_size', '1024', 'default'),
+						('file_maximum_size', '2048', 'default'),
 						('file_extension', 'png,jpg,jpeg,gif,doc,docx,pdf,odt', 'default'),
 						('show_current_location', '2', 'default'),
-						('maximum_open_ticket_per_email', '20', 'default'),
+						('maximum_open_ticket_per_email', '50', 'default'),
 						('reopen_ticket_within_days', '5', 'default'),
 						('staff_can_lock_ticket', '2', 'default'),
 						('visitor_can_create_ticket', '2', 'default'),
@@ -149,7 +136,7 @@ class activation{
 						('ticket_reassign_user', '1', 'default'),
 						('ticket_close_admin', '1', 'default'),
 						('ticket_close_staff', '1', 'default'),
-						('ticket_close_user', '2', 'default'),
+						('ticket_close_user', '1', 'default'),
 						('ticket_delete_admin', '1', 'default'),
 						('ticket_delete_staff', '1', 'default'),
 						('ticket_delete_user', '1', 'default'),
@@ -164,9 +151,9 @@ class activation{
 						('ticket_department_transfer_user', '1', 'default'),
 						('ticket_reply_ticket_user_admin', '1', 'default'),
 						('ticket_reply_ticket_user_staff', '1', 'default'),
-						('ticket_reply_ticket_user_user', '1', 'default'),
-						('ticket_response_to_staff_admin', '1', 'default'),
-						('ticket_response_to_staff_staff', '1', 'default'),
+						('ticket_reply_ticket_user_user', '0', 'default'),
+						('ticket_response_to_staff_admin', '0', 'default'),
+						('ticket_response_to_staff_staff', '0', 'default'),
 						('ticket_response_to_staff_user', '1', 'default'),
 						('ticker_ban_eamil_and_close_ticktet_admin', '1', 'default'),
 						('ticker_ban_eamil_and_close_ticktet_staff', '1', 'default'),

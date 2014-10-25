@@ -7,7 +7,7 @@
 /*
 Plugin Name: JS Support Ticket
 Plugin URI: http://www.joomsky.com
-Description: Help Desk plugin for the wordpress
+Description: JS Support Ticket is a trusted open source ticket system. JS Support ticket is a simple, easy to use, web-based customer support system. User can create ticket from front-end. JS support ticket comes packed with lot features than most of the expensive(and complex) support ticket system on market. The best part is, It completely free.
 Author: Ahmed Bilal
 Version: 1.0
 Author URI: http://www.joomsky.com

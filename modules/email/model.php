@@ -1,17 +1,4 @@
 <?php
-/**
- * @package JS Support Ticket
- * @version 1.0
- */
-/*
-Plugin Name: JS Support Ticket
-Plugin URI: http://www.joomsky.com
-Description: Help Desk plugin for the wordpress
-Author: Ahmed Bilal
-Version: 1.0
-Author URI: http://www.joomsky.com
-*/
-
 if(!defined('ABSPATH')) die('Restricted Access');
 
 class emailModel{
@@ -61,7 +48,8 @@ class emailModel{
                         $senderName = $object->name;
 						// New ticket mail to admin
 						if(jssupportticket::$_config['new_ticket_mail_to_admin'] == 1){ 
-							$adminEmail = jssupportticket::$_config['default_admin_email'];
+							$adminEmailid = jssupportticket::$_config['default_admin_email'];
+							$adminEmail = $this->getEmailById($adminEmailid);
 							$template = $this->getTemplateForEmail('ticket-new-admin');
 							//Parsing template
 		                    $msgSubject = $template->subject;
@@ -118,9 +106,10 @@ class emailModel{
 	                    $msgSubjectUser = $template->subject;
 	                    $msgBodyUser = $template->body;
 
-						// New ticket mail to admin
+						// Close ticket mail to admin
 						if(jssupportticket::$_config['ticket_close_admin'] == 1){ 
-							$adminEmail = jssupportticket::$_config['default_admin_email'];
+							$adminEmailid = jssupportticket::$_config['default_admin_email'];
+							$adminEmail = $this->getEmailById($adminEmailid);
 		                    //Replace Data
 		                    $link = "<a href=".admin_url("admin.php?page=ticket_tickets&task=ticket_ticketdetail&jssupportticket_ticketid=".$id).">".__('TICKET_DETAIL','js-support-ticket')."</a>";
 
@@ -164,9 +153,10 @@ class emailModel{
 	                    $msgSubjectUser = $template->subject;
 	                    $msgBodyUser = $template->body;
 
-						// New ticket mail to admin
+						// Delete ticket mail to admin
 						if(jssupportticket::$_config['ticket_delete_admin'] == 1){
-							$adminEmail = jssupportticket::$_config['default_admin_email'];
+							$adminEmailid = jssupportticket::$_config['default_admin_email'];
+							$adminEmail = $this->getEmailById($adminEmailid);
 		                    //Replace Data
 		                    $this->replaceMatches($msgSubject,$matcharray);
 		                    $this->replaceMatches($msgBody,$matcharray);
@@ -209,9 +199,11 @@ class emailModel{
 	                    $msgSubjectUser = $template->subject;
 	                    $msgBodyUser = $template->body;
 
-						// New ticket mail to admin
+						// Reply ticket mail to admin
 						if(jssupportticket::$_config['ticket_response_to_staff_admin'] == 1){ 
-							$adminEmail = jssupportticket::$_config['default_admin_email'];
+							$adminEmailid = jssupportticket::$_config['default_admin_email'];
+							$adminEmail = $this->getEmailById($adminEmailid);
+
 		                    //Replace Data
 		                    $link = "<a href=".admin_url("admin.php?page=ticket_tickets&task=ticket_ticketdetail&jssupportticket_ticketid=".$id).">".__('TICKET_DETAIL','js-support-ticket')."</a>";
 
@@ -219,7 +211,7 @@ class emailModel{
 
 		                    $this->replaceMatches($msgSubject,$matcharray);
 		                    $this->replaceMatches($msgBody,$matcharray);
-		                    $msgSubject .= '<br/> Admin Mail link'.$link;
+		                    //$msgSubject .= '<br/> Admin Mail link'.$link;
                             $this->sendEmail($adminEmail,$msgSubject,$msgBody,$senderEmail,$senderName,'',$action);
 						}
 						// New ticket mail to User
@@ -232,7 +224,7 @@ class emailModel{
 		                    $this->replaceMatches($msgSubjectUser,$matcharray);
 		                    $this->replaceMatches($msgBodyUser,$matcharray);
 
-		                    $msgSubjectUser .= '<br/> User Mail link'.$link;
+		                    //$msgSubjectUser .= '<br/> User Mail link'.$link;
 	                        $this->sendEmail($Email,$msgSubjectUser,$msgBodyUser,$senderEmail,$senderName,'',$action);
 						}
 						break;					
@@ -265,7 +257,9 @@ class emailModel{
 
 						// New ticket mail to admin
 						if(jssupportticket::$_config['ticket_reply_ticket_user_admin'] == 1){ 
-							$adminEmail = jssupportticket::$_config['default_admin_email'];
+							$adminEmailid = jssupportticket::$_config['default_admin_email'];
+							$adminEmail = $this->getEmailById($adminEmailid);
+
 		                    //Replace Data
 		                    $link = "<a href=".admin_url("admin.php?page=ticket_tickets&task=ticket_ticketdetail&jssupportticket_ticketid=".$id).">".__('TICKET_DETAIL','js-support-ticket')."</a>";
 
@@ -339,8 +333,12 @@ class emailModel{
 				do_action('jsst-beforeemailticketdelete',$recevierEmail,$subject,$body,$senderEmail);
 			break;
 		}
+		if(!$senderName) $senderName = jssupportticket::$_config['title'];
 		$headers = 'From: '.$senderName.' <'.$senderEmail.'>' . "\r\n";
 		add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));
+		$body = preg_replace('/\r?\n|\r/','<br/>', $body);
+		$body = str_replace(array("\r\n","\r","\n"),"<br/>", $body);
+		$body = nl2br($body);
 		wp_mail($recevierEmail, $subject, $body, $headers, $attachments );
 	}
 
@@ -490,6 +488,15 @@ class emailModel{
 			includer::getJSModel('systemerror')->addSystemError();
 		}
 		return $emails;
+	}
+	function getEmailById($id){
+		if(!is_numeric($id)) return false;
+		$query = "SELECT email  FROM `".jssupportticket::$_db->prefix."js_ticket_email` WHERE id = ".$id;
+		$email = jssupportticket::$_db->get_var($query);
+		if(jssupportticket::$_db->last_error  != null){
+			includer::getJSModel('systemerror')->addSystemError();
+		}
+		return $email;
 	}
 
 }
