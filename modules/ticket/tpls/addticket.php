@@ -48,17 +48,28 @@ if( wp_get_current_user()->ID != 0 ){
 </script>
 <span style="display:none" id="filesize"><?php echo __('ERROR_FILE_SIZE_TO_LARGE','js-support-ticket');?></span>
 <span style="display:none" id="fileext"><?php echo __('ERROR_FILE_EXT_MISMATCH','js-support-ticket');?></span>
+<?php
+	$loginuser_name = '';
+	$loginuser_email = '';
+	if ( is_user_logged_in() ) {
+		global $current_user; 
+		get_currentuserinfo();
+		
+		$loginuser_name = $current_user->user_firstname.' '.$current_user->user_lastname;
+		$loginuser_email = $current_user->user_email;
+	}
+?>
 
 <h1 class="js-ticket-heading"><?php echo __('ADD_NEW_TICKET','js-support-ticket'); ?></h1>
 <form class="js-ticket-form" method="post" action="<?php echo site_url("?page_id=".jssupportticket::$_pageid."&task=ticket_saveticket"); ?>" id="adminTicketform" enctype="multipart/form-data">
 	<div class="js-formwrapper-12">
 		<div class="js-col-md-6 js-form-wrapper">
 			<div class="js-col-md-12 js-form-title"><?php echo __('EMAIL','js-support-ticket'); ?>&nbsp;<font color="red">*</font></div>
-			<div class="js-col-md-12 js-form-value"><?php echo formfield::text('email',isset(jssupportticket::$_data[0]->email) ? jssupportticket::$_data[0]->email : '',array('class'=>'inputbox','data-validation'=>'email')) ?></div>
+			<div class="js-col-md-12 js-form-value"><?php echo formfield::text('email',isset(jssupportticket::$_data[0]->email) ? jssupportticket::$_data[0]->email : $loginuser_email,array('class'=>'inputbox','data-validation'=>'email')) ?></div>
 		</div>
 		<div class="js-col-md-6 js-form-wrapper">
 			<div class="js-col-md-12 js-form-title"><?php echo __('FULL_NAME','js-support-ticket'); ?>&nbsp;<font color="red">*</font></div>
-			<div class="js-col-md-12 js-form-value"><?php echo formfield::text('name',isset(jssupportticket::$_data[0]->name) ? jssupportticket::$_data[0]->name : '',array('class'=>'inputbox','data-validation'=>'required')) ?></div>
+			<div class="js-col-md-12 js-form-value"><?php echo formfield::text('name',isset(jssupportticket::$_data[0]->name) ? jssupportticket::$_data[0]->name : $loginuser_name,array('class'=>'inputbox','data-validation'=>'required')) ?></div>
 		</div>
 	</div>
 	<div class="js-formwrapper-12">
