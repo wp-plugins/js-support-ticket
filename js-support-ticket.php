@@ -2,7 +2,7 @@
 /**
  * @package JS Support Ticket
  * @author Ahmad Bilal
- * @version 1.0
+ * @version 1.0.2
  */
 /*
 Plugin Name: JS Support Ticket
