@@ -123,16 +123,16 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Changelog ==
 
-= 1.0.0 - 10/07/2014 =
-* Just releae.
+= 1.0.2 - 11/17/2014 =
+* Admin can change page url (slug).
+* User fields bug fix.
 
 = 1.0.1 - 10/25/2014 =
 * Email alert to admin [bug fix].
 * Email alert in HTML format.
 
-= 1.0.2 - 11/17/2014 =
-* Admin can change page url (slug).
-* User fields bug fix.
+= 1.0.0 - 10/07/2014 =
+* Just releae.
 
 
 == Frequently Asked Questions ==
