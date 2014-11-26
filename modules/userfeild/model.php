@@ -34,6 +34,8 @@ class userfeildModel{
 			if(jssupportticket::$_db->last_error  != null){
 				includer::getJSModel('systemerror')->addSystemError();// if there is an error add it to system errorrs
 			}
+		}else{
+			jssupportticket::$_data[0] = array();
 		}
 		return;
 	}

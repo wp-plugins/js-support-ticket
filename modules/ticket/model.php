@@ -22,7 +22,7 @@ class ticketModel{
 		}
 
 		// Pagination
-		$query = "SELECT COUNT(ticket.id) FROM `".jssupportticket::$_db->prefix."js_ticket_tickets` AS ticket";
+		$query = "SELECT COUNT(ticket.id) FROM `".jssupportticket::$_db->prefix."js_ticket_tickets` AS ticket WHERE 1 = 1 ";
 		$query .= $inquery;
 		$total = jssupportticket::$_db->get_var($query);
 		jssupportticket::$_data[1] = pagination::getPagination($total);		
@@ -32,6 +32,7 @@ class ticketModel{
 					FROM `".jssupportticket::$_db->prefix."js_ticket_tickets` AS ticket
 					JOIN `".jssupportticket::$_db->prefix."js_ticket_departments` AS department ON ticket.departmentid = department.id
 					JOIN `".jssupportticket::$_db->prefix."js_ticket_priorities` AS priority ON ticket.priorityid = priority.id";
+		$query .= ' WHERE 1 = 1 ';
 		$query .= $inquery;
 		$query .= " ORDER BY ".jssupportticket::$_ordering." LIMIT ".pagination::$_offset.", ".pagination::$_limit;
 		jssupportticket::$_data[0] = jssupportticket::$_db->get_results($query);
