@@ -9,7 +9,7 @@ class JSSTproinstallerModel {
         $array = explode('.', phpversion());
         $phpversion = $array[0] . '.' . $array[1];
         $curlexist = function_exists('curl_version');
-        $curlversion = curl_version()['version'];
+        //$curlversion = curl_version()['version'];
         if (extension_loaded('gd') && function_exists('gd_info')) {
             $gd_lib = 1;
         } else {
