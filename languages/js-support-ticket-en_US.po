@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JS Support Ticket 1.0\n"
 "POT-Creation-Date: 2014-10-03 16:30+0500\n"
-"PO-Revision-Date: 2014-10-04 11:21+0500\n"
+"PO-Revision-Date: 2015-02-04 12:48+0500\n"
 "Last-Translator: \n"
 "Language-Team: joomsky <info@joomsky.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.7.3\n"
 "X-Poedit-KeywordsList: __;_e;_\n"
 "X-Poedit-Basepath: ../\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -28,8 +28,7 @@ msgstr ""
 msgid "JS_SUPPORT_TICKET_CONTROL_PANEL"
 msgstr "JS Support Ticket Control Panel"
 
-#: includes/jssupportticketadmin.php:23
-#: modules/jssupportticket/tpls/admin_aboutus.php:14
+#: includes/jssupportticketadmin.php:23 modules/jssupportticket/tpls/admin_aboutus.php:14
 msgid "JS_SUPPORT_TICKET"
 msgstr "JS Support Ticket"
 
@@ -68,15 +67,11 @@ msgstr "JS Support Ticket Priorities"
 
 #: includes/jssupportticketadmin.php:52
 #: modules/jssupportticket/tpls/admin_controlpanel.php:139
-#: modules/priority/tpls/admin_addpriority.php:14
-#: modules/ticket/tpls/ticketdetail.php:105
+#: modules/priority/tpls/admin_addpriority.php:14 modules/ticket/tpls/ticketdetail.php:105
 #: modules/ticket/tpls/myticket.php:40 modules/ticket/tpls/myticket.php:96
-#: modules/ticket/tpls/admin_tickets.php:22
-#: modules/ticket/tpls/admin_tickets.php:81
-#: modules/ticket/tpls/admin_addticket.php:62
-#: modules/ticket/tpls/addticket.php:80
-#: modules/ticket/tpls/admin_ticketdetail.php:79
-#: modules/email/tpls/admin_emails.php:22
+#: modules/ticket/tpls/admin_tickets.php:22 modules/ticket/tpls/admin_tickets.php:81
+#: modules/ticket/tpls/admin_addticket.php:62 modules/ticket/tpls/addticket.php:80
+#: modules/ticket/tpls/admin_ticketdetail.php:79 modules/email/tpls/admin_emails.php:22
 #: modules/email/tpls/admin_addemail.php:16
 msgid "PRIORITY"
 msgstr "Priority"
@@ -113,8 +108,7 @@ msgstr "User Fields"
 msgid "JS_SUPPORT_TICKET_SYSTEM_ERROR"
 msgstr "JS Support Ticket System Error"
 
-#: includes/jssupportticketadmin.php:80
-#: modules/systemerror/tpls/admin_systemerrors.php:8
+#: includes/jssupportticketadmin.php:80 modules/systemerror/tpls/admin_systemerrors.php:8
 #: modules/jssupportticket/tpls/admin_controlpanel.php:126
 msgid "SYSTEM_ERRORS"
 msgstr "System Errors"
@@ -177,10 +171,8 @@ msgstr "Private"
 
 #: modules/department/tpls/admin_adddepartment.php:34
 #: modules/department/tpls/admin_departments.php:23
-#: modules/priority/tpls/admin_addpriority.php:34
-#: modules/ticket/tpls/myticket.php:43
-#: modules/ticket/tpls/admin_tickets.php:25
-#: modules/ticket/tpls/admin_addticket.php:106
+#: modules/priority/tpls/admin_addpriority.php:34 modules/ticket/tpls/myticket.php:43
+#: modules/ticket/tpls/admin_tickets.php:25 modules/ticket/tpls/admin_addticket.php:106
 #: modules/email/tpls/admin_addemail.php:24
 msgid "STATUS"
 msgstr "Status"
@@ -202,12 +194,9 @@ msgstr "Save department"
 #: modules/department/tpls/admin_adddepartment.php:54
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:170
 #: modules/jssupportticket/tpls/controlpanel.php:30
-#: modules/priority/tpls/admin_addpriority.php:65
-#: modules/ticket/tpls/ticketdetail.php:290
-#: modules/ticket/tpls/myticket.php:141
-#: modules/ticket/tpls/admin_addticket.php:206
-#: modules/ticket/tpls/addticket.php:217
-#: modules/userfeild/tpls/admin_adduserfeild.php:229
+#: modules/priority/tpls/admin_addpriority.php:65 modules/ticket/tpls/ticketdetail.php:290
+#: modules/ticket/tpls/myticket.php:141 modules/ticket/tpls/admin_addticket.php:206
+#: modules/ticket/tpls/addticket.php:217 modules/userfeild/tpls/admin_adduserfeild.php:229
 #: modules/email/tpls/admin_addemail.php:43
 msgid "NOT_LOGIN"
 msgstr "Not login"
@@ -215,22 +204,16 @@ msgstr "Not login"
 #: modules/department/tpls/admin_adddepartment.php:57
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:173
 #: modules/jssupportticket/tpls/controlpanel.php:33
-#: modules/priority/tpls/admin_addpriority.php:68
-#: modules/ticket/tpls/ticketdetail.php:293
-#: modules/ticket/tpls/myticket.php:144
-#: modules/ticket/tpls/admin_addticket.php:209
-#: modules/ticket/tpls/addticket.php:220
-#: modules/userfeild/tpls/admin_adduserfeild.php:232
+#: modules/priority/tpls/admin_addpriority.php:68 modules/ticket/tpls/ticketdetail.php:293
+#: modules/ticket/tpls/myticket.php:144 modules/ticket/tpls/admin_addticket.php:209
+#: modules/ticket/tpls/addticket.php:220 modules/userfeild/tpls/admin_adduserfeild.php:232
 #: modules/email/tpls/admin_addemail.php:46
 msgid "YOU_ARE_NOT_ALLOWED_TO_VIEW"
 msgstr "You are not allowed to view"
 
-#: modules/department/tpls/admin_departments.php:8
-#: modules/ticket/tpls/ticketdetail.php:131
-#: modules/ticket/tpls/myticket.php:81
-#: modules/ticket/tpls/admin_tickets.php:66
-#: modules/ticket/tpls/admin_addticket.php:58
-#: modules/ticket/tpls/addticket.php:76
+#: modules/department/tpls/admin_departments.php:8 modules/ticket/tpls/ticketdetail.php:131
+#: modules/ticket/tpls/myticket.php:81 modules/ticket/tpls/admin_tickets.php:66
+#: modules/ticket/tpls/admin_addticket.php:58 modules/ticket/tpls/addticket.php:76
 #: modules/ticket/tpls/admin_ticketdetail.php:105
 msgid "DEPARTMENT"
 msgstr "Department"
@@ -241,18 +224,14 @@ msgid "DEPARTMENT_NAME"
 msgstr "Department name"
 
 #: modules/department/tpls/admin_departments.php:11
-#: modules/priority/tpls/admin_priorities.php:11
-#: modules/ticket/tpls/myticket.php:30
-#: modules/ticket/tpls/admin_tickets.php:11
-#: modules/userfeild/tpls/admin_userfeilds.php:11
+#: modules/priority/tpls/admin_priorities.php:11 modules/ticket/tpls/myticket.php:30
+#: modules/ticket/tpls/admin_tickets.php:11 modules/userfeild/tpls/admin_userfeilds.php:11
 msgid "GO"
 msgstr "Go"
 
 #: modules/department/tpls/admin_departments.php:12
-#: modules/priority/tpls/admin_priorities.php:12
-#: modules/ticket/tpls/myticket.php:31
-#: modules/ticket/tpls/admin_tickets.php:12
-#: modules/userfeild/tpls/admin_userfeilds.php:12
+#: modules/priority/tpls/admin_priorities.php:12 modules/ticket/tpls/myticket.php:31
+#: modules/ticket/tpls/admin_tickets.php:12 modules/userfeild/tpls/admin_userfeilds.php:12
 msgid "RESET"
 msgstr "Reset"
 
@@ -271,47 +250,38 @@ msgstr "Outgoing email"
 #: modules/department/tpls/admin_departments.php:24
 #: modules/systemerror/tpls/admin_systemerrors.php:21
 #: modules/jssupportticket/tpls/admin_controlpanel.php:140
-#: modules/ticket/tpls/ticketdetail.php:75
-#: modules/ticket/tpls/ticketdetail.php:115
-#: modules/ticket/tpls/myticket.php:44
-#: modules/ticket/tpls/admin_tickets.php:26
-#: modules/ticket/tpls/admin_tickets.php:88
-#: modules/ticket/tpls/admin_ticketdetail.php:89
+#: modules/ticket/tpls/ticketdetail.php:75 modules/ticket/tpls/ticketdetail.php:115
+#: modules/ticket/tpls/myticket.php:44 modules/ticket/tpls/admin_tickets.php:26
+#: modules/ticket/tpls/admin_tickets.php:88 modules/ticket/tpls/admin_ticketdetail.php:89
 #: modules/email/tpls/admin_emails.php:23
 msgid "CREATED"
 msgstr "Created"
 
 #: modules/department/tpls/admin_departments.php:25
 #: modules/priority/tpls/admin_priorities.php:23
-#: modules/userfeild/tpls/admin_userfeilds.php:26
-#: modules/email/tpls/admin_emails.php:24
+#: modules/userfeild/tpls/admin_userfeilds.php:26 modules/email/tpls/admin_emails.php:24
 msgid "ACTION"
 msgstr "Action"
 
 #: modules/department/tpls/admin_departments.php:58
 #: modules/systemerror/tpls/admin_systemerrors.php:47
-#: modules/priority/tpls/admin_priorities.php:55
-#: modules/ticket/tpls/myticket.php:122
-#: modules/ticket/tpls/admin_tickets.php:106
-#: modules/userfeild/tpls/admin_userfeilds.php:62
+#: modules/priority/tpls/admin_priorities.php:55 modules/ticket/tpls/myticket.php:122
+#: modules/ticket/tpls/admin_tickets.php:106 modules/userfeild/tpls/admin_userfeilds.php:62
 #: modules/email/tpls/admin_emails.php:55
 msgid "NO_RECORED_FOUND"
 msgstr "No recored found"
 
 #: modules/department/tpls/admin_departments.php:61
 #: modules/systemerror/tpls/admin_systemerrors.php:50
-#: modules/priority/tpls/admin_priorities.php:58
-#: modules/ticket/tpls/myticket.php:125
-#: modules/ticket/tpls/admin_tickets.php:109
-#: modules/userfeild/tpls/admin_userfeilds.php:65
+#: modules/priority/tpls/admin_priorities.php:58 modules/ticket/tpls/myticket.php:125
+#: modules/ticket/tpls/admin_tickets.php:109 modules/userfeild/tpls/admin_userfeilds.php:65
 #: modules/email/tpls/admin_emails.php:58
 msgid "NO_RECORED_FOUNT_TO_VIEW"
 msgstr "No recoreds are available to view"
 
 #: modules/systemerror/tpls/admin_systemerrors.php:10
-#: modules/systemerror/tpls/admin_systemerrors.php:19
-#: modules/ticket/model.php:237 modules/ticket/model.php:295
-#: modules/ticket/model.php:397 modules/reply/model.php:87
+#: modules/systemerror/tpls/admin_systemerrors.php:19 modules/ticket/model.php:237
+#: modules/ticket/model.php:295 modules/ticket/model.php:397 modules/reply/model.php:87
 msgid "ERROR"
 msgstr "Error"
 
@@ -360,9 +330,8 @@ msgstr "New help topic"
 msgid "REASSIGN_TICKET"
 msgstr "Reassign ticket"
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:16
-#: modules/ticket/model.php:405 modules/ticket/tpls/ticketdetail.php:136
-#: modules/ticket/tpls/admin_addticket.php:107
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:16 modules/ticket/model.php:405
+#: modules/ticket/tpls/ticketdetail.php:136 modules/ticket/tpls/admin_addticket.php:107
 #: modules/ticket/tpls/admin_ticketdetail.php:110
 msgid "CLOSE_TICKET"
 msgstr "Close ticket"
@@ -415,13 +384,10 @@ msgstr "New ticket admin alert"
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:131
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:140
 #: modules/jssupportticket/tpls/admin_controlpanel.php:137
-#: modules/ticket/tpls/ticketdetail.php:123
-#: modules/ticket/tpls/myticket.php:39 modules/ticket/tpls/myticket.php:73
-#: modules/ticket/tpls/admin_tickets.php:21
-#: modules/ticket/tpls/admin_tickets.php:58
-#: modules/ticket/tpls/admin_addticket.php:66
-#: modules/ticket/tpls/addticket.php:85
-#: modules/ticket/tpls/admin_ticketdetail.php:97
+#: modules/ticket/tpls/ticketdetail.php:123 modules/ticket/tpls/myticket.php:39
+#: modules/ticket/tpls/myticket.php:73 modules/ticket/tpls/admin_tickets.php:21
+#: modules/ticket/tpls/admin_tickets.php:58 modules/ticket/tpls/admin_addticket.php:66
+#: modules/ticket/tpls/addticket.php:85 modules/ticket/tpls/admin_ticketdetail.php:97
 msgid "SUBJECT"
 msgstr "Subject"
 
@@ -465,8 +431,7 @@ msgstr "Help topic"
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:124
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:133
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:142
-#: modules/ticket/tpls/admin_addticket.php:42
-#: modules/ticket/tpls/addticket.php:56
+#: modules/ticket/tpls/admin_addticket.php:42 modules/ticket/tpls/addticket.php:56
 #: modules/email/tpls/admin_addemail.php:12
 msgid "EMAIL"
 msgstr "Email"
@@ -513,19 +478,16 @@ msgstr "Help topic title"
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:103
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:112
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:117
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-#: modules/email/tpls/admin_emails.php:10
+#: modules/userfeild/tpls/admin_adduserfeild.php:120 modules/email/tpls/admin_emails.php:10
 #: modules/email/tpls/admin_emails.php:20
 msgid "EMAIL_ADDRESS"
 msgstr "Email address"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:113
 #: modules/jssupportticket/tpls/admin_controlpanel.php:136
-#: modules/ticket/tpls/ticketdetail.php:101
-#: modules/ticket/tpls/myticket.php:41 modules/ticket/tpls/myticket.php:88
-#: modules/ticket/tpls/admin_tickets.php:23
-#: modules/ticket/tpls/admin_tickets.php:73
-#: modules/ticket/tpls/admin_ticketdetail.php:75
+#: modules/ticket/tpls/ticketdetail.php:101 modules/ticket/tpls/myticket.php:41
+#: modules/ticket/tpls/myticket.php:88 modules/ticket/tpls/admin_tickets.php:23
+#: modules/ticket/tpls/admin_tickets.php:73 modules/ticket/tpls/admin_ticketdetail.php:75
 msgid "TICKET_ID"
 msgstr "Ticket ID"
 
@@ -638,8 +600,7 @@ msgstr "Internal Mail"
 
 #: modules/jssupportticket/tpls/admin_propage.php:29
 msgid "INTERNAL_MAIL_SYSTEM_FOR_CUMMUNICATION_WITHIN_STAFFS_AND_ADMINISTRATOR"
-msgstr ""
-"Internal mail system for communication within staff's and administrator"
+msgstr "Internal mail system for communication within staff's and administrator"
 
 #: modules/jssupportticket/tpls/admin_propage.php:33
 msgid "ACCESS_CONTROL_LIMIT"
@@ -755,19 +716,16 @@ msgstr "Open ticket"
 msgid "PLEASE_PROVIDE_AS_MUCH_DETAIL_AS_POSSIBLE_SO_WE_CAN_BEST_ASIST_YOU."
 msgstr "Please provide as much detail as possible so we can assist you in the best way."
 
-#: modules/jssupportticket/tpls/controlpanel.php:16
-#: modules/ticket/tpls/myticket.php:24
+#: modules/jssupportticket/tpls/controlpanel.php:16 modules/ticket/tpls/myticket.php:24
 msgid "MY_TICKETS"
 msgstr "My Tickets"
 
 #: modules/jssupportticket/tpls/controlpanel.php:17
 msgid "WE_PROVIDE_ARCHIVES_AND_HISTORY_OF_ALL_YOUR_SUPPORT_REQUESTS_COMPLETE_WITH_RESPONSES."
 msgstr ""
-"We provide archives and history of all your support requests complete with "
-"responses."
+"We provide archives and history of all your support requests complete with responses."
 
-#: modules/jssupportticket/tpls/controlpanel.php:46
-#: modules/ticket/tpls/ticketdetail.php:306
+#: modules/jssupportticket/tpls/controlpanel.php:46 modules/ticket/tpls/ticketdetail.php:306
 #: modules/ticket/tpls/myticket.php:157 modules/ticket/tpls/addticket.php:233
 msgid "SYSTEM_OFFLINE"
 msgstr "System Offline"
@@ -821,10 +779,8 @@ msgid "LATEST_TICKET"
 msgstr "Latest ticket"
 
 #: modules/jssupportticket/tpls/admin_controlpanel.php:138
-#: modules/ticket/tpls/ticketdetail.php:127
-#: modules/ticket/tpls/myticket.php:77
-#: modules/ticket/tpls/admin_tickets.php:62
-#: modules/ticket/tpls/admin_ticketdetail.php:101
+#: modules/ticket/tpls/ticketdetail.php:127 modules/ticket/tpls/myticket.php:77
+#: modules/ticket/tpls/admin_tickets.php:62 modules/ticket/tpls/admin_ticketdetail.php:101
 msgid "FROM"
 msgstr "From"
 
@@ -912,8 +868,8 @@ msgstr "Ticket limit has been exceeded"
 msgid "TICKET_HAS_NOT_BEEN_STORED"
 msgstr "Ticket has not been stored"
 
-#: modules/ticket/model.php:242 modules/ticket/model.php:290
-#: modules/ticket/model.php:393 modules/reply/model.php:83
+#: modules/ticket/model.php:242 modules/ticket/model.php:290 modules/ticket/model.php:393
+#: modules/reply/model.php:83
 msgid "SUCCESSFULLY"
 msgstr "Successfully"
 
@@ -922,8 +878,7 @@ msgid "TICKET_HAS_BEEN_STORED"
 msgstr "Ticket has been stored"
 
 #: modules/ticket/model.php:267 modules/ticket/tpls/admin_tickets.php:14
-#: modules/ticket/tpls/admin_addticket.php:39
-#: modules/ticket/tpls/addticket.php:52
+#: modules/ticket/tpls/admin_addticket.php:39 modules/ticket/tpls/addticket.php:52
 msgid "ADD_NEW_TICKET"
 msgstr "Add new ticket"
 
@@ -963,65 +918,51 @@ msgstr "Ticket has not been closed"
 msgid "TICKET_IS_CLOSE_BY"
 msgstr "Ticket closed by"
 
-#: modules/ticket/tpls/ticketdetail.php:19
-#: modules/ticket/tpls/admin_addticket.php:21
-#: modules/ticket/tpls/addticket.php:22
-#: modules/ticket/tpls/admin_ticketdetail.php:15
+#: modules/ticket/tpls/ticketdetail.php:19 modules/ticket/tpls/admin_addticket.php:21
+#: modules/ticket/tpls/addticket.php:22 modules/ticket/tpls/admin_ticketdetail.php:15
 msgid "FILE_UPLOAD_LIMIT_EXCEED"
 msgstr "File upload limit exceed"
 
-#: modules/ticket/tpls/ticketdetail.php:39
-#: modules/ticket/tpls/admin_addticket.php:36
-#: modules/ticket/tpls/addticket.php:49
-#: modules/ticket/tpls/admin_ticketdetail.php:35
+#: modules/ticket/tpls/ticketdetail.php:39 modules/ticket/tpls/admin_addticket.php:36
+#: modules/ticket/tpls/addticket.php:49 modules/ticket/tpls/admin_ticketdetail.php:35
 msgid "ERROR_FILE_SIZE_TO_LARGE"
 msgstr "Error file size too large"
 
-#: modules/ticket/tpls/ticketdetail.php:40
-#: modules/ticket/tpls/admin_addticket.php:37
-#: modules/ticket/tpls/addticket.php:50
-#: modules/ticket/tpls/admin_ticketdetail.php:36
+#: modules/ticket/tpls/ticketdetail.php:40 modules/ticket/tpls/admin_addticket.php:37
+#: modules/ticket/tpls/addticket.php:50 modules/ticket/tpls/admin_ticketdetail.php:36
 msgid "ERROR_FILE_EXT_MISMATCH"
 msgstr "Error file extension mismatch"
 
-#: modules/ticket/tpls/ticketdetail.php:41
-#: modules/ticket/tpls/admin_ticketdetail.php:37
+#: modules/ticket/tpls/ticketdetail.php:41 modules/ticket/tpls/admin_ticketdetail.php:37
 msgid "TICKET_DETAILS"
 msgstr "Ticket details"
 
-#: modules/ticket/tpls/ticketdetail.php:46
-#: modules/ticket/tpls/admin_ticketdetail.php:42
+#: modules/ticket/tpls/ticketdetail.php:46 modules/ticket/tpls/admin_ticketdetail.php:42
 msgid "LOCK"
 msgstr "Look"
 
 #: modules/ticket/tpls/ticketdetail.php:49 modules/ticket/tpls/myticket.php:51
-#: modules/ticket/tpls/admin_tickets.php:36
-#: modules/ticket/tpls/admin_ticketdetail.php:45
+#: modules/ticket/tpls/admin_tickets.php:36 modules/ticket/tpls/admin_ticketdetail.php:45
 msgid "NEW"
 msgstr "New"
 
-#: modules/ticket/tpls/ticketdetail.php:52
-#: modules/ticket/tpls/admin_ticketdetail.php:48
+#: modules/ticket/tpls/ticketdetail.php:52 modules/ticket/tpls/admin_ticketdetail.php:48
 msgid "WAITING_REPLY"
 msgstr "Waiting reply"
 
 #: modules/ticket/tpls/ticketdetail.php:55 modules/ticket/tpls/myticket.php:57
-#: modules/ticket/tpls/admin_tickets.php:42
-#: modules/ticket/tpls/admin_addticket.php:107
+#: modules/ticket/tpls/admin_tickets.php:42 modules/ticket/tpls/admin_addticket.php:107
 #: modules/ticket/tpls/admin_ticketdetail.php:51
 msgid "IN_PROGRESS"
 msgstr "In progress"
 
-#: modules/ticket/tpls/ticketdetail.php:58
-#: modules/ticket/tpls/admin_ticketdetail.php:54
+#: modules/ticket/tpls/ticketdetail.php:58 modules/ticket/tpls/admin_ticketdetail.php:54
 msgid "REPLIED"
 msgstr "Replied"
 
-#: modules/ticket/tpls/ticketdetail.php:61
-#: modules/ticket/tpls/ticketdetail.php:71 modules/ticket/tpls/myticket.php:18
-#: modules/ticket/tpls/myticket.php:63
-#: modules/ticket/tpls/admin_tickets.php:48
-#: modules/ticket/tpls/admin_ticketdetail.php:57
+#: modules/ticket/tpls/ticketdetail.php:61 modules/ticket/tpls/ticketdetail.php:71
+#: modules/ticket/tpls/myticket.php:18 modules/ticket/tpls/myticket.php:63
+#: modules/ticket/tpls/admin_tickets.php:48 modules/ticket/tpls/admin_ticketdetail.php:57
 #: modules/ticket/tpls/admin_ticketdetail.php:67
 msgid "CLOSED"
 msgstr "Closed"
@@ -1044,119 +985,93 @@ msgstr "Today"
 msgid "AGO"
 msgstr "Ago"
 
-#: modules/ticket/tpls/ticketdetail.php:111
-#: modules/ticket/tpls/myticket.php:92
-#: modules/ticket/tpls/admin_tickets.php:77
-#: modules/ticket/tpls/admin_ticketdetail.php:85
+#: modules/ticket/tpls/ticketdetail.php:111 modules/ticket/tpls/myticket.php:92
+#: modules/ticket/tpls/admin_tickets.php:77 modules/ticket/tpls/admin_ticketdetail.php:85
 msgid "LAST_REPLY"
 msgstr "Last Reply"
 
-#: modules/ticket/tpls/ticketdetail.php:112
-#: modules/ticket/tpls/myticket.php:93
-#: modules/ticket/tpls/admin_tickets.php:78
-#: modules/ticket/tpls/admin_ticketdetail.php:86
+#: modules/ticket/tpls/ticketdetail.php:112 modules/ticket/tpls/myticket.php:93
+#: modules/ticket/tpls/admin_tickets.php:78 modules/ticket/tpls/admin_ticketdetail.php:86
 msgid "NO_LAST_REPLY"
 msgstr "No Last Reply"
 
-#: modules/ticket/tpls/ticketdetail.php:139
-#: modules/ticket/tpls/admin_ticketdetail.php:114
+#: modules/ticket/tpls/ticketdetail.php:139 modules/ticket/tpls/admin_ticketdetail.php:114
 msgid "REQUESTER_INFO"
 msgstr "Requester Info"
 
-#: modules/ticket/tpls/ticketdetail.php:150
-#: modules/ticket/tpls/admin_ticketdetail.php:125
+#: modules/ticket/tpls/ticketdetail.php:150 modules/ticket/tpls/admin_ticketdetail.php:125
 msgid "SHOW_DETAIL"
 msgstr "Show Detail"
 
-#: modules/ticket/tpls/ticketdetail.php:153
-#: modules/ticket/tpls/admin_ticketdetail.php:128
+#: modules/ticket/tpls/ticketdetail.php:153 modules/ticket/tpls/admin_ticketdetail.php:128
 msgid "MORE_DETAIL"
 msgstr "More Detail"
 
-#: modules/ticket/tpls/ticketdetail.php:156
-#: modules/ticket/tpls/admin_ticketdetail.php:131
+#: modules/ticket/tpls/ticketdetail.php:156 modules/ticket/tpls/admin_ticketdetail.php:131
 msgid "PHONE"
 msgstr "Phone"
 
-#: modules/ticket/tpls/ticketdetail.php:166
-#: modules/ticket/tpls/admin_ticketdetail.php:141
+#: modules/ticket/tpls/ticketdetail.php:166 modules/ticket/tpls/admin_ticketdetail.php:141
 msgid "TRUE"
 msgstr "True"
 
-#: modules/ticket/tpls/ticketdetail.php:166
-#: modules/ticket/tpls/admin_ticketdetail.php:141
+#: modules/ticket/tpls/ticketdetail.php:166 modules/ticket/tpls/admin_ticketdetail.php:141
 msgid "FALSE"
 msgstr "False"
 
-#: modules/ticket/tpls/ticketdetail.php:172
-#: modules/ticket/tpls/admin_ticketdetail.php:147
+#: modules/ticket/tpls/ticketdetail.php:172 modules/ticket/tpls/admin_ticketdetail.php:147
 msgid "NOT_FILLED"
 msgstr "Not Filled"
 
-#: modules/ticket/tpls/ticketdetail.php:180
-#: modules/ticket/tpls/admin_ticketdetail.php:155
+#: modules/ticket/tpls/ticketdetail.php:180 modules/ticket/tpls/admin_ticketdetail.php:155
 msgid "TICKET_THREAD"
 msgstr "Ticket Thread"
 
-#: modules/ticket/tpls/ticketdetail.php:185
-#: modules/ticket/tpls/ticketdetail.php:218
+#: modules/ticket/tpls/ticketdetail.php:185 modules/ticket/tpls/ticketdetail.php:218
 #: modules/ticket/tpls/admin_ticketdetail.php:160
 #: modules/ticket/tpls/admin_ticketdetail.php:193
 msgid "REPLIED_BY"
 msgstr "Replied By"
 
-#: modules/ticket/tpls/ticketdetail.php:202
-#: modules/ticket/tpls/ticketdetail.php:235
+#: modules/ticket/tpls/ticketdetail.php:202 modules/ticket/tpls/ticketdetail.php:235
 #: modules/ticket/tpls/admin_ticketdetail.php:177
 #: modules/ticket/tpls/admin_ticketdetail.php:210
 msgid "DOWNLOAD"
 msgstr "Download"
 
-#: modules/ticket/tpls/ticketdetail.php:246
-#: modules/ticket/tpls/admin_ticketdetail.php:218
+#: modules/ticket/tpls/ticketdetail.php:246 modules/ticket/tpls/admin_ticketdetail.php:218
 msgid "REPLY"
 msgstr "Reply"
 
-#: modules/ticket/tpls/ticketdetail.php:249
-#: modules/ticket/tpls/admin_ticketdetail.php:221
+#: modules/ticket/tpls/ticketdetail.php:249 modules/ticket/tpls/admin_ticketdetail.php:221
 msgid "RESPONSE"
 msgstr "Response"
 
-#: modules/ticket/tpls/ticketdetail.php:253
-#: modules/ticket/tpls/admin_addticket.php:74
-#: modules/ticket/tpls/addticket.php:93
-#: modules/ticket/tpls/admin_ticketdetail.php:225
+#: modules/ticket/tpls/ticketdetail.php:253 modules/ticket/tpls/admin_addticket.php:74
+#: modules/ticket/tpls/addticket.php:93 modules/ticket/tpls/admin_ticketdetail.php:225
 msgid "ATTACHMENTS"
 msgstr "Attachments"
 
-#: modules/ticket/tpls/ticketdetail.php:262
-#: modules/ticket/tpls/admin_addticket.php:83
-#: modules/ticket/tpls/addticket.php:102
-#: modules/ticket/tpls/admin_ticketdetail.php:234
+#: modules/ticket/tpls/ticketdetail.php:262 modules/ticket/tpls/admin_addticket.php:83
+#: modules/ticket/tpls/addticket.php:102 modules/ticket/tpls/admin_ticketdetail.php:234
 msgid "MAXIMUM_FILE_SIZE"
 msgstr "Maximum File Size"
 
-#: modules/ticket/tpls/ticketdetail.php:262
-#: modules/ticket/tpls/admin_addticket.php:83
-#: modules/ticket/tpls/addticket.php:102
-#: modules/ticket/tpls/admin_ticketdetail.php:234
+#: modules/ticket/tpls/ticketdetail.php:262 modules/ticket/tpls/admin_addticket.php:83
+#: modules/ticket/tpls/addticket.php:102 modules/ticket/tpls/admin_ticketdetail.php:234
 msgid "FILE_EXTENSION_TYPE"
 msgstr "File Extension Type"
 
-#: modules/ticket/tpls/ticketdetail.php:264
-#: modules/ticket/tpls/admin_addticket.php:85
-#: modules/ticket/tpls/addticket.php:104
-#: modules/ticket/tpls/admin_ticketdetail.php:236
+#: modules/ticket/tpls/ticketdetail.php:264 modules/ticket/tpls/admin_addticket.php:85
+#: modules/ticket/tpls/addticket.php:104 modules/ticket/tpls/admin_ticketdetail.php:236
 msgid "ADD_MORE_FILE"
 msgstr "Add More File"
 
-#: modules/ticket/tpls/ticketdetail.php:268
-#: modules/ticket/tpls/admin_ticketdetail.php:240
+#: modules/ticket/tpls/ticketdetail.php:268 modules/ticket/tpls/admin_ticketdetail.php:240
 msgid "POST_REPLY"
 msgstr "Post Reply"
 
-#: modules/ticket/tpls/myticket.php:28
-#: modules/ticket/tpls/admin_tickets.php:10
+#: modules/ticket/tpls/myticket.php:28 modules/ticket/tpls/admin_tickets.php:10
 msgid "TICKET_ID_OR_SUBJECT"
 msgstr "Ticket ID Or Subject"
 
@@ -1164,13 +1079,11 @@ msgstr "Ticket ID Or Subject"
 msgid "WAITING_STAFF_REPLY"
 msgstr "Waiting For Staff Reply"
 
-#: modules/ticket/tpls/myticket.php:60
-#: modules/ticket/tpls/admin_tickets.php:39
+#: modules/ticket/tpls/myticket.php:60 modules/ticket/tpls/admin_tickets.php:39
 msgid "WAITING_YOUR_REPLY"
 msgstr "Waiting For Your Reply"
 
-#: modules/ticket/tpls/admin_tickets.php:45
-#: modules/ticket/tpls/admin_addticket.php:107
+#: modules/ticket/tpls/admin_tickets.php:45 modules/ticket/tpls/admin_addticket.php:107
 msgid "WAITING_CUSTOMER_REPLY"
 msgstr "Waiting For Customer Reply"
 
@@ -1183,25 +1096,21 @@ msgid "EDIT"
 msgstr "Edit"
 
 #: modules/ticket/tpls/admin_tickets.php:91 modules/email/model.php:70
-#: modules/email/model.php:85 modules/email/model.php:125
-#: modules/email/model.php:137 modules/email/model.php:216
-#: modules/email/model.php:228 modules/email/model.php:270
+#: modules/email/model.php:85 modules/email/model.php:125 modules/email/model.php:137
+#: modules/email/model.php:216 modules/email/model.php:228 modules/email/model.php:270
 #: modules/email/model.php:282
 msgid "TICKET_DETAIL"
 msgstr "Ticket Detail"
 
-#: modules/ticket/tpls/admin_addticket.php:46
-#: modules/ticket/tpls/addticket.php:60
+#: modules/ticket/tpls/admin_addticket.php:46 modules/ticket/tpls/addticket.php:60
 msgid "FULL_NAME"
 msgstr "Full Name"
 
-#: modules/ticket/tpls/admin_addticket.php:50
-#: modules/ticket/tpls/addticket.php:66
+#: modules/ticket/tpls/admin_addticket.php:50 modules/ticket/tpls/addticket.php:66
 msgid "PHONE_NOE"
 msgstr "Phone No"
 
-#: modules/ticket/tpls/admin_addticket.php:54
-#: modules/ticket/tpls/addticket.php:70
+#: modules/ticket/tpls/admin_addticket.php:54 modules/ticket/tpls/addticket.php:70
 msgid "PHONE_EXT"
 msgstr "Phone Ext"
 
@@ -1209,29 +1118,24 @@ msgstr "Phone Ext"
 msgid "SELECT_DEPARTMENT"
 msgstr "Select department"
 
-#: modules/ticket/tpls/admin_addticket.php:63
-#: modules/ticket/tpls/addticket.php:81
+#: modules/ticket/tpls/admin_addticket.php:63 modules/ticket/tpls/addticket.php:81
 #: modules/email/tpls/admin_addemail.php:17
 msgid "SELECT_PRIORITY"
 msgstr "Select priority"
 
-#: modules/ticket/tpls/admin_addticket.php:70
-#: modules/ticket/tpls/addticket.php:89
+#: modules/ticket/tpls/admin_addticket.php:70 modules/ticket/tpls/addticket.php:89
 msgid "ISSUE_SUMMARY"
 msgstr "Issue Summary"
 
-#: modules/ticket/tpls/admin_addticket.php:92
-#: modules/ticket/tpls/addticket.php:111
+#: modules/ticket/tpls/admin_addticket.php:92 modules/ticket/tpls/addticket.php:111
 msgid "DELETE_ATTACHMENT"
 msgstr "Delete Attachment"
 
-#: modules/ticket/tpls/admin_addticket.php:107
-#: modules/email/tpls/admin_addemail.php:25
+#: modules/ticket/tpls/admin_addticket.php:107 modules/email/tpls/admin_addemail.php:25
 msgid "ACTIVE"
 msgstr "Active"
 
-#: modules/ticket/tpls/admin_addticket.php:107
-#: modules/email/tpls/admin_addemail.php:25
+#: modules/ticket/tpls/admin_addticket.php:107 modules/email/tpls/admin_addemail.php:25
 #: modules/configuration/tpls/admin_configurations.php:18
 msgid "DISABLED"
 msgstr "Disabled"
@@ -1240,8 +1144,7 @@ msgstr "Disabled"
 msgid "WAITING_ADMIN_STAFF_REPLY"
 msgstr "Waiting admin/staff reply"
 
-#: modules/ticket/tpls/admin_addticket.php:195
-#: modules/ticket/tpls/addticket.php:205
+#: modules/ticket/tpls/admin_addticket.php:195 modules/ticket/tpls/addticket.php:205
 msgid "SAVE_TICKET"
 msgstr "Save Ticket"
 
