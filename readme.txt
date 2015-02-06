@@ -52,6 +52,13 @@ Email notification send to admin and user on certian action i.e reply ticket, cl
 
 = Responsive Design =
 
+JS Support Ticket using these shortcodes.
+- [jssupportticket] for JS Support Ticket control panel
+- [jssupportticket_addticket] for add new ticket form
+- [jssupportticket_mytickets] for my tickets
+
+= Responsive Design =
+
 Full responsive layouts, user can use ticket system from his laptop, tablet or smart phone. Layouts auto adjust according to devices.
 
 = User Fields =
@@ -92,7 +99,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 = Minimum Requirements =
 
-* WordPress 3.8 or greater
+* WordPress 3.5 or greater
 * PHP version 5.2.4 or greater
 * MySQL version 5.0 or greater
 
@@ -123,12 +130,24 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Changelog ==
 
-= 1.0.0 - 10/07/2014 =
-* Just releae.
+= 1.0.3 - 02/06/2015 =
+* New control panel layout.
+* Admin responsive layout, now JS Support Ticket fully responsive.
+* SEF improve
+* Implement short codes
+* Add breadcrum
+* Pagination bug fix
+
+= 1.0.2 - 11/17/2014 =
+* Admin can change page url (slug).
+* User fields bug fix.
 
 = 1.0.1 - 10/25/2014 =
 * Email alert to admin [bug fix].
 * Email alert in HTML format.
+
+= 1.0.0 - 10/07/2014 =
+* Just releae.
 
 
 == Frequently Asked Questions ==
