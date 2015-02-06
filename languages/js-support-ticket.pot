@@ -1,0 +1,1477 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JS Support Ticket 1.0\n"
+"POT-Creation-Date: 2014-08-21 16:41+0500\n"
+"PO-Revision-Date: 2014-08-21 16:41+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: modules/department/model.php:75
+msgid "DEPARTMENT_HAS_BEEN_STORED"
+msgstr "Department Has Been Stored"
+
+#: modules/department/model.php:78
+msgid "DEPARTMENT_HAS_NOT_BEEN_STORED"
+msgstr ""
+
+#: modules/department/model.php:88
+msgid "DEPARTMENT_HAS_BEEN_DELETED"
+msgstr ""
+
+#: modules/department/model.php:91
+msgid "DEPARTMENT_HAS_NOT_BEEN_DELETED"
+msgstr ""
+
+#: modules/department/model.php:94
+msgid "DEPARTMENT_IN_USE_CANNOT_DELETED"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:8
+#: modules/ticket/tpls/admin_ticketdetail.php:105
+#: modules/ticket/tpls/myticket.php:80 modules/ticket/tpls/addticket.php:58
+#: modules/ticket/tpls/admin_addticket.php:57
+#: modules/ticket/tpls/ticketdetail.php:105
+#: modules/ticket/tpls/admin_tickets.php:66
+msgid "DEPARTMENT"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:10
+#: modules/department/tpls/admin_departments.php:20
+msgid "DEPARTMENT_NAME"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:11
+#: modules/userfeild/tpls/admin_userfeilds.php:11
+#: modules/priority/tpls/admin_priorities.php:11
+#: modules/ticket/tpls/myticket.php:29
+#: modules/ticket/tpls/admin_tickets.php:11
+msgid "GO"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:12
+#: modules/userfeild/tpls/admin_userfeilds.php:12
+#: modules/priority/tpls/admin_priorities.php:12
+#: modules/ticket/tpls/myticket.php:30
+#: modules/ticket/tpls/admin_tickets.php:12
+msgid "RESET"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:14
+msgid "ADD_DEPARTMENT"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:21
+msgid "TYPE"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:22
+msgid "OUTGOING_EMAIL"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:23
+#: modules/department/tpls/admin_adddepartment.php:28
+#: modules/email/tpls/admin_addemail.php:19
+#: modules/priority/tpls/admin_addpriority.php:27
+#: modules/ticket/tpls/myticket.php:42
+#: modules/ticket/tpls/admin_addticket.php:103
+#: modules/ticket/tpls/admin_tickets.php:25
+msgid "STATUS"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:24
+#: modules/email/tpls/admin_emails.php:23
+#: modules/systemerror/tpls/admin_systemerrors.php:21
+#: modules/ticket/tpls/admin_ticketdetail.php:89
+#: modules/ticket/tpls/myticket.php:43 modules/ticket/tpls/ticketdetail.php:89
+#: modules/ticket/tpls/admin_tickets.php:26
+#: modules/ticket/tpls/admin_tickets.php:88
+msgid "CREATED"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:25
+#: modules/userfeild/tpls/admin_userfeilds.php:26
+#: modules/email/tpls/admin_emails.php:24
+#: modules/priority/tpls/admin_priorities.php:23
+msgid "ACTION"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:29
+#: modules/department/tpls/admin_adddepartment.php:17
+#: modules/priority/tpls/admin_priorities.php:20
+msgid "PUBLIC"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:29
+#: modules/department/tpls/admin_adddepartment.php:17
+msgid "PRIVATE"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:30
+#: modules/department/tpls/admin_adddepartment.php:29
+#: modules/priority/tpls/admin_addpriority.php:28
+msgid "APPROVED"
+msgstr ""
+
+#: modules/department/tpls/admin_departments.php:30
+#: modules/department/tpls/admin_adddepartment.php:29
+#: modules/priority/tpls/admin_addpriority.php:28
+msgid "NOT_APPROVED"
+msgstr ""
+
+#: modules/department/tpls/admin_adddepartment.php:5
+msgid "ADD_NEW_DEPARTMENT"
+msgstr ""
+
+#: modules/department/tpls/admin_adddepartment.php:8
+#: modules/userfeild/tpls/admin_adduserfeild.php:168
+#: modules/priority/tpls/admin_priorities.php:10
+#: modules/priority/tpls/admin_priorities.php:19
+#: modules/configuration/tpls/admin_configurations.php:36
+msgid "TITLE"
+msgstr ""
+
+#: modules/department/tpls/admin_adddepartment.php:12
+msgid "OUT_GOING_EMAIL"
+msgstr ""
+
+#: modules/department/tpls/admin_adddepartment.php:16
+#: modules/priority/tpls/admin_addpriority.php:19
+msgid "IS_PUBLIC"
+msgstr ""
+
+#: modules/department/tpls/admin_adddepartment.php:20
+msgid "SIGNATURE"
+msgstr ""
+
+#: modules/department/tpls/admin_adddepartment.php:24
+msgid "APPEND_SIGNATURE"
+msgstr ""
+
+#: modules/department/tpls/admin_adddepartment.php:25
+msgid "APPEND_SIGNATURE_WITH_REPLY"
+msgstr ""
+
+#: modules/department/tpls/admin_adddepartment.php:37
+msgid "SAVE_DEPARTMENT"
+msgstr ""
+
+#: modules/userfeild/model.php:61
+msgid "USER_FIELD_HAS_NOT_BEEN_STORED"
+msgstr ""
+
+#: modules/userfeild/model.php:63
+msgid "USER_FIELD_HAS_BEEN_STORED"
+msgstr ""
+
+#: modules/userfeild/model.php:94
+msgid "USER_FIELD_HAS_BEEN_DELETED"
+msgstr ""
+
+#: modules/userfeild/model.php:97
+msgid "USER_FIELD_HAS_NOT_BEEN_DELETED"
+msgstr ""
+
+#: modules/userfeild/model.php:100
+msgid "USER_FIELD_IN_USE_CANNOT_DELETED"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_userfeilds.php:10
+#: modules/userfeild/tpls/admin_userfeilds.php:20
+#: modules/userfeild/tpls/admin_adduserfeild.php:123
+msgid "FIELD_NAME"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_userfeilds.php:14
+msgid "ADD_USER_FIELD"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_userfeilds.php:21
+#: modules/userfeild/tpls/admin_adduserfeild.php:127
+msgid "FIELD_TITLE"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_userfeilds.php:22
+#: modules/userfeild/tpls/admin_adduserfeild.php:119
+msgid "FIELD_TYPE"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_userfeilds.php:23
+#: modules/userfeild/tpls/admin_adduserfeild.php:131
+msgid "REQUIRED"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_userfeilds.php:24
+#: modules/userfeild/tpls/admin_adduserfeild.php:135
+msgid "READ_ONLY"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_userfeilds.php:25
+#: modules/userfeild/tpls/admin_adduserfeild.php:139
+msgid "PUBLISHED"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:103
+msgid "JS_OPTION_VALUE_IN_USE"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:116
+msgid "ADD_NEW_USER_FIELD"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "TEXT_FIELD"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "DROP_DOWN"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:99
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:103
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:112
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:117
+#: modules/email/tpls/admin_emails.php:20
+msgid "EMAIL_ADDRESS"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "CHECK_BOX"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "DATE"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "TEXT_AREA"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:132
+#: modules/userfeild/tpls/admin_adduserfeild.php:136
+#: modules/userfeild/tpls/admin_adduserfeild.php:140
+#: modules/email/tpls/admin_addemail.php:16
+#: modules/priority/tpls/admin_addpriority.php:20
+#: modules/priority/tpls/admin_addpriority.php:24
+#: modules/configuration/tpls/admin_configurations.php:13
+msgid "YES"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:132
+#: modules/userfeild/tpls/admin_adduserfeild.php:136
+#: modules/userfeild/tpls/admin_adduserfeild.php:140
+#: modules/email/tpls/admin_addemail.php:16
+#: modules/priority/tpls/admin_addpriority.php:20
+#: modules/priority/tpls/admin_addpriority.php:24
+#: modules/configuration/tpls/admin_configurations.php:14
+msgid "NO"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:143
+msgid "FIELD_SIZE"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:149
+msgid "MAX_LENGTH"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:155
+msgid "COLUMNS"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:159
+msgid "ROWS"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:164
+msgid "USE_THE_TABLE_BELOW_TO_ADD_NEW_VALUES"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:165
+msgid "ADD_A_VALUE"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:169
+msgid "VALUE"
+msgstr ""
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:217
+msgid "SAVE_USER_FIELD"
+msgstr ""
+
+#: modules/emailtemplate/model.php:59
+msgid "EMAIL_TEMPLATE_HAS_BEEN_STORED"
+msgstr ""
+
+#: modules/emailtemplate/model.php:62
+msgid "EMAIL_TEMPLATE_HAS_NOT_BEEN_STORED"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:5
+msgid "EMAIL_TEMPLATE"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:9
+#: modules/configuration/tpls/admin_configurations.php:188
+msgid "NEW_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:10
+msgid "STAFF_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:11
+msgid "NEW_DEPARTMENT"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:12
+msgid "NEW_GROUP"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:13
+msgid "NEW_STAFF"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:14
+msgid "NEW_HELP_TOPIC"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:15
+msgid "REASSIGN_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:16
+#: modules/ticket/model.php:365 modules/ticket/tpls/admin_ticketdetail.php:110
+#: modules/ticket/tpls/ticketdetail.php:110
+msgid "CLOSE_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:17
+msgid "DELETE_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:18
+msgid "MARK_OVERDUE_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:19
+msgid "BAN_EMAIL"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:20
+msgid "BAN_EMAIL_TRY_CREATE_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:21
+msgid "DEPARTMENT_TRANSFER"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:22
+msgid "EMAIL_BAN_CLOSE_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:23
+msgid "UNBAN_EMAIL"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:24
+msgid "RESPONSE_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:25
+msgid "REPLY_TICKET"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:26
+msgid "NEW_TICKET_ADMIN_ALERT"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:30
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:43
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:53
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:122
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:131
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:140
+#: modules/ticket/tpls/admin_ticketdetail.php:97
+#: modules/ticket/tpls/myticket.php:38 modules/ticket/tpls/myticket.php:72
+#: modules/ticket/tpls/addticket.php:66
+#: modules/ticket/tpls/admin_addticket.php:65
+#: modules/ticket/tpls/ticketdetail.php:97
+#: modules/ticket/tpls/admin_tickets.php:21
+#: modules/ticket/tpls/admin_tickets.php:58
+msgid "SUBJECT"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:34
+msgid "BODY"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:38
+msgid "PARAMETERS"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:42
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:52
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:121
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:130
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:139
+msgid "USERNAME"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:44
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:54
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:79
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:85
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:90
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:94
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:107
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:123
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:132
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:141
+msgid "TRACKING_ID"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:45
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:55
+msgid "HELP_TOPIC"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:46
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:56
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:124
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:133
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:142
+#: modules/email/tpls/admin_emails.php:10
+#: modules/email/tpls/admin_addemail.php:7
+#: modules/ticket/tpls/addticket.php:42
+#: modules/ticket/tpls/admin_addticket.php:41
+msgid "EMAIL"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:47
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:57
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:125
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:134
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:143
+msgid "MESSAGE"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:48
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:58
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:81
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:86
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:95
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:126
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:135
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:144
+msgid "TICKET_URL"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:62
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:75
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:108
+msgid "DEPARTMENT_TITLE"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:66
+msgid "GROUP_TITLE"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:70
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:80
+msgid "STAFF_MEMBER_TITLE"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:74
+msgid "HELPTOPIC_TITLE"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:113
+#: modules/ticket/tpls/admin_ticketdetail.php:75
+#: modules/ticket/tpls/myticket.php:27 modules/ticket/tpls/myticket.php:40
+#: modules/ticket/tpls/myticket.php:87 modules/ticket/tpls/ticketdetail.php:75
+#: modules/ticket/tpls/admin_tickets.php:10
+#: modules/ticket/tpls/admin_tickets.php:23
+#: modules/ticket/tpls/admin_tickets.php:73
+msgid "TICKET_ID"
+msgstr ""
+
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:150
+msgid "SAVE_EMAIL_TEMPLATE"
+msgstr ""
+
+#: modules/attachment/model.php:64
+msgid "CANNOT_OPEN_FILE"
+msgstr ""
+
+#: modules/attachment/model.php:125
+msgid "FILE_SIZE_GREATER_THEN_DEFAULT_FILESIZE"
+msgstr ""
+
+#: modules/attachment/model.php:131
+msgid "FILE_EXTENSION_DOES_NOT_MATCH"
+msgstr ""
+
+#: modules/attachment/model.php:177
+msgid "ATTACHMENT_HAS_BEEN_REMOVED"
+msgstr ""
+
+#: modules/attachment/model.php:180
+msgid "ATTACHMENT_HAS_NOT_BEEN_REMOVED"
+msgstr ""
+
+#: modules/reply/model.php:81
+msgid "REPLY_HAS_BEEN_STORED"
+msgstr ""
+
+#: modules/reply/model.php:82 modules/ticket/model.php:209
+#: modules/ticket/model.php:253 modules/ticket/model.php:353
+msgid "SUCCESSFULLY"
+msgstr ""
+
+#: modules/reply/model.php:85
+msgid "REPLY_HAS_NOT_BEEN_STORED"
+msgstr ""
+
+#: modules/reply/model.php:86
+#: modules/systemerror/tpls/admin_systemerrors.php:10
+#: modules/systemerror/tpls/admin_systemerrors.php:19
+#: modules/ticket/model.php:204 modules/ticket/model.php:258
+#: modules/ticket/model.php:357
+msgid "ERROR"
+msgstr ""
+
+#: modules/reply/model.php:95
+msgid "TICKET_IS_REPLIED_BY"
+msgstr ""
+
+#: modules/reply/model.php:109
+msgid "REPLY_HAS_BEEN_DELETED"
+msgstr ""
+
+#: modules/reply/model.php:112
+msgid "REPLY_HAS_NOT_BEEN_DELETED"
+msgstr ""
+
+#: modules/email/model.php:274
+#: modules/configuration/tpls/admin_configurations.php:212
+msgid "ADMIN"
+msgstr ""
+
+#: modules/email/model.php:361
+msgid "EMAIL_HAS_BEEN_STORED"
+msgstr ""
+
+#: modules/email/model.php:364
+msgid "EMAIL_HAS_NOT_BEEN_STORED"
+msgstr ""
+
+#: modules/email/model.php:374
+msgid "EMAIL_HAS_BEEN_DELETED"
+msgstr ""
+
+#: modules/email/model.php:377
+msgid "EMAIL_HAS_NOT_BEEN_DELETED"
+msgstr ""
+
+#: modules/email/model.php:380
+msgid "EMAIL_IN_USE_CANNOT_DELETED"
+msgstr ""
+
+#: modules/email/tpls/admin_emails.php:8
+#: modules/jssupportticket/tpls/admin_controlpanel.php:10
+#: includes/jssupportticketadmin.php:58
+msgid "SYSTEM_EMAILS"
+msgstr ""
+
+#: modules/email/tpls/admin_emails.php:14
+msgid "ADD_EMAIL"
+msgstr ""
+
+#: modules/email/tpls/admin_emails.php:21
+msgid "AUTORESPONSE"
+msgstr ""
+
+#: modules/email/tpls/admin_emails.php:22
+#: modules/email/tpls/admin_addemail.php:11
+#: modules/priority/tpls/admin_addpriority.php:7
+#: modules/ticket/tpls/admin_ticketdetail.php:79
+#: modules/ticket/tpls/myticket.php:39 modules/ticket/tpls/myticket.php:95
+#: modules/ticket/tpls/addticket.php:62
+#: modules/ticket/tpls/admin_addticket.php:61
+#: modules/ticket/tpls/ticketdetail.php:79
+#: modules/ticket/tpls/admin_tickets.php:22
+#: modules/ticket/tpls/admin_tickets.php:81
+#: includes/jssupportticketadmin.php:44
+msgid "PRIORITY"
+msgstr ""
+
+#: modules/email/tpls/admin_addemail.php:4
+msgid "ADD_NEW_SYSTEM_EMAIL"
+msgstr ""
+
+#: modules/email/tpls/admin_addemail.php:15
+msgid "AUTO_RESPONSE"
+msgstr ""
+
+#: modules/email/tpls/admin_addemail.php:20
+#: modules/ticket/tpls/admin_addticket.php:104
+msgid "ACTIVE"
+msgstr ""
+
+#: modules/email/tpls/admin_addemail.php:20
+#: modules/configuration/tpls/admin_configurations.php:18
+#: modules/ticket/tpls/admin_addticket.php:104
+msgid "DISABLED"
+msgstr ""
+
+#: modules/email/tpls/admin_addemail.php:28
+msgid "SAVE_EMAIL"
+msgstr ""
+
+#: modules/priority/model.php:81
+msgid "PRIORITY_HAS_BEEN_STORED"
+msgstr ""
+
+#: modules/priority/model.php:84
+msgid "PRIORITY_HAS_NOT_BEEN_STORED"
+msgstr ""
+
+#: modules/priority/model.php:103
+msgid "PRIORITY_HAS_BEEN_DELETED"
+msgstr ""
+
+#: modules/priority/model.php:106
+msgid "PRIORITY_HAS_NOT_BEEN_DELETED"
+msgstr ""
+
+#: modules/priority/model.php:109
+msgid "PRIORITY_IN_USE_CANNOT_DELETED"
+msgstr ""
+
+#: modules/priority/tpls/admin_priorities.php:8
+msgid "PRIORITIES"
+msgstr ""
+
+#: modules/priority/tpls/admin_priorities.php:14
+msgid "ADD_PRIORITY"
+msgstr ""
+
+#: modules/priority/tpls/admin_priorities.php:21
+msgid "DEFAULT"
+msgstr ""
+
+#: modules/priority/tpls/admin_priorities.php:22
+msgid "COLOR"
+msgstr ""
+
+#: modules/priority/tpls/admin_addpriority.php:4
+msgid "ADD_NEW_PRIORITY"
+msgstr ""
+
+#: modules/priority/tpls/admin_addpriority.php:11
+msgid "PRIORITY_COLOR"
+msgstr ""
+
+#: modules/priority/tpls/admin_addpriority.php:15
+msgid "PRIORITY_URGENCY"
+msgstr ""
+
+#: modules/priority/tpls/admin_addpriority.php:23
+msgid "IS_DEFAULT"
+msgstr ""
+
+#: modules/priority/tpls/admin_addpriority.php:35
+msgid "SAVE_PRIORITY"
+msgstr ""
+
+#: modules/activitylog/model.php:50
+msgid "TICKET"
+msgstr ""
+
+#: modules/activitylog/model.php:67
+msgid "ACTIVITY_LOG_HAS_NOT_BEEN_UPDATED"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:17
+msgid "ENABLED"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:24
+#: modules/configuration/tpls/admin_configurations.php:33
+msgid "GENERAL_SETTING"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:25
+#: modules/configuration/tpls/admin_configurations.php:93
+msgid "TICKET_SETTING"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:26
+#: modules/configuration/tpls/admin_configurations.php:129
+msgid "STAFF_MEMBERS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:27
+#: modules/configuration/tpls/admin_configurations.php:147
+msgid "DEFAULT_SYSTEM_EMAIL"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:28
+msgid "KNOWLDEGE_BASE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:29
+msgid "MAIL_SETTING"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:38
+msgid "SET_THE_HEADING_OF_YOUR_PLUGIN"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:41
+#: modules/configuration/tpls/admin_configurations.php:42
+msgid "OFFLINE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:42
+msgid "ONLINE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:43
+msgid "SET_YOUR_PLUGIN_OFFLINE_FOR_FRONT_END"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:46
+msgid "OFFLINE_MESSAGE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:48
+msgid "SET_THE_OFFLINE_MESSAGE_FOR_YOUR_USER"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:51
+msgid "DATA_DIRECTORY"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:53
+msgid "SET_THE_NAME_FOR_YOUR_DATA_DIRECTORY"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:56
+msgid "DATE_FORMAT"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:58
+msgid "SET_THE_DEFAULT_DATE_FORMAT"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:61
+msgid "TICKET_OVERDUE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:62
+#: modules/configuration/tpls/admin_configurations.php:67
+msgid "DAYS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:63
+msgid "SET_NO_OF_DAYS_TO_MARK_TICKET_AS_OVERDUE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:66
+msgid "TICKET_AUTOCLOSE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:68
+msgid "TICKET_AUTOCLOSE_IF_USER_NOT_RESPOND_WITHIN_GIVEN_DAYS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:71
+msgid "NO_OF_ATTACHMENT"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:73
+msgid "NO_OF_ATTACHMENT_ALLOWED_AT_A_TIME"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:76
+msgid "FILE_MAXIMUM_SIZE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:77
+msgid "KB"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:78
+msgid "MAXIMUM_FILE_SIZE_IN_BYTES"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:81
+msgid "FILE_EXTENSION"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:83
+msgid "FILE_EXTENSION_ALLOWED_TO_ATTACH"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:86
+msgid "SHOW_CURRENT_LOCATION"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:88
+msgid "SHOW_CURRENT_LOCATION_IN_YOUR_PLUGIN"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:96
+msgid "MAXIMUM_OPEN_TICKET_PER_EMAIL"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:98
+msgid "MAXIMUM_TICKET_CAN_BE_OPENED_BY_ONE_EMAIL"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:101
+msgid "REOPEN_TICKET_WITHIN_DAYS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:103
+msgid "TICKET_CAN_BE_REOPEN_WITHIN_GIVEN_NUMBER_OF_DAYS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:106
+msgid "STAFF_CAN_LOCK_TICKET"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:108
+msgid "CAN_STAFF_MEMBER_LOCK_TICKET_OR_NOT"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:111
+msgid "VISITOR_CAN_CREATE_TICKET"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:113
+msgid "CAN_VISITOR_CREATE_TICKET_OR_NOT"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:116
+msgid "SHOW_CAPTCHA_ON_VISITOR_FORM_TICKET"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:118
+msgid "SHOW_CAPTCHA_WHEN_VISITOR_WANT_TO_CREATE_TICKET"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:121
+msgid "STAFF_IDENTITY"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:123
+msgid "DESCRIPTION"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:131
+msgid "VIEW_TICKETS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:132
+msgid "SHOW_ALL_TICKETS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:132
+msgid "SHOW_ASSIGN_TICKETS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:133
+msgid "SET_STAFF_MEMBER_CAN_SEE_TICKETS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:139
+msgid "DEFAULT_EMAIL_SYSTEM"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:142
+msgid "DEFAULT_ALERT_EMAIL"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:144
+msgid "SET_DEFAULT_ALERT_EMAIL_TO_SEND_ALERTS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:149
+msgid "SET_DEFAULT_SYSTEM_EMAIL"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:152
+msgid "DEFAULT_ADMIN_EMAIL"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:154
+msgid "SET_DEFAULT_ADMIN_EMAIL_TO_RECEVICE_ADMIN_EMAILS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:157
+msgid "ARTICLES_PER_ROW"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:159
+msgid "SET_HOW_MANY_ARTICLE_SHOW_PER_ROW"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:166
+msgid "STAFF_MEMBER_KNOWLEDGEBASE_SETTING"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:169
+msgid "ENABLE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:171
+msgid "SET_KNOWLEDGEBASE_ENABLE_OR_DISABLE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:174
+msgid "STAFF_CREATE_CATEGORIES"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:176
+msgid "CAN_STAFF_MEMBER_CREATE_CATEGORIES_OR_NOT"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:179
+msgid "STAFF_CREATE_ARTICLES"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:181
+msgid "CAN_STAFF_MEMBER_CREATE_ARTICLE_OR_NOT"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:191
+#: modules/configuration/tpls/admin_configurations.php:204
+msgid "MAIL_TO_ADMIN"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:193
+msgid "EMAIL_SEND_TO_ADMIN_WHEN_NEW_TICKET_CREATED"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:196
+msgid "MAIL_TO_STAFF_MEMBERS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:198
+msgid "EMAIL_SEND_TO_STAFF_MEMBER_WHEN_NEW_TICKET_CREATED"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:201
+msgid "BAN_EMAIL_NEW_TICKET"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:206
+msgid "EMAIL_SEND_TO_ADMIN_WHEN_BANNED_EMAIL_TRY_TO_CREATE_TICKET"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:211
+msgid "OPERATIONS"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:213
+msgid "STAFF"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:214
+msgid "USER"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:217
+msgid "TICKET_REASSIGN"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:223
+msgid "TICKET_CLOSE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:229
+msgid "TICKET_DELETE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:235
+msgid "TICKET_MARK_OVERDUE"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:241
+msgid "TICKET_BAN_EMAIL"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:247
+msgid "TICKET_DEPARTMENT_TRANSFER"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:253
+msgid "TICKET_REPLY_(_TICKET_USER_)"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:259
+msgid "TICKET_RESPONSE_(_STAFF_)"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:265
+msgid "TICKET_BAN_EMAIL_AND_CLOSE_TICKET"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:271
+msgid "TICKET_UNBAN_EMAIL"
+msgstr ""
+
+#: modules/configuration/tpls/admin_configurations.php:287
+msgid "SAVE_CONFIGURATION"
+msgstr ""
+
+#: modules/systemerror/tpls/admin_systemerrors.php:8
+#: modules/jssupportticket/tpls/admin_controlpanel.php:11
+#: includes/jssupportticketadmin.php:65
+msgid "SYSTEM_ERRORS"
+msgstr ""
+
+#: modules/systemerror/tpls/admin_systemerrors.php:20
+msgid "VIEW"
+msgstr ""
+
+#: modules/jssupportticket/tpls/controlpanel.php:5
+msgid "OPEN_TICKET"
+msgstr ""
+
+#: modules/jssupportticket/tpls/controlpanel.php:6
+#: modules/jssupportticket/tpls/controlpanel.php:13
+msgid "ABC_DESCRIPTION_PROVIDED_AHMED_KHAN"
+msgstr ""
+
+#: modules/jssupportticket/tpls/controlpanel.php:12
+#: modules/ticket/tpls/myticket.php:23
+msgid "MY_TICKETS"
+msgstr ""
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:1
+msgid "ADMIN_CONTROL_PANEL"
+msgstr ""
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:4
+#: includes/jssupportticketadmin.php:30
+msgid "CONFIGURATIONS"
+msgstr ""
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:5
+#: modules/ticket/tpls/myticket.php:11 modules/ticket/tpls/admin_tickets.php:8
+#: includes/jssupportticketadmin.php:37
+msgid "TICKETS"
+msgstr ""
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:6
+msgid "PRIORITES"
+msgstr ""
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:7
+#: includes/jssupportticketadmin.php:51
+msgid "DEPARTMENTS"
+msgstr ""
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:12
+msgid "ACTIVITY_LOG"
+msgstr ""
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:13
+#: includes/jssupportticketadmin.php:79
+msgid "USER_FIELDS"
+msgstr ""
+
+#: modules/ticket/model.php:206
+msgid "TICKET_HAS_NOT_BEEN_STORED"
+msgstr ""
+
+#: modules/ticket/model.php:228
+msgid "TICKET_HAS_BEEN_STORED"
+msgstr ""
+
+#: modules/ticket/model.php:234 modules/ticket/tpls/addticket.php:39
+#: modules/ticket/tpls/admin_addticket.php:38
+#: modules/ticket/tpls/admin_tickets.php:14
+msgid "ADD_NEW_TICKET"
+msgstr ""
+
+#: modules/ticket/model.php:235
+msgid "TICKET_IS_CREATED_BY"
+msgstr ""
+
+#: modules/ticket/model.php:254
+msgid "TICKET_HAS_BEEN_DELETED"
+msgstr ""
+
+#: modules/ticket/model.php:257
+msgid "TICKET_HAS_NOT_BEEN_DELETED"
+msgstr ""
+
+#: modules/ticket/model.php:266
+msgid "REMOVE_TICKET"
+msgstr ""
+
+#: modules/ticket/model.php:267
+msgid "TICKET_IS_REMOVE_BY"
+msgstr ""
+
+#: modules/ticket/model.php:274
+msgid "TICKET_IN_USE_CANNOT_DELETED"
+msgstr ""
+
+#: modules/ticket/model.php:352
+msgid "TICKET_HAS_BEEN_CLOSED"
+msgstr ""
+
+#: modules/ticket/model.php:356
+msgid "TICKET_HAS_NOT_BEEN_CLOSED"
+msgstr ""
+
+#: modules/ticket/model.php:366
+msgid "TICKET_IS_CLOSE_BY"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:15
+#: modules/ticket/tpls/addticket.php:22
+#: modules/ticket/tpls/admin_addticket.php:21
+#: modules/ticket/tpls/ticketdetail.php:15
+msgid "FILE_UPLOAD_LIMIT_EXCEED"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:35
+#: modules/ticket/tpls/addticket.php:36
+#: modules/ticket/tpls/admin_addticket.php:35
+#: modules/ticket/tpls/ticketdetail.php:35
+msgid "ERROR_FILE_SIZE_TO_LARGE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:36
+#: modules/ticket/tpls/addticket.php:37
+#: modules/ticket/tpls/admin_addticket.php:36
+#: modules/ticket/tpls/ticketdetail.php:36
+msgid "ERROR_FILE_EXT_MISMATCH"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:37
+#: modules/ticket/tpls/ticketdetail.php:37
+msgid "TICKET_DETAILS"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:42
+#: modules/ticket/tpls/ticketdetail.php:42
+msgid "LOCK"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:45
+#: modules/ticket/tpls/myticket.php:50 modules/ticket/tpls/ticketdetail.php:45
+#: modules/ticket/tpls/admin_tickets.php:36
+msgid "NEW"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:48
+#: modules/ticket/tpls/ticketdetail.php:48
+msgid "WAITING_REPLY"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:51
+#: modules/ticket/tpls/myticket.php:56 modules/ticket/tpls/ticketdetail.php:51
+#: modules/ticket/tpls/admin_tickets.php:42
+msgid "IN_PROGRESS"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:54
+#: modules/ticket/tpls/ticketdetail.php:54
+msgid "REPLIED"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:57
+#: modules/ticket/tpls/admin_ticketdetail.php:67
+#: modules/ticket/tpls/myticket.php:17 modules/ticket/tpls/myticket.php:62
+#: modules/ticket/tpls/ticketdetail.php:57
+#: modules/ticket/tpls/ticketdetail.php:67
+#: modules/ticket/tpls/admin_tickets.php:48
+msgid "CLOSED"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:67
+#: modules/ticket/tpls/myticket.php:14 modules/ticket/tpls/ticketdetail.php:67
+msgid "OPEN"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:85
+#: modules/ticket/tpls/myticket.php:91 modules/ticket/tpls/ticketdetail.php:85
+#: modules/ticket/tpls/admin_tickets.php:77
+msgid "LAST_REPLY"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:86
+#: modules/ticket/tpls/myticket.php:92 modules/ticket/tpls/ticketdetail.php:86
+#: modules/ticket/tpls/admin_tickets.php:78
+msgid "NO_LAST_REPLY"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:101
+#: modules/ticket/tpls/myticket.php:76
+#: modules/ticket/tpls/ticketdetail.php:101
+#: modules/ticket/tpls/admin_tickets.php:62
+msgid "FROM"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:111
+msgid "EDIT_TICKET"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:114
+#: modules/ticket/tpls/ticketdetail.php:113
+msgid "REQUESTER_INFO"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:125
+#: modules/ticket/tpls/ticketdetail.php:124
+msgid "SHOW_DETAIL"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:128
+#: modules/ticket/tpls/ticketdetail.php:127
+msgid "MORE_DETAIL"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:131
+#: modules/ticket/tpls/ticketdetail.php:130
+msgid "PHONE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:135
+#: modules/ticket/tpls/addticket.php:100
+#: modules/ticket/tpls/admin_addticket.php:99
+#: modules/ticket/tpls/ticketdetail.php:134
+msgid "DUE_DATE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:145
+#: modules/ticket/tpls/ticketdetail.php:144
+msgid "TRUE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:145
+#: modules/ticket/tpls/ticketdetail.php:144
+msgid "FALSE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:151
+#: modules/ticket/tpls/ticketdetail.php:150
+msgid "NOT_FILLED"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:159
+#: modules/ticket/tpls/ticketdetail.php:158
+msgid "TICKET_THREAD"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:164
+#: modules/ticket/tpls/admin_ticketdetail.php:197
+#: modules/ticket/tpls/ticketdetail.php:163
+#: modules/ticket/tpls/ticketdetail.php:196
+msgid "REPLIED_BY"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:181
+#: modules/ticket/tpls/admin_ticketdetail.php:214
+#: modules/ticket/tpls/ticketdetail.php:180
+#: modules/ticket/tpls/ticketdetail.php:213
+msgid "DOWNLOAD"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:222
+#: modules/ticket/tpls/ticketdetail.php:221
+msgid "REPLY"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:225
+#: modules/ticket/tpls/ticketdetail.php:224
+msgid "RESPONSE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:229
+#: modules/ticket/tpls/addticket.php:74
+#: modules/ticket/tpls/admin_addticket.php:73
+#: modules/ticket/tpls/ticketdetail.php:228
+msgid "ATTACHMENTS"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:238
+#: modules/ticket/tpls/addticket.php:83
+#: modules/ticket/tpls/admin_addticket.php:82
+#: modules/ticket/tpls/ticketdetail.php:237
+msgid "MAXIMUM_FILE_SIZE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:238
+#: modules/ticket/tpls/addticket.php:83
+#: modules/ticket/tpls/admin_addticket.php:82
+#: modules/ticket/tpls/ticketdetail.php:237
+msgid "FILE_EXTENSION_TYPE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:240
+#: modules/ticket/tpls/addticket.php:85
+#: modules/ticket/tpls/admin_addticket.php:84
+#: modules/ticket/tpls/ticketdetail.php:239
+msgid "ADD_MORE_FILE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_ticketdetail.php:244
+#: modules/ticket/tpls/ticketdetail.php:243
+msgid "POST_REPLY"
+msgstr ""
+
+#: modules/ticket/tpls/myticket.php:20
+msgid "ANSWERED"
+msgstr ""
+
+#: modules/ticket/tpls/myticket.php:41
+#: modules/ticket/tpls/admin_tickets.php:24
+msgid "IS_ANSWERED"
+msgstr ""
+
+#: modules/ticket/tpls/myticket.php:53
+msgid "WAITING_STAFF_REPLY"
+msgstr ""
+
+#: modules/ticket/tpls/myticket.php:59
+#: modules/ticket/tpls/admin_tickets.php:39
+msgid "WAITING_YOUR_REPLY"
+msgstr ""
+
+#: modules/ticket/tpls/addticket.php:46
+#: modules/ticket/tpls/admin_addticket.php:45
+msgid "FULL_NAME"
+msgstr ""
+
+#: modules/ticket/tpls/addticket.php:50
+#: modules/ticket/tpls/admin_addticket.php:49
+msgid "PHONE_NOE"
+msgstr ""
+
+#: modules/ticket/tpls/addticket.php:54
+#: modules/ticket/tpls/admin_addticket.php:53
+msgid "PHONE_EXT"
+msgstr ""
+
+#: modules/ticket/tpls/addticket.php:70
+#: modules/ticket/tpls/admin_addticket.php:69
+msgid "ISSUE_SUMMARY"
+msgstr ""
+
+#: modules/ticket/tpls/addticket.php:92
+#: modules/ticket/tpls/admin_addticket.php:91
+msgid "DELETE_ATTACHMENT"
+msgstr ""
+
+#: modules/ticket/tpls/addticket.php:170
+#: modules/ticket/tpls/admin_addticket.php:173
+msgid "SAVE_TICKET"
+msgstr ""
+
+#: modules/ticket/tpls/admin_tickets.php:45
+msgid "WAITING_CUSTOMER_REPLY"
+msgstr ""
+
+#: modules/ticket/tpls/admin_tickets.php:89
+msgid "REMOVE"
+msgstr ""
+
+#: modules/ticket/tpls/admin_tickets.php:90
+msgid "EDIT"
+msgstr ""
+
+#: modules/ticket/tpls/admin_tickets.php:91
+msgid "TICKET_DETAIL"
+msgstr ""
+
+#: includes/jssupportticketadmin.php:22
+msgid "JS_SUPPORT_TICKET_CONTROL_PANEL"
+msgstr ""
+
+#: includes/jssupportticketadmin.php:23
+msgid "JS_SUPPORT_TICKET"
+msgstr ""
+
+#: includes/jssupportticketadmin.php:29
+msgid "JS_SUPPORT_TICKET_CONFIGURATION"
+msgstr ""
+
+#: includes/jssupportticketadmin.php:36
+msgid "JS_SUPPORT_TICKET_TICKETS"
+msgstr ""
+
+#: includes/jssupportticketadmin.php:43
+msgid "JS_SUPPORT_TICKET_PRIORITIES"
+msgstr ""
+
+#: includes/jssupportticketadmin.php:50
+msgid "JS_SUPPORT_TICKET_DEPARTMENT"
+msgstr ""
+
+#: includes/jssupportticketadmin.php:57
+msgid "JS_SUPPORT_TICKET_EMAILS"
+msgstr ""
+
+#: includes/jssupportticketadmin.php:64
+msgid "JS_SUPPORT_TICKET_SYSTEM_ERROR"
+msgstr "JS Support Ticket System Error"
+
+#: includes/jssupportticketadmin.php:71
+msgid "JS_SUPPORT_TICKET_EMAIL_TEMPLATES"
+msgstr "JS Support Ticket Email Templates"
+
+#: includes/jssupportticketadmin.php:72
+msgid "EMAIL_TEMPLATES"
+msgstr "Email Templates"
+
+#: includes/jssupportticketadmin.php:78
+msgid "JS_SUPPORT_TICKET_USER_FIELDS"
+msgstr "JS Support Ticket User Fields"
+
+#: includes/pagination.php:30
+msgid "&laquo;"
+msgstr ""
+
+#: includes/pagination.php:31
+msgid "&raquo;"
+msgstr ""
+
+msgid "ANNOUNCEMENT_DETAILS"
+msgstr "Announcement Details"
+
+msgid "SYSTEM_EMAILS_USED_FOR_SENDING_EMAIL"
+msgstr "System emails used for sending email"
+
+msgid "MARK_IN_PROGRESS_TICKET"
+msgstr "Mark In Progress Ticket"
+
+msgid "TICKET_PRIORITY_CHANGE"
+msgstr "Ticket Priority Change"
+
+msgid "EMAIL_ALERT_NEW_MAIL"
+msgstr "Email Alert New Mail"
+
+msgid "EMAIL_ALERT_NEW_MAIL_REPLY"
+msgstr "Email Alert New Mail Reply"
+
+msgid "EMAIL_TEMPLATE"
+msgstr "Email Template"
