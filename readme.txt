@@ -99,7 +99,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 = Minimum Requirements =
 
-* WordPress 3.8 or greater
+* WordPress 3.5 or greater
 * PHP version 5.2.4 or greater
 * MySQL version 5.0 or greater
 
