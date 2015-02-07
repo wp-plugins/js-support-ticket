@@ -50,7 +50,7 @@ Ticket system build on the basis on latest style. You will find it very easy to 
 Autoresponder is the term used for acknowledgement email dispatched when a new ticket is created in helpdesk. You can configure it, and also modify the content as well as layout.
 Email notification send to admin and user on certian action i.e reply ticket, close ticket etc
 
-= Responsive Design =
+= Short Codes =
 
 JS Support Ticket using these shortcodes.
 - [jssupportticket] for JS Support Ticket control panel
