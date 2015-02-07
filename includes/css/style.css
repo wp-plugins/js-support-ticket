@@ -1,8 +1,9 @@
-h1.js-ticket-heading{border-bottom:2px solid #00BBFF;padding-bottom: 4px;padding-top: 15px; font-weight: bold;font-size: 17px; margin: 0px;margin-bottom: 17px;}
+h1.js-ticket-heading{border-bottom:2px solid #00BBFF;padding-bottom: 4px;padding-top: 4px; font-weight: bold;font-size: 17px; margin: 0px !important;margin-bottom: 17px !important;}
 h1.js-ticket-heading span.js-ticket-heading-span{padding-left: 8px; font-weight: normal; font-size: 15px;}
-h1.js-ticket-heading a{float: right; margin-top: -15px; padding: 5px 5px;padding-left: 30px;background: url(../images/add_icon2.png) no-repeat 5px 6px; font-size: 13px;font-weight: normal;}
+h1.js-ticket-heading a{float: right;padding: 5px 5px;padding-left: 30px;background: url(../images/add_icon2.png) no-repeat 5px 6px; font-size: 13px;font-weight: normal;line-height: 20px;}
 h1.js-ticket-heading a:hover{text-decoration: none !important; background: url(../images/add_icon1.png) no-repeat 5px 6px;}
-h1.js-ticket-sub-heading{padding: 10px; margin-top: 10px; display: inline-block;width: 100%; font-size: 16px;}
+h1.js-ticket-sub-heading{padding: 10px; margin-top: 10px; display: inline-block;width: 100%; font-size: 16px;line-height: 1;margin-bottom: 10px;}
+
 form.js-ticket-form{display:inline-block; width: 100%;padding:10px 5px;}
 div.js-ticket-form-instruction-message{display: inline-block;padding: 7px 10px;background-color: #F5F9FF;border: 1px solid #BCD8F8; color: #04419A; border-radius: 5px; margin-bottom: 15px;}
 div.js-ticket-frontend-heading{padding: 10px 15px; background: #2EA2CC;color: #FFFFFF;font-weight: bold;font-size: 20px; margin-bottom: 15px;}
@@ -26,8 +27,8 @@ div.js-filter-wrapper{margin-top: 10px;}
 div.js-filter-wrapper div.js-filter-value input{width:100%;}
 div.js-filter-wrapper div.js-filter-title {width:100%;}
 div.js-filter-wrapper div.js-filter-button{padding-top: 10px; padding-bottom: 10px; display: inline-block; width: 100%; text-align: center;}
-div.js-filter-wrapper div.js-filter-button input[class="button"]{width: 90px;}
-div.js-filter-wrapper div.js-filter-value select{width:100%;height: 28px;}
+div.js-filter-wrapper div.js-filter-button input[class="button"]{min-width: 90px;}
+div.js-filter-wrapper div.js-filter-value select{width:100%;}
 div#jsst_breadcrumbs_parent {width:100%;float:left;border:1px solid #D5D5D5;padding:2px;margin-bottom:10px;background:#FCFCFC;}
 div#jsst_breadcrumbs_parent img{box-shadow: none;}
 div#jsst_breadcrumbs_parent div.home{width: 34px;height: 34px; display: inline-block;}
@@ -42,11 +43,12 @@ div#jsst_breadcrumbs_parent div.home{background-color: #00BBFF;}
 div#jsst_breadcrumbs_parent div.links a.links{color: #00BBFF;}
 div.js-ticket-suheading{display: inline-block;padding: 10px;background: #343538;font-size: 18px;color: #FFFFFF;margin: 10px 0px;}
 form.post-reply-textarea{border: 1px solid #EEEEED;display: inline-block;}
-img.js-ticket-frontend-manu-icon{width: 35px;height: 35px;}
+img.js-ticket-frontend-manu-icon{width: 35px;height: 35px;margin:0px;}
 div.js-form-wrapper{margin-top: 5px;margin-bottom: 5px;}
+div.js-form-wrapper{width: 100% !important;float: left;}
 div.js-form-wrapper div.js-form-title{width: 100%;}
 div.js-form-wrapper div.js-form-value input{width: 100%;}
-div.js-form-wrapper div.js-form-value select{width: 100%;padding:4px;}
+div.js-form-wrapper div.js-form-value select{width: 100%;}
 form.js-ticket-form{background: #FDFDFD;border:1px solid #EEEEED;}
 div.js-myticket-link{text-align:center;padding-bottom: 20px;}
 div.js-myticket-link a.js-myticket-link{display: inline-block;padding:20px 20px;background:#DDDDDD;border:1px solid #EEEEED;text-decoration: none;border-radius: 4px;min-width: 150px;color:#222222;}
@@ -166,4 +168,18 @@ div.frontend.updated{background:url(../images/saved.png) 5px 12px no-repeat #d4f
 	div#js-filter-wrapper-toggle-area div.js-filter-wrapper{margin: 0px;}
 	div#js-filter-wrapper-toggle-area div.js-filter-wrapper div{margin-bottom: 10px;}
 	div.js-filter-wrapper-position div{margin-bottom: 10px;}
+	div#jsst_breadcrumbs_parent div{float:left;}
 }
+div.js-form-wrapper div.js-form-value input.inputbox{width: 100%;}
+div.js-form-wrapper div.has-error span.help-block.form-error{position: absolute; top: 23px;left: 15px;font-size:10px;}
+div.js-ticket-sorting span.js-ticket-sorting-link a img{display: inline-block;}
+div.js-ticket-thread-wrapper div.js_ticketattachment a{display: inline-block;margin:0px;margin-left:10px;}
+div[class^="js"] img{box-shadow: none !important;margin:0px;}
+div.frontend p{margin:10px 0px;}
+div.js-filter-form-data div:last-child a{display: inline-block;}
+div.js-filter-form-data div:last-child a img{display: inline-block;}
+div#jsst-header-2 span.jsst-header-2-tab.active a{}	
+div#jsst_breadcrumbs_parent div{float: left;padding:5px;margin-left:5px;padding-left: 5px;border-left:1px solid #ababab;}
+div#jsst_breadcrumbs_parent div.home{width: 34px;height: 34px; padding:0px; display: inline-block;}
+div#jsst_breadcrumbs_parent div.home a{display: inline-block;}
+div#jsst_breadcrumbs_parent div.home img.homeicon{height: 30px; width: auto;margin-bottom: 0px;margin-top:2px;margin-left:2px;}
