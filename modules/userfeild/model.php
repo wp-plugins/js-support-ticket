@@ -44,6 +44,7 @@ class JSSTuserfeildModel {
 
     function getUserFeildbyId($id) {
         if ($id) { // edit case
+            if(!is_numeric($id)) return false;
             $query = "SELECT * FROM `" . jssupportticket::$_db->prefix . "js_ticket_userfields` WHERE id = " . $id;
             jssupportticket::$_data[0] = jssupportticket::$_db->get_results($query);
             if (jssupportticket::$_db->last_error != null) {
