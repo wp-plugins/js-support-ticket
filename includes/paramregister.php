@@ -30,7 +30,7 @@ function jsst_add_rules() {
 
     //Module specific rules here
     add_rewrite_rule('(.?.+?)/ticket/(.?.+?)/?$', 'index.php?pagename=$matches[1]&module=ticket&layout=$matches[2]', 'top');
-    add_rewrite_rule('(.?.+?)/jssupportticket/(.?.+?)/?$', 'index.php?pagename=$matches[1]&module=jssupportticket&layout=$matches[2]', 'top');
+    add_rewrite_rule('(.?.+?)/ticket/(.?.+?)/?$', 'index.php?pagename=$matches[1]&module=ticket&layout=$matches[2]', 'top');
 }
 
 add_action('init', 'jsst_rewrite_tag', 10, 0);
