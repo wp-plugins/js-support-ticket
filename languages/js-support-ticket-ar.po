@@ -1,68 +1,610 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JS Support Ticket 1.0\n"
-"POT-Creation-Date: 2014-08-21 16:41+0500\n"
-"PO-Revision-Date: 2015-02-22 19:52+0200\n"
+"POT-Creation-Date: 2015-02-28 10:04+0200\n"
+"PO-Revision-Date: 2015-02-28 10:20+0200\n"
 "Last-Translator: Muhammad Bashir Al-Noimi <mbnoimi@gmail.com>\n"
 "Language-Team: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.4\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ../\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n"
+"%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Language: ar\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: modules/department/model.php:75
+#: includes/jssupportticketadmin.php:9
+msgid "JS_SUPPORT_TICKET_CONTROL_PANEL"
+msgstr "لوحة تحكم بطاقة الدعم"
+
+#: includes/jssupportticketadmin.php:10 modules/jssupportticket/tpls/admin_aboutus.php:14
+msgid "JS_SUPPORT_TICKET"
+msgstr "بطاقة دعم"
+
+#: includes/jssupportticketadmin.php:17
+msgid "JS_SUPPORT_TICKET_TICKETS"
+msgstr "بطاقات بطاقة الدعم"
+
+#: includes/jssupportticketadmin.php:18 modules/jssupportticket/tpls/admin_controlpanel.php:117
+#: modules/ticket/tpls/admin_tickets.php:8 modules/ticket/tpls/myticket.php:12
+msgid "TICKETS"
+msgstr "بطاقات"
+
+#: includes/jssupportticketadmin.php:24
+msgid "JS_SUPPORT_TICKET_CONFIGURATION"
+msgstr "إعدادات بطاقة الدعم"
+
+#: includes/jssupportticketadmin.php:25 modules/configuration/tpls/admin_configurations.php:21
+#: modules/jssupportticket/tpls/admin_controlpanel.php:118
+msgid "CONFIGURATIONS"
+msgstr "الإعدادات"
+
+#: includes/jssupportticketadmin.php:31
+msgid "JS_SUPPORT_TICKET_DEPARTMENT"
+msgstr "قسم بطاقة الدعم"
+
+#: includes/jssupportticketadmin.php:32 modules/jssupportticket/tpls/admin_controlpanel.php:119
+msgid "DEPARTMENTS"
+msgstr "الأقسام"
+
+#: includes/jssupportticketadmin.php:38
+msgid "JS_SUPPORT_TICKET_PRIORITIES"
+msgstr "أولويات بطاقة الدعم"
+
+#: includes/jssupportticketadmin.php:39 modules/email/tpls/admin_addemail.php:16
+#: modules/email/tpls/admin_emails.php:22 modules/jssupportticket/tpls/admin_controlpanel.php:139
+#: modules/priority/tpls/admin_addpriority.php:14 modules/ticket/tpls/addticket.php:80
+#: modules/ticket/tpls/admin_addticket.php:62 modules/ticket/tpls/admin_ticketdetail.php:79
+#: modules/ticket/tpls/admin_tickets.php:22 modules/ticket/tpls/admin_tickets.php:81
+#: modules/ticket/tpls/myticket.php:40 modules/ticket/tpls/myticket.php:96
+#: modules/ticket/tpls/ticketdetail.php:105
+msgid "PRIORITY"
+msgstr "الأولوية"
+
+#: includes/jssupportticketadmin.php:45
+msgid "JS_SUPPORT_TICKET_EMAILS"
+msgstr "رسائل بطاقة الدعم"
+
+#: includes/jssupportticketadmin.php:46 modules/email/tpls/admin_emails.php:8
+#: modules/jssupportticket/tpls/admin_controlpanel.php:123
+msgid "SYSTEM_EMAILS"
+msgstr "رسائل النظام"
+
+#: includes/jssupportticketadmin.php:52
+msgid "JS_SUPPORT_TICKET_EMAIL_TEMPLATES"
+msgstr "قوالب بريد بطاقات الدعم"
+
+#: includes/jssupportticketadmin.php:53 modules/jssupportticket/tpls/admin_controlpanel.php:124
+msgid "EMAIL_TEMPLATES"
+msgstr "قالب البريد"
+
+#: includes/jssupportticketadmin.php:59
+msgid "JS_SUPPORT_TICKET_USER_FIELDS"
+msgstr "حقول مستخدم بطاقة الدعم"
+
+#: includes/jssupportticketadmin.php:60 modules/jssupportticket/tpls/admin_controlpanel.php:125
+msgid "USER_FIELDS"
+msgstr "حقول المستخدم"
+
+#: includes/jssupportticketadmin.php:66
+msgid "JS_SUPPORT_TICKET_SYSTEM_ERROR"
+msgstr "خطأ نظام بطاقة الدعم"
+
+#: includes/jssupportticketadmin.php:67 modules/jssupportticket/tpls/admin_controlpanel.php:126
+#: modules/systemerror/tpls/admin_systemerrors.php:8
+msgid "SYSTEM_ERRORS"
+msgstr "أخطاء النظام"
+
+#: includes/pagination.php:17
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: includes/pagination.php:18
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: modules/activitylog/model.php:39
+msgid "TICKET"
+msgstr "بطاقة"
+
+#: modules/activitylog/model.php:56
+msgid "ACTIVITY_LOG_HAS_NOT_BEEN_UPDATED"
+msgstr "لا يمكن تحديث سجل النشاط"
+
+#: modules/attachment/model.php:51
+msgid "CANNOT_OPEN_FILE"
+msgstr "لا يمكن فتح الملف"
+
+#: modules/attachment/model.php:112
+msgid "FILE_SIZE_GREATER_THEN_DEFAULT_FILESIZE"
+msgstr "حجم الملف أكبر من الحجم المسموح به"
+
+#: modules/attachment/model.php:118
+msgid "FILE_EXTENSION_DOES_NOT_MATCH"
+msgstr "تنسيق الملف غير مدعوم"
+
+#: modules/attachment/model.php:164
+msgid "ATTACHMENT_HAS_BEEN_REMOVED"
+msgstr "تم حذف المرفق"
+
+#: modules/attachment/model.php:167
+msgid "ATTACHMENT_HAS_NOT_BEEN_REMOVED"
+msgstr "لا يمكن حذف المرفق"
+
+#: modules/configuration/tpls/admin_configurations.php:13 modules/email/tpls/admin_addemail.php:21
+#: modules/priority/tpls/admin_addpriority.php:27 modules/priority/tpls/admin_addpriority.php:31
+#: modules/userfeild/tpls/admin_adduserfeild.php:132 modules/userfeild/tpls/admin_adduserfeild.php:136
+#: modules/userfeild/tpls/admin_adduserfeild.php:140
+msgid "YES"
+msgstr "نعم"
+
+#: modules/configuration/tpls/admin_configurations.php:14 modules/email/tpls/admin_addemail.php:21
+#: modules/priority/tpls/admin_addpriority.php:27 modules/priority/tpls/admin_addpriority.php:31
+#: modules/userfeild/tpls/admin_adduserfeild.php:132 modules/userfeild/tpls/admin_adduserfeild.php:136
+#: modules/userfeild/tpls/admin_adduserfeild.php:140
+msgid "NO"
+msgstr "لا"
+
+#: modules/configuration/tpls/admin_configurations.php:17
+msgid "ENABLED"
+msgstr "تمكين"
+
+#: modules/configuration/tpls/admin_configurations.php:18 modules/email/tpls/admin_addemail.php:25
+#: modules/ticket/tpls/admin_addticket.php:107
+msgid "DISABLED"
+msgstr "معلق"
+
+#: modules/configuration/tpls/admin_configurations.php:25
+#: modules/configuration/tpls/admin_configurations.php:34
+msgid "GENERAL_SETTING"
+msgstr "الإعدادات العامة"
+
+#: modules/configuration/tpls/admin_configurations.php:26
+#: modules/configuration/tpls/admin_configurations.php:89
+msgid "TICKET_SETTING"
+msgstr "إعدادات البطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:27
+#: modules/configuration/tpls/admin_configurations.php:125
+msgid "STAFF_MEMBERS"
+msgstr "الأعضاء"
+
+#: modules/configuration/tpls/admin_configurations.php:28
+#: modules/configuration/tpls/admin_configurations.php:143
+msgid "DEFAULT_SYSTEM_EMAIL"
+msgstr "بريد النظام الافتراضي"
+
+#: modules/configuration/tpls/admin_configurations.php:29
+msgid "KNOWLDEGE_BASE"
+msgstr "قاعدة بيانات المعلومات"
+
+#: modules/configuration/tpls/admin_configurations.php:30
+msgid "MAIL_SETTING"
+msgstr "إعداد البريد"
+
+#: modules/configuration/tpls/admin_configurations.php:37
+#: modules/department/tpls/admin_adddepartment.php:12 modules/priority/tpls/admin_priorities.php:10
+#: modules/priority/tpls/admin_priorities.php:19 modules/userfeild/tpls/admin_adduserfeild.php:168
+msgid "TITLE"
+msgstr "نص"
+
+#: modules/configuration/tpls/admin_configurations.php:39
+msgid "SET_THE_HEADING_OF_YOUR_PLUGIN"
+msgstr "تعيين عنوان الإضافة"
+
+#: modules/configuration/tpls/admin_configurations.php:42
+#: modules/configuration/tpls/admin_configurations.php:43
+msgid "OFFLINE"
+msgstr "غير متصل"
+
+#: modules/configuration/tpls/admin_configurations.php:43
+msgid "ONLINE"
+msgstr "متصل"
+
+#: modules/configuration/tpls/admin_configurations.php:44
+msgid "SET_YOUR_PLUGIN_OFFLINE_FOR_FRONT_END"
+msgstr "وضع الإضافة بحالة خارج الاتصال بواجهة المستخدم"
+
+#: modules/configuration/tpls/admin_configurations.php:47
+msgid "OFFLINE_MESSAGE"
+msgstr "رسالة مغلقة"
+
+#: modules/configuration/tpls/admin_configurations.php:49
+msgid "SET_THE_OFFLINE_MESSAGE_FOR_YOUR_USER"
+msgstr "تخصيص رسالة خارج الخط التي ستظهر للمستخدم"
+
+#: modules/configuration/tpls/admin_configurations.php:52
+msgid "DATA_DIRECTORY"
+msgstr "دليل البيانات"
+
+#: modules/configuration/tpls/admin_configurations.php:54
+msgid "SET_THE_NAME_FOR_YOUR_DATA_DIRECTORY"
+msgstr "تعيين اسم دليل البيانات"
+
+#: modules/configuration/tpls/admin_configurations.php:57
+msgid "DATE_FORMAT"
+msgstr "تنسيق التاريخ"
+
+#: modules/configuration/tpls/admin_configurations.php:59
+msgid "SET_THE_DEFAULT_DATE_FORMAT"
+msgstr "تعيين تنسيق التاريخ الافتراضي"
+
+#: modules/configuration/tpls/admin_configurations.php:62
+#: modules/jssupportticket/tpls/admin_propage.php:73
+msgid "TICKET_OVERDUE"
+msgstr "بطاقة متأخرة"
+
+#: modules/configuration/tpls/admin_configurations.php:63
+#: modules/configuration/tpls/admin_configurations.php:68 modules/ticket/tpls/ticketdetail.php:86
+msgid "DAYS"
+msgstr "أيام"
+
+#: modules/configuration/tpls/admin_configurations.php:64
+msgid "SET_NO_OF_DAYS_TO_MARK_TICKET_AS_OVERDUE"
+msgstr "تخصيص عدد الأيام التي ستوضع بها البطاقة كمتأخرة"
+
+#: modules/configuration/tpls/admin_configurations.php:67
+msgid "TICKET_AUTOCLOSE"
+msgstr "اغلاق البطاقة تلقائي"
+
+#: modules/configuration/tpls/admin_configurations.php:69
+msgid "TICKET_AUTOCLOSE_IF_USER_NOT_RESPOND_WITHIN_GIVEN_DAYS"
+msgstr "اغلاق البطاقة تلقائياً إذا لم يتم الرد خلال أيام"
+
+#: modules/configuration/tpls/admin_configurations.php:72
+msgid "NO_OF_ATTACHMENT"
+msgstr "رقم المرفق"
+
+#: modules/configuration/tpls/admin_configurations.php:74
+msgid "NO_OF_ATTACHMENT_ALLOWED_AT_A_TIME"
+msgstr "عدد المرفقات المسموح بها في وقت"
+
+#: modules/configuration/tpls/admin_configurations.php:77
+msgid "FILE_MAXIMUM_SIZE"
+msgstr "الحد الأقصى لحجم الملف"
+
+#: modules/configuration/tpls/admin_configurations.php:78
+msgid "KB"
+msgstr "كيلو بايت"
+
+#: modules/configuration/tpls/admin_configurations.php:79
+msgid "MAXIMUM_FILE_SIZE_IN_BYTES"
+msgstr "الحد الأدنى لحجم الملف"
+
+#: modules/configuration/tpls/admin_configurations.php:82
+msgid "FILE_EXTENSION"
+msgstr "تنسيق الملف"
+
+#: modules/configuration/tpls/admin_configurations.php:84
+msgid "FILE_EXTENSION_ALLOWED_TO_ATTACH"
+msgstr "تنسيق الملف المسموح به"
+
+#: modules/configuration/tpls/admin_configurations.php:92
+msgid "MAXIMUM_OPEN_TICKET_PER_EMAIL"
+msgstr "أكبر عدد للبطاقات المفتوحة حسب البريد الإلكتروني"
+
+#: modules/configuration/tpls/admin_configurations.php:94
+msgid "MAXIMUM_TICKET_CAN_BE_OPENED_BY_ONE_EMAIL"
+msgstr "أكبر عدد للبطاقات التي يسمح بفتحها للبريد الإلكتروني الواحد"
+
+#: modules/configuration/tpls/admin_configurations.php:97
+msgid "REOPEN_TICKET_WITHIN_DAYS"
+msgstr "إعادة فتح البطاقة خلال  أيام"
+
+#: modules/configuration/tpls/admin_configurations.php:99
+msgid "TICKET_CAN_BE_REOPEN_WITHIN_GIVEN_NUMBER_OF_DAYS"
+msgstr "يمكن إعادة فتح البطاقة خلال عدة أيام"
+
+#: modules/configuration/tpls/admin_configurations.php:102
+msgid "STAFF_CAN_LOCK_TICKET"
+msgstr "يمكن للموظف قفل البطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:104
+msgid "CAN_STAFF_MEMBER_LOCK_TICKET_OR_NOT"
+msgstr "يمكن للعضو قفل البطاقة أو لا"
+
+#: modules/configuration/tpls/admin_configurations.php:107
+msgid "VISITOR_CAN_CREATE_TICKET"
+msgstr "يمكن للزائر إنشاء بطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:109
+msgid "CAN_VISITOR_CREATE_TICKET_OR_NOT"
+msgstr "يمكن للزائر إنشاء بطاقة أو لا"
+
+#: modules/configuration/tpls/admin_configurations.php:112
+msgid "SHOW_CAPTCHA_ON_VISITOR_FORM_TICKET"
+msgstr "عرض كابتشا بنموذج بطاقة الزائر"
+
+#: modules/configuration/tpls/admin_configurations.php:114
+msgid "SHOW_CAPTCHA_WHEN_VISITOR_WANT_TO_CREATE_TICKET"
+msgstr "عرض كابتشا لدى إنشاء بطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:117
+msgid "STAFF_IDENTITY"
+msgstr "هوية الموظف"
+
+#: modules/configuration/tpls/admin_configurations.php:119
+msgid "DESCRIPTION"
+msgstr "التفاصيل"
+
+#: modules/configuration/tpls/admin_configurations.php:127
+msgid "VIEW_TICKETS"
+msgstr "عرض البطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:128
+msgid "SHOW_ALL_TICKETS"
+msgstr "عرض جميع البطاقات"
+
+#: modules/configuration/tpls/admin_configurations.php:128
+msgid "SHOW_ASSIGN_TICKETS"
+msgstr "عرض البطاقات الخاصة"
+
+#: modules/configuration/tpls/admin_configurations.php:129
+msgid "SET_STAFF_MEMBER_CAN_SEE_TICKETS"
+msgstr "تعيين موظف لإظهار البطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:135
+msgid "DEFAULT_EMAIL_SYSTEM"
+msgstr "بريد النظام الافتراضي"
+
+#: modules/configuration/tpls/admin_configurations.php:138
+msgid "DEFAULT_ALERT_EMAIL"
+msgstr "بريد التنبيه الافراضي"
+
+#: modules/configuration/tpls/admin_configurations.php:140
+msgid "SET_DEFAULT_ALERT_EMAIL_TO_SEND_ALERTS"
+msgstr "تعيين بريد التنبيه الافتراضي لإرسال التنبيهات"
+
+#: modules/configuration/tpls/admin_configurations.php:145
+msgid "SET_DEFAULT_SYSTEM_EMAIL"
+msgstr "تعيين بريد النظام الافتراضي"
+
+#: modules/configuration/tpls/admin_configurations.php:148
+msgid "DEFAULT_ADMIN_EMAIL"
+msgstr "بريد المشرف الافتراضي"
+
+#: modules/configuration/tpls/admin_configurations.php:150
+msgid "SET_DEFAULT_ADMIN_EMAIL_TO_RECEVICE_ADMIN_EMAILS"
+msgstr "تعيين بريد المشرف الافتراضي لاستلام رسائل المشرفين"
+
+#: modules/configuration/tpls/admin_configurations.php:153
+msgid "ARTICLES_PER_ROW"
+msgstr "المواد في كل لصف"
+
+#: modules/configuration/tpls/admin_configurations.php:155
+msgid "SET_HOW_MANY_ARTICLE_SHOW_PER_ROW"
+msgstr "تعيين عدد المواد في كل صف"
+
+#: modules/configuration/tpls/admin_configurations.php:162
+msgid "STAFF_MEMBER_KNOWLEDGEBASE_SETTING"
+msgstr "إعدادات قاعدة بيانات الموظفين"
+
+#: modules/configuration/tpls/admin_configurations.php:165
+msgid "ENABLE"
+msgstr "تمكين"
+
+#: modules/configuration/tpls/admin_configurations.php:167
+msgid "SET_KNOWLEDGEBASE_ENABLE_OR_DISABLE"
+msgstr "تعيين قاعدة البيانات تمكين او عدم تمكين "
+
+#: modules/configuration/tpls/admin_configurations.php:170
+msgid "STAFF_CREATE_CATEGORIES"
+msgstr "إنشاء فئات الموظفين"
+
+#: modules/configuration/tpls/admin_configurations.php:172
+msgid "CAN_STAFF_MEMBER_CREATE_CATEGORIES_OR_NOT"
+msgstr "تمكين او عدم تمكين الموظف من إنشاء الفئات"
+
+#: modules/configuration/tpls/admin_configurations.php:175
+msgid "STAFF_CREATE_ARTICLES"
+msgstr "إضافة  المواد"
+
+#: modules/configuration/tpls/admin_configurations.php:177
+msgid "CAN_STAFF_MEMBER_CREATE_ARTICLE_OR_NOT"
+msgstr "تمكين او عدن تمكين الموظف من إضافة المواد"
+
+#: modules/configuration/tpls/admin_configurations.php:184
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:9
+msgid "NEW_TICKET"
+msgstr "بطاقة جديدة"
+
+#: modules/configuration/tpls/admin_configurations.php:187
+#: modules/configuration/tpls/admin_configurations.php:200
+msgid "MAIL_TO_ADMIN"
+msgstr "رسالة إلى المشرف"
+
+#: modules/configuration/tpls/admin_configurations.php:189
+msgid "EMAIL_SEND_TO_ADMIN_WHEN_NEW_TICKET_CREATED"
+msgstr "إرسال رسالة إلى المشرف عند إضافة بطاقة جديدة"
+
+#: modules/configuration/tpls/admin_configurations.php:192
+msgid "MAIL_TO_STAFF_MEMBERS"
+msgstr "رسالة إلى الموظفين"
+
+#: modules/configuration/tpls/admin_configurations.php:194
+msgid "EMAIL_SEND_TO_STAFF_MEMBER_WHEN_NEW_TICKET_CREATED"
+msgstr "إرسال رسالة إلى الموظف عند إضافة بطاقة جديدة"
+
+#: modules/configuration/tpls/admin_configurations.php:197
+msgid "BAN_EMAIL_NEW_TICKET"
+msgstr "بطاقة حظر ايميل جديدة"
+
+#: modules/configuration/tpls/admin_configurations.php:202
+msgid "EMAIL_SEND_TO_ADMIN_WHEN_BANNED_EMAIL_TRY_TO_CREATE_TICKET"
+msgstr "إرسال رسالة إلى المشرف عند إنشاء بطاقة إعادة حظر بريد"
+
+#: modules/configuration/tpls/admin_configurations.php:207
+msgid "OPERATIONS"
+msgstr "عمليات"
+
+#: modules/configuration/tpls/admin_configurations.php:208
+msgid "ADMIN"
+msgstr "المشرف"
+
+#: modules/configuration/tpls/admin_configurations.php:209
+#: modules/jssupportticket/tpls/admin_propage.php:38
+msgid "STAFF"
+msgstr "موظف"
+
+#: modules/configuration/tpls/admin_configurations.php:210
+msgid "USER"
+msgstr "مستخدم"
+
+#: modules/configuration/tpls/admin_configurations.php:213
+msgid "TICKET_REASSIGN"
+msgstr "إعادة تعيين بطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:219
+msgid "TICKET_CLOSE"
+msgstr "إغلاق بطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:225
+msgid "TICKET_DELETE"
+msgstr "حذف بطاقة"
+
+#: modules/configuration/tpls/admin_configurations.php:231
+msgid "TICKET_MARK_OVERDUE"
+msgstr "الإشارة للبطاقة كمتأخرة"
+
+#: modules/configuration/tpls/admin_configurations.php:237
+msgid "TICKET_BAN_EMAIL"
+msgstr "بطاقة حظر بريد"
+
+#: modules/configuration/tpls/admin_configurations.php:243
+msgid "TICKET_DEPARTMENT_TRANSFER"
+msgstr "تحويل بطاقة قسم"
+
+#: modules/configuration/tpls/admin_configurations.php:249
+msgid "TICKET_REPLY_(_TICKET_USER_)"
+msgstr "بطاقة رد (بطاقة مستخدم)"
+
+#: modules/configuration/tpls/admin_configurations.php:255
+msgid "TICKET_RESPONSE_(_STAFF_)"
+msgstr "بطاقة استجابة موظف"
+
+#: modules/configuration/tpls/admin_configurations.php:261
+msgid "TICKET_BAN_EMAIL_AND_CLOSE_TICKET"
+msgstr "بطاقة حظر "
+
+#: modules/configuration/tpls/admin_configurations.php:267
+msgid "TICKET_UNBAN_EMAIL"
+msgstr "بطاقة إلغاء حظر بريد"
+
+#: modules/configuration/tpls/admin_configurations.php:281
+msgid "SAVE_CONFIGURATION"
+msgstr "حفظ الإعداد"
+
+#: modules/configuration/tpls/admin_configurations.php:284
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:153
+msgid "PRO_VERSION_ONLY"
+msgstr "فقط للإصدار الإحترافي"
+
+#: modules/department/model.php:63
 msgid "DEPARTMENT_HAS_BEEN_STORED"
 msgstr "تم تخزين القسم"
 
-#: modules/department/model.php:78
+#: modules/department/model.php:66
 msgid "DEPARTMENT_HAS_NOT_BEEN_STORED"
 msgstr "لم يتم تخزين القسم"
 
-#: modules/department/model.php:88
+#: modules/department/model.php:76
 msgid "DEPARTMENT_HAS_BEEN_DELETED"
 msgstr "تم حذف القسم"
 
-#: modules/department/model.php:91
+#: modules/department/model.php:79
 msgid "DEPARTMENT_HAS_NOT_BEEN_DELETED"
 msgstr "لم يتم حذف القسم"
 
-#: modules/department/model.php:94
+#: modules/department/model.php:82
 msgid "DEPARTMENT_IN_USE_CANNOT_DELETED"
 msgstr "القسم قيد الاستخدام، لا يمكن حذفه"
 
-#: modules/department/tpls/admin_departments.php:8
-#: modules/ticket/tpls/admin_ticketdetail.php:105
-#: modules/ticket/tpls/myticket.php:80 modules/ticket/tpls/addticket.php:58
-#: modules/ticket/tpls/admin_addticket.php:57
-#: modules/ticket/tpls/ticketdetail.php:105
-#: modules/ticket/tpls/admin_tickets.php:66
+#: modules/department/tpls/admin_adddepartment.php:9
+msgid "ADD_NEW_DEPARTMENT"
+msgstr "إضافة قسم جديد"
+
+#: modules/department/tpls/admin_adddepartment.php:16
+msgid "OUT_GOING_EMAIL"
+msgstr "البريد الصادر"
+
+#: modules/department/tpls/admin_adddepartment.php:17
+msgid "SELECT_EMAIL_ADDRESS"
+msgstr "تحديد عنوان البريد الإلكتروني"
+
+#: modules/department/tpls/admin_adddepartment.php:20 modules/priority/tpls/admin_addpriority.php:26
+msgid "IS_PUBLIC"
+msgstr "عامة"
+
+#: modules/department/tpls/admin_adddepartment.php:21 modules/department/tpls/admin_departments.php:29
+#: modules/priority/tpls/admin_priorities.php:20
+msgid "PUBLIC"
+msgstr "عام"
+
+#: modules/department/tpls/admin_adddepartment.php:21 modules/department/tpls/admin_departments.php:29
+msgid "PRIVATE"
+msgstr "خاص"
+
+#: modules/department/tpls/admin_adddepartment.php:34 modules/department/tpls/admin_departments.php:23
+#: modules/email/tpls/admin_addemail.php:24 modules/priority/tpls/admin_addpriority.php:34
+#: modules/ticket/tpls/admin_addticket.php:106 modules/ticket/tpls/admin_tickets.php:25
+#: modules/ticket/tpls/myticket.php:43
+msgid "STATUS"
+msgstr "الحالة"
+
+#: modules/department/tpls/admin_adddepartment.php:35 modules/priority/tpls/admin_addpriority.php:35
+msgid "APPROVED"
+msgstr "موافق"
+
+#: modules/department/tpls/admin_adddepartment.php:35 modules/priority/tpls/admin_addpriority.php:35
+msgid "NOT_APPROVED"
+msgstr "غير موافق"
+
+#: modules/department/tpls/admin_adddepartment.php:43
+msgid "SAVE_DEPARTMENT"
+msgstr "حفظ القسم"
+
+#: modules/department/tpls/admin_adddepartment.php:54 modules/email/tpls/admin_addemail.php:43
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:170
+#: modules/jssupportticket/tpls/controlpanel.php:30 modules/priority/tpls/admin_addpriority.php:65
+#: modules/ticket/tpls/addticket.php:219 modules/ticket/tpls/admin_addticket.php:208
+#: modules/ticket/tpls/myticket.php:141 modules/ticket/tpls/ticketdetail.php:290
+#: modules/userfeild/tpls/admin_adduserfeild.php:229
+msgid "NOT_LOGIN"
+msgstr "لم يتم تسجيل الدخول"
+
+#: modules/department/tpls/admin_adddepartment.php:57 modules/email/tpls/admin_addemail.php:46
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:173
+#: modules/jssupportticket/tpls/controlpanel.php:33 modules/priority/tpls/admin_addpriority.php:68
+#: modules/ticket/tpls/addticket.php:222 modules/ticket/tpls/admin_addticket.php:211
+#: modules/ticket/tpls/myticket.php:144 modules/ticket/tpls/ticketdetail.php:293
+#: modules/userfeild/tpls/admin_adduserfeild.php:232
+msgid "YOU_ARE_NOT_ALLOWED_TO_VIEW"
+msgstr "ليس مسموحاً لك بعرض المحتوى"
+
+#: modules/department/tpls/admin_departments.php:8 modules/ticket/tpls/addticket.php:76
+#: modules/ticket/tpls/admin_addticket.php:58 modules/ticket/tpls/admin_ticketdetail.php:105
+#: modules/ticket/tpls/admin_tickets.php:66 modules/ticket/tpls/myticket.php:81
+#: modules/ticket/tpls/ticketdetail.php:131
 msgid "DEPARTMENT"
 msgstr "القسم"
 
-#: modules/department/tpls/admin_departments.php:10
-#: modules/department/tpls/admin_departments.php:20
+#: modules/department/tpls/admin_departments.php:10 modules/department/tpls/admin_departments.php:20
 msgid "DEPARTMENT_NAME"
 msgstr "اسم القسم"
 
-#: modules/department/tpls/admin_departments.php:11
+#: modules/department/tpls/admin_departments.php:11 modules/priority/tpls/admin_priorities.php:11
+#: modules/ticket/tpls/admin_tickets.php:11 modules/ticket/tpls/myticket.php:30
 #: modules/userfeild/tpls/admin_userfeilds.php:11
-#: modules/priority/tpls/admin_priorities.php:11
-#: modules/ticket/tpls/myticket.php:29
-#: modules/ticket/tpls/admin_tickets.php:11
 msgid "GO"
 msgstr "ذهاب"
 
-#: modules/department/tpls/admin_departments.php:12
+#: modules/department/tpls/admin_departments.php:12 modules/priority/tpls/admin_priorities.php:12
+#: modules/ticket/tpls/admin_tickets.php:12 modules/ticket/tpls/myticket.php:31
 #: modules/userfeild/tpls/admin_userfeilds.php:12
-#: modules/priority/tpls/admin_priorities.php:12
-#: modules/ticket/tpls/myticket.php:30
-#: modules/ticket/tpls/admin_tickets.php:12
 msgid "RESET"
 msgstr "إعادة"
 
@@ -78,253 +620,118 @@ msgstr "نمط"
 msgid "OUTGOING_EMAIL"
 msgstr "البريد الإلكتروني الصادر"
 
-#: modules/department/tpls/admin_departments.php:23
-#: modules/department/tpls/admin_adddepartment.php:28
-#: modules/email/tpls/admin_addemail.php:19
-#: modules/priority/tpls/admin_addpriority.php:27
-#: modules/ticket/tpls/myticket.php:42
-#: modules/ticket/tpls/admin_addticket.php:103
-#: modules/ticket/tpls/admin_tickets.php:25
-msgid "STATUS"
-msgstr "الوضع"
-
-#: modules/department/tpls/admin_departments.php:24
-#: modules/email/tpls/admin_emails.php:23
-#: modules/systemerror/tpls/admin_systemerrors.php:21
-#: modules/ticket/tpls/admin_ticketdetail.php:89
-#: modules/ticket/tpls/myticket.php:43 modules/ticket/tpls/ticketdetail.php:89
-#: modules/ticket/tpls/admin_tickets.php:26
-#: modules/ticket/tpls/admin_tickets.php:88
+#: modules/department/tpls/admin_departments.php:24 modules/email/tpls/admin_emails.php:23
+#: modules/jssupportticket/tpls/admin_controlpanel.php:140
+#: modules/systemerror/tpls/admin_systemerrors.php:21 modules/ticket/tpls/admin_ticketdetail.php:89
+#: modules/ticket/tpls/admin_tickets.php:26 modules/ticket/tpls/admin_tickets.php:88
+#: modules/ticket/tpls/myticket.php:44 modules/ticket/tpls/ticketdetail.php:75
+#: modules/ticket/tpls/ticketdetail.php:115
 msgid "CREATED"
 msgstr "تم الانشاء"
 
-#: modules/department/tpls/admin_departments.php:25
-#: modules/userfeild/tpls/admin_userfeilds.php:26
-#: modules/email/tpls/admin_emails.php:24
-#: modules/priority/tpls/admin_priorities.php:23
+#: modules/department/tpls/admin_departments.php:25 modules/email/tpls/admin_emails.php:24
+#: modules/priority/tpls/admin_priorities.php:23 modules/userfeild/tpls/admin_userfeilds.php:26
 msgid "ACTION"
 msgstr "إجراء"
 
-#: modules/department/tpls/admin_departments.php:29
-#: modules/department/tpls/admin_adddepartment.php:17
-#: modules/priority/tpls/admin_priorities.php:20
-msgid "PUBLIC"
-msgstr "عام"
+#: modules/department/tpls/admin_departments.php:58 modules/email/tpls/admin_emails.php:55
+#: modules/priority/tpls/admin_priorities.php:55 modules/systemerror/tpls/admin_systemerrors.php:47
+#: modules/ticket/tpls/admin_tickets.php:106 modules/ticket/tpls/myticket.php:122
+#: modules/userfeild/tpls/admin_userfeilds.php:62
+msgid "NO_RECORED_FOUND"
+msgstr "لم يتم العثور على أية سجل"
 
-#: modules/department/tpls/admin_departments.php:29
-#: modules/department/tpls/admin_adddepartment.php:17
-msgid "PRIVATE"
-msgstr "خاص"
+#: modules/department/tpls/admin_departments.php:61 modules/email/tpls/admin_emails.php:58
+#: modules/priority/tpls/admin_priorities.php:58 modules/systemerror/tpls/admin_systemerrors.php:50
+#: modules/ticket/tpls/admin_tickets.php:109 modules/ticket/tpls/myticket.php:125
+#: modules/userfeild/tpls/admin_userfeilds.php:65
+msgid "NO_RECORED_FOUNT_TO_VIEW"
+msgstr "لا يوجد أي سجل لعرضه"
 
-#: modules/department/tpls/admin_departments.php:30
-#: modules/department/tpls/admin_adddepartment.php:29
-#: modules/priority/tpls/admin_addpriority.php:28
-msgid "APPROVED"
-msgstr "موافق"
+#: modules/email/model.php:58 modules/email/model.php:73 modules/email/model.php:114
+#: modules/email/model.php:126 modules/email/model.php:208 modules/email/model.php:220
+#: modules/email/model.php:264 modules/email/model.php:276 modules/ticket/tpls/admin_tickets.php:91
+msgid "TICKET_DETAIL"
+msgstr "تفاصيل البطاقة"
 
-#: modules/department/tpls/admin_departments.php:30
-#: modules/department/tpls/admin_adddepartment.php:29
-#: modules/priority/tpls/admin_addpriority.php:28
-msgid "NOT_APPROVED"
-msgstr "غير موافق"
+#: modules/email/model.php:447
+msgid "EMAIL_HAS_BEEN_STORED"
+msgstr "تم تخزين البريد الإلكتروني"
 
-#: modules/department/tpls/admin_adddepartment.php:5
-msgid "ADD_NEW_DEPARTMENT"
-msgstr "إضافة قسم جديد"
+#: modules/email/model.php:450
+msgid "EMAIL_HAS_NOT_BEEN_STORED"
+msgstr "لا يمكن تخزين البريد الإلكتروني"
 
-#: modules/department/tpls/admin_adddepartment.php:8
-#: modules/userfeild/tpls/admin_adduserfeild.php:168
-#: modules/priority/tpls/admin_priorities.php:10
-#: modules/priority/tpls/admin_priorities.php:19
-#: modules/configuration/tpls/admin_configurations.php:36
-msgid "TITLE"
-msgstr "نص"
+#: modules/email/model.php:460
+msgid "EMAIL_HAS_BEEN_DELETED"
+msgstr "تم حذف البريد الإلكتروني"
 
-#: modules/department/tpls/admin_adddepartment.php:12
-msgid "OUT_GOING_EMAIL"
-msgstr "البريد الصادر"
+#: modules/email/model.php:463
+msgid "EMAIL_HAS_NOT_BEEN_DELETED"
+msgstr "لا يمكن حذف البريد الإلكتروني"
 
-#: modules/department/tpls/admin_adddepartment.php:16
-#: modules/priority/tpls/admin_addpriority.php:19
-msgid "IS_PUBLIC"
-msgstr "عامة"
+#: modules/email/model.php:466
+msgid "EMAIL_IN_USE_CANNOT_DELETED"
+msgstr "البريد مستخدم، لا يمكن حذفه"
 
-#: modules/department/tpls/admin_adddepartment.php:20
-msgid "SIGNATURE"
-msgstr "التوقيع"
+#: modules/email/tpls/admin_addemail.php:9
+msgid "ADD_NEW_SYSTEM_EMAIL"
+msgstr "إضافة بريد نظام جديد"
 
-#: modules/department/tpls/admin_adddepartment.php:24
-msgid "APPEND_SIGNATURE"
-msgstr "إضافة توقيع"
+#: modules/email/tpls/admin_addemail.php:12 modules/emailtemplate/tpls/admin_emailtemplates.php:46
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:56
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:124
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:133
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:142 modules/ticket/tpls/addticket.php:56
+#: modules/ticket/tpls/admin_addticket.php:42
+msgid "EMAIL"
+msgstr "البريد الالكتروني"
 
-#: modules/department/tpls/admin_adddepartment.php:25
-msgid "APPEND_SIGNATURE_WITH_REPLY"
-msgstr "إضافة التوقيع مع الرد"
+#: modules/email/tpls/admin_addemail.php:17 modules/ticket/tpls/addticket.php:81
+#: modules/ticket/tpls/admin_addticket.php:63
+msgid "SELECT_PRIORITY"
+msgstr "تحديد الأولوية"
 
-#: modules/department/tpls/admin_adddepartment.php:37
-msgid "SAVE_DEPARTMENT"
-msgstr "حفظ القسم"
+#: modules/email/tpls/admin_addemail.php:20
+msgid "AUTO_RESPONSE"
+msgstr "رد تلقائي"
 
-#: modules/userfeild/model.php:61
-msgid "USER_FIELD_HAS_NOT_BEEN_STORED"
-msgstr "اسم المستخدم خطأ، لا يمكن التخزين"
+#: modules/email/tpls/admin_addemail.php:25 modules/ticket/tpls/admin_addticket.php:107
+msgid "ACTIVE"
+msgstr "نشيط"
 
-#: modules/userfeild/model.php:63
-msgid "USER_FIELD_HAS_BEEN_STORED"
-msgstr "تم تخزين اسم المستخدم"
+#: modules/email/tpls/admin_addemail.php:33
+msgid "SAVE_EMAIL"
+msgstr "حفظ البريد"
 
-#: modules/userfeild/model.php:94
-msgid "USER_FIELD_HAS_BEEN_DELETED"
-msgstr "تم حذف اسم المستخدم"
-
-#: modules/userfeild/model.php:97
-msgid "USER_FIELD_HAS_NOT_BEEN_DELETED"
-msgstr "لا يمكن حذف اسم المستخدم"
-
-#: modules/userfeild/model.php:100
-msgid "USER_FIELD_IN_USE_CANNOT_DELETED"
-msgstr "اسم المستخدم قيد الاستخدام، لا يمكن حذفه"
-
-#: modules/userfeild/tpls/admin_userfeilds.php:10
-#: modules/userfeild/tpls/admin_userfeilds.php:20
-#: modules/userfeild/tpls/admin_adduserfeild.php:123
-msgid "FIELD_NAME"
-msgstr "اسم الحقل"
-
-#: modules/userfeild/tpls/admin_userfeilds.php:14
-msgid "ADD_USER_FIELD"
-msgstr "إضافة اسم مستخدم جديد"
-
-#: modules/userfeild/tpls/admin_userfeilds.php:21
-#: modules/userfeild/tpls/admin_adduserfeild.php:127
-msgid "FIELD_TITLE"
-msgstr "اسم الحقل"
-
-#: modules/userfeild/tpls/admin_userfeilds.php:22
-#: modules/userfeild/tpls/admin_adduserfeild.php:119
-msgid "FIELD_TYPE"
-msgstr "نوع الحقل"
-
-#: modules/userfeild/tpls/admin_userfeilds.php:23
-#: modules/userfeild/tpls/admin_adduserfeild.php:131
-msgid "REQUIRED"
-msgstr "مطلوب"
-
-#: modules/userfeild/tpls/admin_userfeilds.php:24
-#: modules/userfeild/tpls/admin_adduserfeild.php:135
-msgid "READ_ONLY"
-msgstr "للقراءة فقط"
-
-#: modules/userfeild/tpls/admin_userfeilds.php:25
-#: modules/userfeild/tpls/admin_adduserfeild.php:139
-msgid "PUBLISHED"
-msgstr "تم النشر"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:103
-msgid "JS_OPTION_VALUE_IN_USE"
-msgstr ""
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:116
-msgid "ADD_NEW_USER_FIELD"
-msgstr "إضافة مستخدم جديد"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "TEXT_FIELD"
-msgstr "الحقل"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "DROP_DOWN"
-msgstr "قائمة منسدلة"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
+#: modules/email/tpls/admin_emails.php:10 modules/email/tpls/admin_emails.php:20
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:99
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:103
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:112
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:117
-#: modules/email/tpls/admin_emails.php:20
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
 msgid "EMAIL_ADDRESS"
 msgstr "البريد الالكتروني"
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "CHECK_BOX"
-msgstr "مربع اختيار"
+#: modules/email/tpls/admin_emails.php:14
+msgid "ADD_EMAIL"
+msgstr "إضافة بريد جديد"
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "DATE"
-msgstr "التاريخ"
+#: modules/email/tpls/admin_emails.php:21
+msgid "AUTORESPONSE"
+msgstr "رد تلقائي"
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "TEXT_AREA"
-msgstr "الموقع"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:132
-#: modules/userfeild/tpls/admin_adduserfeild.php:136
-#: modules/userfeild/tpls/admin_adduserfeild.php:140
-#: modules/email/tpls/admin_addemail.php:16
-#: modules/priority/tpls/admin_addpriority.php:20
-#: modules/priority/tpls/admin_addpriority.php:24
-#: modules/configuration/tpls/admin_configurations.php:13
-msgid "YES"
-msgstr "نعم"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:132
-#: modules/userfeild/tpls/admin_adduserfeild.php:136
-#: modules/userfeild/tpls/admin_adduserfeild.php:140
-#: modules/email/tpls/admin_addemail.php:16
-#: modules/priority/tpls/admin_addpriority.php:20
-#: modules/priority/tpls/admin_addpriority.php:24
-#: modules/configuration/tpls/admin_configurations.php:14
-msgid "NO"
-msgstr "لا"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:143
-msgid "FIELD_SIZE"
-msgstr "حجم الحقل"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:149
-msgid "MAX_LENGTH"
-msgstr "الحد الأقصى"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:155
-msgid "COLUMNS"
-msgstr "الأعمدة"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:159
-msgid "ROWS"
-msgstr "الصفوف"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:164
-msgid "USE_THE_TABLE_BELOW_TO_ADD_NEW_VALUES"
-msgstr "استخدم الجدول أدناه لإضافة قيم جديدة"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:165
-msgid "ADD_A_VALUE"
-msgstr "إدخال قيمة"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:169
-msgid "VALUE"
-msgstr "قيمة"
-
-#: modules/userfeild/tpls/admin_adduserfeild.php:217
-msgid "SAVE_USER_FIELD"
-msgstr "حفظ المستنخدم"
-
-#: modules/emailtemplate/model.php:59
+#: modules/emailtemplate/model.php:46
 msgid "EMAIL_TEMPLATE_HAS_BEEN_STORED"
 msgstr "تم تخزين عنوان البريد الإلكتروني"
 
-#: modules/emailtemplate/model.php:62
+#: modules/emailtemplate/model.php:49
 msgid "EMAIL_TEMPLATE_HAS_NOT_BEEN_STORED"
 msgstr "لم يتم تخزين عنوان البريد الإلكتروني"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:5
 msgid "EMAIL_TEMPLATE"
 msgstr "البريد الالكتروني"
-
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:9
-#: modules/configuration/tpls/admin_configurations.php:188
-msgid "NEW_TICKET"
-msgstr "بطاقة جديدة"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:10
 msgid "STAFF_TICKET"
@@ -350,11 +757,10 @@ msgstr "موضوع مساعدة جديد"
 msgid "REASSIGN_TICKET"
 msgstr "بطاقة تعيين"
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:16
-#: modules/ticket/model.php:365 modules/ticket/tpls/admin_ticketdetail.php:110
-#: modules/ticket/tpls/ticketdetail.php:110
+#: modules/emailtemplate/tpls/admin_emailtemplates.php:16 modules/ticket/tpls/admin_ticketdetail.php:110
+#: modules/ticket/tpls/ticketdetail.php:136
 msgid "CLOSE_TICKET"
-msgstr "بطاقة إغلاق"
+msgstr "إغلاق البطاقة"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:17
 msgid "DELETE_TICKET"
@@ -362,7 +768,7 @@ msgstr "حذف بطاقة"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:18
 msgid "MARK_OVERDUE_TICKET"
-msgstr ""
+msgstr "الإشارة للبطاقة كمتأخرة"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:19
 msgid "BAN_EMAIL"
@@ -373,8 +779,9 @@ msgid "BAN_EMAIL_TRY_CREATE_TICKET"
 msgstr "هذا البريد محظور، حاول مرة أخرى"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:21
+#: modules/jssupportticket/tpls/admin_propage.php:98
 msgid "DEPARTMENT_TRANSFER"
-msgstr "نقل قسم"
+msgstr "تحويل قسم"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:22
 msgid "EMAIL_BAN_CLOSE_TICKET"
@@ -385,16 +792,16 @@ msgid "UNBAN_EMAIL"
 msgstr "إلغاء حظر البريد الإلكتروني"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:24
-msgid "RESPONSE_TICKET"
-msgstr "بطاقة رد"
+msgid "REPLY_TICKET_STAFF_ADMIN"
+msgstr "ردّ على بطاقة الموظف المدير"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:25
 msgid "REPLY_TICKET"
-msgstr "بطاقة إعادة"
+msgstr "إعادة البطاقة"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:26
 msgid "NEW_TICKET_ADMIN_ALERT"
-msgstr "بطاقة تنبيه مشرف جديد"
+msgstr "تنبيه المشرف ببطاقة جديدة"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:30
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:43
@@ -402,15 +809,13 @@ msgstr "بطاقة تنبيه مشرف جديد"
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:122
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:131
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:140
-#: modules/ticket/tpls/admin_ticketdetail.php:97
-#: modules/ticket/tpls/myticket.php:38 modules/ticket/tpls/myticket.php:72
-#: modules/ticket/tpls/addticket.php:66
-#: modules/ticket/tpls/admin_addticket.php:65
-#: modules/ticket/tpls/ticketdetail.php:97
-#: modules/ticket/tpls/admin_tickets.php:21
-#: modules/ticket/tpls/admin_tickets.php:58
+#: modules/jssupportticket/tpls/admin_controlpanel.php:137 modules/ticket/tpls/addticket.php:85
+#: modules/ticket/tpls/admin_addticket.php:66 modules/ticket/tpls/admin_ticketdetail.php:97
+#: modules/ticket/tpls/admin_tickets.php:21 modules/ticket/tpls/admin_tickets.php:58
+#: modules/ticket/tpls/myticket.php:39 modules/ticket/tpls/myticket.php:73
+#: modules/ticket/tpls/ticketdetail.php:123
 msgid "SUBJECT"
-msgstr "الموضوع"
+msgstr "العنوان"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:34
 msgid "BODY"
@@ -439,24 +844,13 @@ msgstr "اسم المستخدم"
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:132
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:141
 msgid "TRACKING_ID"
-msgstr ""
+msgstr "رقم التتبع"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:45
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:55
+#: modules/jssupportticket/tpls/admin_propage.php:43
 msgid "HELP_TOPIC"
-msgstr "موضوع المساعدة"
-
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:46
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:56
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:124
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:133
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:142
-#: modules/email/tpls/admin_emails.php:10
-#: modules/email/tpls/admin_addemail.php:7
-#: modules/ticket/tpls/addticket.php:42
-#: modules/ticket/tpls/admin_addticket.php:41
-msgid "EMAIL"
-msgstr "البريد الالكتروني"
+msgstr "محتوى المساعدة"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:47
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:57
@@ -494,15 +888,13 @@ msgstr "عنوان الموظف"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:74
 msgid "HELPTOPIC_TITLE"
-msgstr "عنوان المساعدة"
+msgstr "عنوان محتوى المساعدة"
 
 #: modules/emailtemplate/tpls/admin_emailtemplates.php:113
-#: modules/ticket/tpls/admin_ticketdetail.php:75
-#: modules/ticket/tpls/myticket.php:27 modules/ticket/tpls/myticket.php:40
-#: modules/ticket/tpls/myticket.php:87 modules/ticket/tpls/ticketdetail.php:75
-#: modules/ticket/tpls/admin_tickets.php:10
-#: modules/ticket/tpls/admin_tickets.php:23
-#: modules/ticket/tpls/admin_tickets.php:73
+#: modules/jssupportticket/tpls/admin_controlpanel.php:136 modules/ticket/tpls/admin_ticketdetail.php:75
+#: modules/ticket/tpls/admin_tickets.php:23 modules/ticket/tpls/admin_tickets.php:73
+#: modules/ticket/tpls/myticket.php:41 modules/ticket/tpls/myticket.php:88
+#: modules/ticket/tpls/ticketdetail.php:101
 msgid "TICKET_ID"
 msgstr "رقم البطاقة"
 
@@ -510,154 +902,307 @@ msgstr "رقم البطاقة"
 msgid "SAVE_EMAIL_TEMPLATE"
 msgstr "حفظ قالب البريد الإلكتروني"
 
-#: modules/attachment/model.php:64
-msgid "CANNOT_OPEN_FILE"
-msgstr "لا يمكن فتح الملف"
+#: modules/jssupportticket/tpls/admin_aboutus.php:1
+#: modules/jssupportticket/tpls/admin_controlpanel.php:130
+msgid "ABOUT_US"
+msgstr "حول"
 
-#: modules/attachment/model.php:125
-msgid "FILE_SIZE_GREATER_THEN_DEFAULT_FILESIZE"
+#: modules/jssupportticket/tpls/admin_aboutus.php:2
+msgid "COMPONENT_DETAIL"
+msgstr "تفاصيل المكون"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:3
+msgid "COMPONENT_FOR_ONLINE_TICKET_SUPPORT_SYSTEM"
+msgstr "مكون خاص بنظام بطاقة الدعم المتصل بالانترنت"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:5
+msgid "CREATED_BY"
+msgstr "أُنشئ بواسطة"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:6
+msgid "Ahmed Bilal"
+msgstr "أحمد بلال"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:9
+msgid "COMPANY"
+msgstr "الشركة"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:10 modules/jssupportticket/tpls/admin_aboutus.php:23
+msgid "JOOM_SKY"
+msgstr "Joom Sky"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:13
+msgid "PLUGIN_NAME"
+msgstr "اسم الإضافة"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:17
+msgid "VERSION"
+msgstr "الإصدار"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:18
+msgid "1.0.0"
+msgstr "1.0.0"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:28
+msgid "GOTO_WEB"
+msgstr "ذهاب للويب"
+
+#: modules/jssupportticket/tpls/admin_aboutus.php:37
+msgid "OUR_PRODUCTS"
+msgstr "منتجاتنا"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:10
+#: modules/jssupportticket/tpls/admin_controlpanel.php:38
+#: modules/jssupportticket/tpls/admin_controlpanel.php:101 modules/ticket/tpls/admin_ticketdetail.php:67
+#: modules/ticket/tpls/myticket.php:15 modules/ticket/tpls/ticketdetail.php:71
+msgid "OPEN"
+msgstr "فتح"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:16
+#: modules/jssupportticket/tpls/admin_controlpanel.php:48
+#: modules/jssupportticket/tpls/admin_controlpanel.php:104
+msgid "CLOSE"
+msgstr "إغلاق"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:22
+#: modules/jssupportticket/tpls/admin_controlpanel.php:58
+#: modules/jssupportticket/tpls/admin_controlpanel.php:107 modules/ticket/tpls/admin_tickets.php:24
+#: modules/ticket/tpls/myticket.php:21 modules/ticket/tpls/myticket.php:42
+msgid "ANSWERED"
+msgstr "تمت الإجابة"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:28
+#: modules/jssupportticket/tpls/admin_controlpanel.php:68
+#: modules/jssupportticket/tpls/admin_controlpanel.php:110
+msgid "ALL_TICKET"
+msgstr "كل البطاقات"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:91
+msgid "SATISTICS"
+msgstr "إحصائيات"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:114
+msgid "ADMIN_CONTROL_PANEL"
+msgstr "لوحة تحكم المشرف"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:120
+msgid "PRIORITES"
+msgstr "الأولويات"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:129
+msgid "PRO_VERSION"
+msgstr "إصدار إحترافي"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:133
+msgid "LATEST_TICKET"
+msgstr "آخر بطاقة"
+
+#: modules/jssupportticket/tpls/admin_controlpanel.php:138 modules/ticket/tpls/admin_ticketdetail.php:101
+#: modules/ticket/tpls/admin_tickets.php:62 modules/ticket/tpls/myticket.php:77
+#: modules/ticket/tpls/ticketdetail.php:127
+msgid "FROM"
+msgstr "من"
+
+#: modules/jssupportticket/tpls/admin_propage.php:4
+msgid "JS_SUPPORT_TICKET_PRO"
+msgstr "Js support ticket pro"
+
+#: modules/jssupportticket/tpls/admin_propage.php:5
+msgid "FEATURE_AVAILABLE_IN_PRO_VERSION_ONLY"
+msgstr "الميزة متوفرة بالإصدار الاحترافي فقط"
+
+#: modules/jssupportticket/tpls/admin_propage.php:9
+msgid "JS_SUPPORT_TICKET_PRO_FEATURE"
+msgstr "ميزة في Js support ticket pro"
+
+#: modules/jssupportticket/tpls/admin_propage.php:13
+msgid "FULL_RESPONSIVE"
+msgstr "تجاوب كامل (للنقالات)"
+
+#: modules/jssupportticket/tpls/admin_propage.php:14
+msgid "JS_TICKET_FULLY_RESPONSIVE_LAYOUT_GET_RESIZE_YOUR_SCREEN"
+msgstr "بطاقة Js متجاوبة بالكامل (للنقالات)"
+
+#: modules/jssupportticket/tpls/admin_propage.php:18
+msgid "THEME"
+msgstr "قالب"
+
+#: modules/jssupportticket/tpls/admin_propage.php:19
+msgid "UNLIMITED_COLOR_TOOLS_TO_DESIRED_RESULT"
+msgstr "أداوت ألوان غير محدودة "
+
+#: modules/jssupportticket/tpls/admin_propage.php:23
+msgid "FIELD_ORDERING"
+msgstr "ترتيب الحقول"
+
+#: modules/jssupportticket/tpls/admin_propage.php:24
+msgid "FIELD_ORDERING_LET_YOU_CHANGE_THE_ORDER_OF_TICKET_FIELDS"
+msgstr "ترتيب الحقول تسمح لك بتغيير ترتيب حقول البطاقة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:28
+msgid "INTERNAL_MAIL"
+msgstr "بريد إلكتروني داخلي"
+
+#: modules/jssupportticket/tpls/admin_propage.php:29
+msgid "INTERNAL_MAIL_SYSTEM_FOR_CUMMUNICATION_WITHIN_STAFFS_AND_ADMINISTRATOR"
+msgstr "بريد إلكتروني داخلي للتواصل ما بين الموظفين و الإدارة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:33
+msgid "ACCESS_CONTROL_LIMIT"
+msgstr "حدود التحكم بالوصول"
+
+#: modules/jssupportticket/tpls/admin_propage.php:34
+msgid "ACCESS_CONTROL_LIMIT_YOU_CAN_LIMIT_YOUR_STAFF_TO_DO_SPECIFIC_TASK"
+msgstr "حدود التحكم بالوصول تسمح لك بتحديد عمل محدد لكل موظف"
+
+#: modules/jssupportticket/tpls/admin_propage.php:39
+msgid "STAFF_MEMBER_CAN_BE_CREATED_AND_REPLY_YOUR_CUSTOMER_TICKETS"
+msgstr "السماح للموظف بإنشاء و الرد على بطاقات الزبائن"
+
+#: modules/jssupportticket/tpls/admin_propage.php:44
+msgid "HELP_TOPIC_CAN_BE_ADD_WITH_RESPECT_TO_DEPARTMENTS"
+msgstr "محتوى المساعدة يمكن إضافته للأقسام المتعلقة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:48
+msgid "KNOWLEDGE_BASE"
+msgstr "قاعدة بيانات المعلومات"
+
+#: modules/jssupportticket/tpls/admin_propage.php:49
+msgid "YOU_CAN_CREATE_AND_KNOWLEDGE_BASE_FOR_YOUR_TICKET_SYSTEM"
+msgstr "بإمكانك إنشاء قاعدة بيانات المعلومات لنظام البطاقات الخاص بك"
+
+#: modules/jssupportticket/tpls/admin_propage.php:53
+msgid "DOWNLOADS"
+msgstr "تنزيلات"
+
+#: modules/jssupportticket/tpls/admin_propage.php:54
+msgid "YOU_CAN_DOWNLOADS_FOR_YOUR_CUSTOMERS"
+msgstr "تحميل لزبائنك"
+
+#: modules/jssupportticket/tpls/admin_propage.php:58
+msgid "ANNOUNCEMENTS"
+msgstr "إعلانات"
+
+#: modules/jssupportticket/tpls/admin_propage.php:59
+msgid "ADD_ANNOUNCEMENTS_FOR_YOUR_SUPPORT_SYSTEM"
+msgstr "إضافة إعلانات لنظام الدعم الخاص بك"
+
+#: modules/jssupportticket/tpls/admin_propage.php:63
+msgid "FAQ_S"
+msgstr "أسئلة شائعة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:64
+msgid "YOU_CAN_MANAGE_FAQ_S"
+msgstr "بإمكانك إدارة الأسئلة الشائعة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:68
+msgid "BANNED_EMAIL"
+msgstr "بريد إلكتروني محظور"
+
+#: modules/jssupportticket/tpls/admin_propage.php:69
+msgid "YOU_CAN_BANNED_AND_UNBANNED_ANY_SPAMMY_EMAIL_ADDRESS"
+msgstr "بإمكانك حظر و منع حظر أي عنوان بريد إلكتروني مزعج"
+
+#: modules/jssupportticket/tpls/admin_propage.php:74
+msgid "IF_AND_ONLY_IF_CUSTOMER_NOT_REPLY_CERTAIN_DAYS_TICKET_MARKED_OVERDUE"
+msgstr "إذا لم يقم الزبون بالرد على البطاقة خلال أيام محدّدة أشر للبطاقة كمتأخرة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:78
+msgid "VISITOR_TICKET_OPEN"
+msgstr "بطاقة الزبون مفتوحة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:79
+msgid "VISITOR_CAN_ALSO_OPEN_TICKET_IN_YOUR_SUPPORT_SYSTEM"
+msgstr "الزوار أيضاً بإمكانهم فتح بطاقات دعم"
+
+#: modules/jssupportticket/tpls/admin_propage.php:83
+msgid "LOCK_TICKET"
+msgstr "قفل البطاقة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:84
+msgid "YOU_CAN_NOW_LOCK_OR_UNLOCK_ANY_TICKET_FOR_CERTAIN_TIME"
+msgstr "بإمكانك الآن أقفال أو ألغاء إقفال أية بطاقة بحسب زمن محدّد"
+
+#: modules/jssupportticket/tpls/admin_propage.php:88
+msgid "INTERNAL_NOTE"
+msgstr "ملاحظة داخلية"
+
+#: modules/jssupportticket/tpls/admin_propage.php:89
+msgid "INTERNAL_NOTE_FOR_STAFF_MEMBERS_AND_ADMINISTRATOR_TICKET_BASED"
+msgstr "ملاحظة داخلية ما بين الموظفين و الإدارة"
+
+#: modules/jssupportticket/tpls/admin_propage.php:93
+msgid "STAFF_TRANSFER"
+msgstr "تحويل موظف"
+
+#: modules/jssupportticket/tpls/admin_propage.php:94
+msgid "TICKET_CAN_BE_TRANSFER_TO_ANY_OTHER_STAFF_MEMBER"
+msgstr "البطاقة بالإمكان تحويلها لأي موظف آخر"
+
+#: modules/jssupportticket/tpls/admin_propage.php:99
+msgid "TICKET_CAN_ALSO_BE_TRANSFER_TO_ANY_OTHER_DEPARTMENT"
+msgstr "البطاقة بالإمكان تحويلها لأي قسم آخر"
+
+#: modules/jssupportticket/tpls/controlpanel.php:9
+msgid "OPEN_TICKET"
+msgstr "فتح بطاقة"
+
+#: modules/jssupportticket/tpls/controlpanel.php:10
+msgid "PLEASE_PROVIDE_AS_MUCH_DETAIL_AS_POSSIBLE_SO_WE_CAN_BEST_ASIST_YOU."
+msgstr "يرجى تزويدنا بأكبر قدر ممكن من التفاصيل لكي نكون قادرين على مساعدتك بأفضل وجه ممكن"
+
+#: modules/jssupportticket/tpls/controlpanel.php:16 modules/ticket/tpls/myticket.php:24
+msgid "MY_TICKETS"
+msgstr "بطاقاتي"
+
+#: modules/jssupportticket/tpls/controlpanel.php:17
+msgid "WE_PROVIDE_ARCHIVES_AND_HISTORY_OF_ALL_YOUR_SUPPORT_REQUESTS_COMPLETE_WITH_RESPONSES."
 msgstr ""
 
-#: modules/attachment/model.php:131
-msgid "FILE_EXTENSION_DOES_NOT_MATCH"
-msgstr "تنسيق الملف غير مدعوم"
+#: modules/jssupportticket/tpls/controlpanel.php:46 modules/ticket/tpls/addticket.php:235
+#: modules/ticket/tpls/myticket.php:157 modules/ticket/tpls/ticketdetail.php:306
+msgid "SYSTEM_OFFLINE"
+msgstr "النظام خارج الخط"
 
-#: modules/attachment/model.php:177
-msgid "ATTACHMENT_HAS_BEEN_REMOVED"
-msgstr "تم حذف المرفق"
-
-#: modules/attachment/model.php:180
-msgid "ATTACHMENT_HAS_NOT_BEEN_REMOVED"
-msgstr "لا يمكن حذف المرفق"
-
-#: modules/reply/model.php:81
-msgid "REPLY_HAS_BEEN_STORED"
-msgstr "تم تخزين الرد"
-
-#: modules/reply/model.php:82 modules/ticket/model.php:209
-#: modules/ticket/model.php:253 modules/ticket/model.php:353
-msgid "SUCCESSFULLY"
-msgstr "تمت العملية بنجاح"
-
-#: modules/reply/model.php:85
-msgid "REPLY_HAS_NOT_BEEN_STORED"
-msgstr "لا يمكن تخزين الرد"
-
-#: modules/reply/model.php:86
-#: modules/systemerror/tpls/admin_systemerrors.php:10
-#: modules/systemerror/tpls/admin_systemerrors.php:19
-#: modules/ticket/model.php:204 modules/ticket/model.php:258
-#: modules/ticket/model.php:357
-msgid "ERROR"
-msgstr "خطأ"
-
-#: modules/reply/model.php:95
-msgid "TICKET_IS_REPLIED_BY"
-msgstr "الرد عن طريق"
-
-#: modules/reply/model.php:109
-msgid "REPLY_HAS_BEEN_DELETED"
-msgstr "تم حذف الرد"
-
-#: modules/reply/model.php:112
-msgid "REPLY_HAS_NOT_BEEN_DELETED"
-msgstr "لا يمكن حذف الرد"
-
-#: modules/email/model.php:274
-#: modules/configuration/tpls/admin_configurations.php:212
-msgid "ADMIN"
-msgstr "المشرف"
-
-#: modules/email/model.php:361
-msgid "EMAIL_HAS_BEEN_STORED"
-msgstr "تم تخزين البريد الإلكتروني"
-
-#: modules/email/model.php:364
-msgid "EMAIL_HAS_NOT_BEEN_STORED"
-msgstr "لا يمكن تخزين البريد الإلكتروني"
-
-#: modules/email/model.php:374
-msgid "EMAIL_HAS_BEEN_DELETED"
-msgstr "تم حذف البريد الإلكتروني"
-
-#: modules/email/model.php:377
-msgid "EMAIL_HAS_NOT_BEEN_DELETED"
-msgstr "لا يمكن حذف البريد الإلكتروني"
-
-#: modules/email/model.php:380
-msgid "EMAIL_IN_USE_CANNOT_DELETED"
-msgstr "البريد مستخدم، لا يمكن حذفه"
-
-#: modules/email/tpls/admin_emails.php:8
-#: modules/jssupportticket/tpls/admin_controlpanel.php:10
-#: includes/jssupportticketadmin.php:58
-msgid "SYSTEM_EMAILS"
-msgstr "رسائل النظام"
-
-#: modules/email/tpls/admin_emails.php:14
-msgid "ADD_EMAIL"
-msgstr "إضافة بريد جديد"
-
-#: modules/email/tpls/admin_emails.php:21
-msgid "AUTORESPONSE"
-msgstr "رد تلقائي"
-
-#: modules/email/tpls/admin_emails.php:22
-#: modules/email/tpls/admin_addemail.php:11
-#: modules/priority/tpls/admin_addpriority.php:7
-#: modules/ticket/tpls/admin_ticketdetail.php:79
-#: modules/ticket/tpls/myticket.php:39 modules/ticket/tpls/myticket.php:95
-#: modules/ticket/tpls/addticket.php:62
-#: modules/ticket/tpls/admin_addticket.php:61
-#: modules/ticket/tpls/ticketdetail.php:79
-#: modules/ticket/tpls/admin_tickets.php:22
-#: modules/ticket/tpls/admin_tickets.php:81
-#: includes/jssupportticketadmin.php:44
-msgid "PRIORITY"
-msgstr "الأولوية"
-
-#: modules/email/tpls/admin_addemail.php:4
-msgid "ADD_NEW_SYSTEM_EMAIL"
-msgstr "إضافة بريد نظام جديد"
-
-#: modules/email/tpls/admin_addemail.php:15
-msgid "AUTO_RESPONSE"
-msgstr "رد تلقائي"
-
-#: modules/email/tpls/admin_addemail.php:20
-#: modules/ticket/tpls/admin_addticket.php:104
-msgid "ACTIVE"
-msgstr "نشيط"
-
-#: modules/email/tpls/admin_addemail.php:20
-#: modules/configuration/tpls/admin_configurations.php:18
-#: modules/ticket/tpls/admin_addticket.php:104
-msgid "DISABLED"
-msgstr "معلق"
-
-#: modules/email/tpls/admin_addemail.php:28
-msgid "SAVE_EMAIL"
-msgstr "حفظ البريد"
-
-#: modules/priority/model.php:81
+#: modules/priority/model.php:72
 msgid "PRIORITY_HAS_BEEN_STORED"
 msgstr "تم تخزين الأولوية"
 
-#: modules/priority/model.php:84
+#: modules/priority/model.php:75
 msgid "PRIORITY_HAS_NOT_BEEN_STORED"
 msgstr "لا يمكن تخزين الأولوية"
 
-#: modules/priority/model.php:103
+#: modules/priority/model.php:94
 msgid "PRIORITY_HAS_BEEN_DELETED"
 msgstr "تم حذف الأولوية"
 
-#: modules/priority/model.php:106
+#: modules/priority/model.php:97
 msgid "PRIORITY_HAS_NOT_BEEN_DELETED"
 msgstr "لا يمكن حذف الأولوية"
 
-#: modules/priority/model.php:109
+#: modules/priority/model.php:100
 msgid "PRIORITY_IN_USE_CANNOT_DELETED"
 msgstr "الأولوية مستخدمة، ولا يمكن حذفها"
+
+#: modules/priority/tpls/admin_addpriority.php:11
+msgid "ADD_NEW_PRIORITY"
+msgstr "إضافة أولوية جديدة"
+
+#: modules/priority/tpls/admin_addpriority.php:18
+msgid "PRIORITY_COLOR"
+msgstr "لون الأولوية"
+
+#: modules/priority/tpls/admin_addpriority.php:22
+msgid "PRIORITY_URGENCY"
+msgstr "أهمية الأولوية"
+
+#: modules/priority/tpls/admin_addpriority.php:30
+msgid "IS_DEFAULT"
+msgstr "افتراضي"
+
+#: modules/priority/tpls/admin_addpriority.php:42
+msgid "SAVE_PRIORITY"
+msgstr "حفظ الأولوية"
 
 #: modules/priority/tpls/admin_priorities.php:8
 msgid "PRIORITIES"
@@ -675,782 +1220,425 @@ msgstr "افتراضي"
 msgid "COLOR"
 msgstr "اللون"
 
-#: modules/priority/tpls/admin_addpriority.php:4
-msgid "ADD_NEW_PRIORITY"
-msgstr "إضافة أولوية جديدة"
-
-#: modules/priority/tpls/admin_addpriority.php:11
-msgid "PRIORITY_COLOR"
-msgstr "لون الأولوية"
-
-#: modules/priority/tpls/admin_addpriority.php:15
-msgid "PRIORITY_URGENCY"
-msgstr "أهمية الأولوية"
-
-#: modules/priority/tpls/admin_addpriority.php:23
-msgid "IS_DEFAULT"
-msgstr "افتراضي"
-
-#: modules/priority/tpls/admin_addpriority.php:35
-msgid "SAVE_PRIORITY"
-msgstr "حفظ الأولوية"
-
-#: modules/activitylog/model.php:50
-msgid "TICKET"
-msgstr "بطاقة"
-
-#: modules/activitylog/model.php:67
-msgid "ACTIVITY_LOG_HAS_NOT_BEEN_UPDATED"
-msgstr "لا يمكن تحديث سجل النشاط"
-
-#: modules/configuration/tpls/admin_configurations.php:17
-msgid "ENABLED"
-msgstr "تمكين"
-
-#: modules/configuration/tpls/admin_configurations.php:24
-#: modules/configuration/tpls/admin_configurations.php:33
-msgid "GENERAL_SETTING"
-msgstr "الإعدادات العامة"
-
-#: modules/configuration/tpls/admin_configurations.php:25
-#: modules/configuration/tpls/admin_configurations.php:93
-msgid "TICKET_SETTING"
-msgstr "إعدادات البطاقة"
-
-#: modules/configuration/tpls/admin_configurations.php:26
-#: modules/configuration/tpls/admin_configurations.php:129
-msgid "STAFF_MEMBERS"
-msgstr "الأعضاء"
-
-#: modules/configuration/tpls/admin_configurations.php:27
-#: modules/configuration/tpls/admin_configurations.php:147
-msgid "DEFAULT_SYSTEM_EMAIL"
-msgstr "بريد النظام الافتراضي"
-
-#: modules/configuration/tpls/admin_configurations.php:28
-msgid "KNOWLDEGE_BASE"
-msgstr "قاعدة المعلومات"
-
-#: modules/configuration/tpls/admin_configurations.php:29
-msgid "MAIL_SETTING"
-msgstr "إعداد البريد"
-
-#: modules/configuration/tpls/admin_configurations.php:38
-msgid "SET_THE_HEADING_OF_YOUR_PLUGIN"
-msgstr "تعيين عنوان الإضافة"
-
-#: modules/configuration/tpls/admin_configurations.php:41
-#: modules/configuration/tpls/admin_configurations.php:42
-msgid "OFFLINE"
-msgstr "غير متصل"
-
-#: modules/configuration/tpls/admin_configurations.php:42
-msgid "ONLINE"
-msgstr "متصل"
-
-#: modules/configuration/tpls/admin_configurations.php:43
-msgid "SET_YOUR_PLUGIN_OFFLINE_FOR_FRONT_END"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:46
-msgid "OFFLINE_MESSAGE"
-msgstr "رسالة مغلقة"
-
-#: modules/configuration/tpls/admin_configurations.php:48
-msgid "SET_THE_OFFLINE_MESSAGE_FOR_YOUR_USER"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:51
-msgid "DATA_DIRECTORY"
-msgstr "دليل البيانات"
-
-#: modules/configuration/tpls/admin_configurations.php:53
-msgid "SET_THE_NAME_FOR_YOUR_DATA_DIRECTORY"
-msgstr "تعيين اسم دليل البيانات"
-
-#: modules/configuration/tpls/admin_configurations.php:56
-msgid "DATE_FORMAT"
-msgstr "تنسيق التاريخ"
-
-#: modules/configuration/tpls/admin_configurations.php:58
-msgid "SET_THE_DEFAULT_DATE_FORMAT"
-msgstr "تعيين تنسيق التاريخ الافتراضي"
-
-#: modules/configuration/tpls/admin_configurations.php:61
-msgid "TICKET_OVERDUE"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:62
-#: modules/configuration/tpls/admin_configurations.php:67
-msgid "DAYS"
-msgstr "أيام"
-
-#: modules/configuration/tpls/admin_configurations.php:63
-msgid "SET_NO_OF_DAYS_TO_MARK_TICKET_AS_OVERDUE"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:66
-msgid "TICKET_AUTOCLOSE"
-msgstr "اغلاق البطاقة تلقائي"
-
-#: modules/configuration/tpls/admin_configurations.php:68
-msgid "TICKET_AUTOCLOSE_IF_USER_NOT_RESPOND_WITHIN_GIVEN_DAYS"
-msgstr "اغلاق البطاقة تلقائياً إذا لم يتم الرد خلال أيام"
-
-#: modules/configuration/tpls/admin_configurations.php:71
-msgid "NO_OF_ATTACHMENT"
-msgstr "رقم المرفق"
-
-#: modules/configuration/tpls/admin_configurations.php:73
-msgid "NO_OF_ATTACHMENT_ALLOWED_AT_A_TIME"
-msgstr "عدد المرفقات المسموح بها في وقت"
-
-#: modules/configuration/tpls/admin_configurations.php:76
-msgid "FILE_MAXIMUM_SIZE"
-msgstr "الحد الأقصى لحجم الملف"
-
-#: modules/configuration/tpls/admin_configurations.php:77
-msgid "KB"
-msgstr "كيلو بايت"
-
-#: modules/configuration/tpls/admin_configurations.php:78
-msgid "MAXIMUM_FILE_SIZE_IN_BYTES"
-msgstr "الحد الأدنى لحجم الملف"
-
-#: modules/configuration/tpls/admin_configurations.php:81
-msgid "FILE_EXTENSION"
-msgstr "تنسيق الملف"
-
-#: modules/configuration/tpls/admin_configurations.php:83
-msgid "FILE_EXTENSION_ALLOWED_TO_ATTACH"
-msgstr "تنسيق الملف المسموح به"
-
-#: modules/configuration/tpls/admin_configurations.php:86
-msgid "SHOW_CURRENT_LOCATION"
-msgstr "عرض الموقع الحالي"
-
-#: modules/configuration/tpls/admin_configurations.php:88
-msgid "SHOW_CURRENT_LOCATION_IN_YOUR_PLUGIN"
-msgstr "عرض الموقع الحالي في الأداة الإضافية"
-
-#: modules/configuration/tpls/admin_configurations.php:96
-msgid "MAXIMUM_OPEN_TICKET_PER_EMAIL"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:98
-msgid "MAXIMUM_TICKET_CAN_BE_OPENED_BY_ONE_EMAIL"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:101
-msgid "REOPEN_TICKET_WITHIN_DAYS"
-msgstr "إعادة فتح البطاقة خلال  أيام"
-
-#: modules/configuration/tpls/admin_configurations.php:103
-msgid "TICKET_CAN_BE_REOPEN_WITHIN_GIVEN_NUMBER_OF_DAYS"
-msgstr "يمكن إعادة فتح البطاقة خلال عدة أيام"
-
-#: modules/configuration/tpls/admin_configurations.php:106
-msgid "STAFF_CAN_LOCK_TICKET"
-msgstr "يمكن للموظف قفل البطاقة"
-
-#: modules/configuration/tpls/admin_configurations.php:108
-msgid "CAN_STAFF_MEMBER_LOCK_TICKET_OR_NOT"
-msgstr "يمكن للعضو قفل البطاقة أو لا"
-
-#: modules/configuration/tpls/admin_configurations.php:111
-msgid "VISITOR_CAN_CREATE_TICKET"
-msgstr "يمكن للزائر إنشاء بطاقة"
-
-#: modules/configuration/tpls/admin_configurations.php:113
-msgid "CAN_VISITOR_CREATE_TICKET_OR_NOT"
-msgstr "يمكن للزائر إنشاء بطاقة أو لا"
-
-#: modules/configuration/tpls/admin_configurations.php:116
-msgid "SHOW_CAPTCHA_ON_VISITOR_FORM_TICKET"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:118
-msgid "SHOW_CAPTCHA_WHEN_VISITOR_WANT_TO_CREATE_TICKET"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:121
-msgid "STAFF_IDENTITY"
-msgstr "هوية الموظف"
-
-#: modules/configuration/tpls/admin_configurations.php:123
-msgid "DESCRIPTION"
-msgstr "التفاصيل"
-
-#: modules/configuration/tpls/admin_configurations.php:131
-msgid "VIEW_TICKETS"
-msgstr "عرض البطاقة"
-
-#: modules/configuration/tpls/admin_configurations.php:132
-msgid "SHOW_ALL_TICKETS"
-msgstr "عرض جميع البطاقات"
-
-#: modules/configuration/tpls/admin_configurations.php:132
-msgid "SHOW_ASSIGN_TICKETS"
-msgstr "عرض البطاقات الخاصة"
-
-#: modules/configuration/tpls/admin_configurations.php:133
-msgid "SET_STAFF_MEMBER_CAN_SEE_TICKETS"
-msgstr "تعيين موظف لإظهار البطاقة"
-
-#: modules/configuration/tpls/admin_configurations.php:139
-msgid "DEFAULT_EMAIL_SYSTEM"
-msgstr "بريد النظام الافتراضي"
-
-#: modules/configuration/tpls/admin_configurations.php:142
-msgid "DEFAULT_ALERT_EMAIL"
-msgstr "بريد التنبيه الافراضي"
-
-#: modules/configuration/tpls/admin_configurations.php:144
-msgid "SET_DEFAULT_ALERT_EMAIL_TO_SEND_ALERTS"
-msgstr "تعيين بريد التنبيه الافتراضي لإرسال التنبيهات"
-
-#: modules/configuration/tpls/admin_configurations.php:149
-msgid "SET_DEFAULT_SYSTEM_EMAIL"
-msgstr "تعيين بريد النظام الافتراضي"
-
-#: modules/configuration/tpls/admin_configurations.php:152
-msgid "DEFAULT_ADMIN_EMAIL"
-msgstr "بريد المشرف الافتراضي"
-
-#: modules/configuration/tpls/admin_configurations.php:154
-msgid "SET_DEFAULT_ADMIN_EMAIL_TO_RECEVICE_ADMIN_EMAILS"
-msgstr "تعيين بريد المشرف الافتراضي لاستلام رسائل المشرفين"
-
-#: modules/configuration/tpls/admin_configurations.php:157
-msgid "ARTICLES_PER_ROW"
-msgstr "المواد في كل لصف"
-
-#: modules/configuration/tpls/admin_configurations.php:159
-msgid "SET_HOW_MANY_ARTICLE_SHOW_PER_ROW"
-msgstr "تعيين عدد المواد في كل صف"
-
-#: modules/configuration/tpls/admin_configurations.php:166
-msgid "STAFF_MEMBER_KNOWLEDGEBASE_SETTING"
-msgstr "إعدادات قاعدة بيانات الموظفين"
-
-#: modules/configuration/tpls/admin_configurations.php:169
-msgid "ENABLE"
-msgstr "تمكين"
-
-#: modules/configuration/tpls/admin_configurations.php:171
-msgid "SET_KNOWLEDGEBASE_ENABLE_OR_DISABLE"
-msgstr "تعيين قاعدة البيانات تمكين او عدم تمكين "
-
-#: modules/configuration/tpls/admin_configurations.php:174
-msgid "STAFF_CREATE_CATEGORIES"
-msgstr "إنشاء فئات الموظفين"
-
-#: modules/configuration/tpls/admin_configurations.php:176
-msgid "CAN_STAFF_MEMBER_CREATE_CATEGORIES_OR_NOT"
-msgstr "تمكين او عدم تمكين الموظف من إنشاء الفئات"
-
-#: modules/configuration/tpls/admin_configurations.php:179
-msgid "STAFF_CREATE_ARTICLES"
-msgstr "إضافة  المواد"
-
-#: modules/configuration/tpls/admin_configurations.php:181
-msgid "CAN_STAFF_MEMBER_CREATE_ARTICLE_OR_NOT"
-msgstr "تمكين او عدن تمكين الموظف من إضافة المواد"
-
-#: modules/configuration/tpls/admin_configurations.php:191
-#: modules/configuration/tpls/admin_configurations.php:204
-msgid "MAIL_TO_ADMIN"
-msgstr "رسالة إلى المشرف"
-
-#: modules/configuration/tpls/admin_configurations.php:193
-msgid "EMAIL_SEND_TO_ADMIN_WHEN_NEW_TICKET_CREATED"
-msgstr "إرسال رسالة إلى المشرف عند إضافة بطاقة جديدة"
-
-#: modules/configuration/tpls/admin_configurations.php:196
-msgid "MAIL_TO_STAFF_MEMBERS"
-msgstr "رسالة إلى الموظفين"
-
-#: modules/configuration/tpls/admin_configurations.php:198
-msgid "EMAIL_SEND_TO_STAFF_MEMBER_WHEN_NEW_TICKET_CREATED"
-msgstr "إرسال رسالة إلى الموظف عند إضافة بطاقة جديدة"
-
-#: modules/configuration/tpls/admin_configurations.php:201
-msgid "BAN_EMAIL_NEW_TICKET"
-msgstr "بطاقة حظر ايميل جديدة"
-
-#: modules/configuration/tpls/admin_configurations.php:206
-msgid "EMAIL_SEND_TO_ADMIN_WHEN_BANNED_EMAIL_TRY_TO_CREATE_TICKET"
-msgstr "إرسال رسالة إلى المشرف عند إنشاء بطاقة إعادة حظر بريد"
-
-#: modules/configuration/tpls/admin_configurations.php:211
-msgid "OPERATIONS"
-msgstr "عمليات"
-
-#: modules/configuration/tpls/admin_configurations.php:213
-msgid "STAFF"
-msgstr "موظف"
-
-#: modules/configuration/tpls/admin_configurations.php:214
-msgid "USER"
-msgstr "مستخدم"
-
-#: modules/configuration/tpls/admin_configurations.php:217
-msgid "TICKET_REASSIGN"
-msgstr "إعادة تعيين بطاقة"
-
-#: modules/configuration/tpls/admin_configurations.php:223
-msgid "TICKET_CLOSE"
-msgstr "إغلاق بطاقة"
-
-#: modules/configuration/tpls/admin_configurations.php:229
-msgid "TICKET_DELETE"
-msgstr "حذف بطاقة"
-
-#: modules/configuration/tpls/admin_configurations.php:235
-msgid "TICKET_MARK_OVERDUE"
-msgstr ""
-
-#: modules/configuration/tpls/admin_configurations.php:241
-msgid "TICKET_BAN_EMAIL"
-msgstr "بطاقة حظر بريد"
-
-#: modules/configuration/tpls/admin_configurations.php:247
-msgid "TICKET_DEPARTMENT_TRANSFER"
-msgstr "تحويل بطاقة قسم"
-
-#: modules/configuration/tpls/admin_configurations.php:253
-msgid "TICKET_REPLY_(_TICKET_USER_)"
-msgstr "بطاقة رد (بطاقة مستخدم)"
-
-#: modules/configuration/tpls/admin_configurations.php:259
-msgid "TICKET_RESPONSE_(_STAFF_)"
-msgstr "بطاقة استجابة موظف"
-
-#: modules/configuration/tpls/admin_configurations.php:265
-msgid "TICKET_BAN_EMAIL_AND_CLOSE_TICKET"
-msgstr "بطاقة حظر "
-
-#: modules/configuration/tpls/admin_configurations.php:271
-msgid "TICKET_UNBAN_EMAIL"
-msgstr "بطاقة إلغاء حظر بريد"
-
-#: modules/configuration/tpls/admin_configurations.php:287
-msgid "SAVE_CONFIGURATION"
-msgstr "حفظ الترتيب"
-
-#: modules/systemerror/tpls/admin_systemerrors.php:8
-#: modules/jssupportticket/tpls/admin_controlpanel.php:11
-#: includes/jssupportticketadmin.php:65
-msgid "SYSTEM_ERRORS"
-msgstr "أخطاء النظام"
+#: modules/reply/model.php:69
+msgid "REPLY_HAS_BEEN_STORED"
+msgstr "تم تخزين الرد"
+
+#: modules/reply/model.php:70 modules/ticket/model.php:229
+msgid "SUCCESSFULLY"
+msgstr "تمت العملية بنجاح"
+
+#: modules/reply/model.php:73
+msgid "REPLY_HAS_NOT_BEEN_STORED"
+msgstr "لا يمكن تخزين الرد"
+
+#: modules/reply/model.php:74 modules/systemerror/tpls/admin_systemerrors.php:10
+#: modules/systemerror/tpls/admin_systemerrors.php:19 modules/ticket/model.php:224
+msgid "ERROR"
+msgstr "خطأ"
+
+#: modules/reply/model.php:83
+msgid "TICKET_IS_REPLIED_BY"
+msgstr "الرد عن طريق"
+
+#: modules/reply/model.php:104
+msgid "REPLY_HAS_BEEN_DELETED"
+msgstr "تم حذف الرد"
+
+#: modules/reply/model.php:107
+msgid "REPLY_HAS_NOT_BEEN_DELETED"
+msgstr "لا يمكن حذف الرد"
 
 #: modules/systemerror/tpls/admin_systemerrors.php:20
 msgid "VIEW"
 msgstr "عرض"
 
-#: modules/jssupportticket/tpls/controlpanel.php:5
-msgid "OPEN_TICKET"
-msgstr "فتح بطاقة"
+#: modules/ticket/model.php:192
+msgid "TICKET_LIMIT_HAS_BEEN_EXCEEDS"
+msgstr "تخطت البطاقة حدودها"
 
-#: modules/jssupportticket/tpls/controlpanel.php:6
-#: modules/jssupportticket/tpls/controlpanel.php:13
-msgid "ABC_DESCRIPTION_PROVIDED_AHMED_KHAN"
-msgstr ""
-
-#: modules/jssupportticket/tpls/controlpanel.php:12
-#: modules/ticket/tpls/myticket.php:23
-msgid "MY_TICKETS"
-msgstr "بطاقتي"
-
-#: modules/jssupportticket/tpls/admin_controlpanel.php:1
-msgid "ADMIN_CONTROL_PANEL"
-msgstr "لوحة تحكم المشرف"
-
-#: modules/jssupportticket/tpls/admin_controlpanel.php:4
-#: includes/jssupportticketadmin.php:30
-msgid "CONFIGURATIONS"
-msgstr "الترتيبات"
-
-#: modules/jssupportticket/tpls/admin_controlpanel.php:5
-#: modules/ticket/tpls/myticket.php:11 modules/ticket/tpls/admin_tickets.php:8
-#: includes/jssupportticketadmin.php:37
-msgid "TICKETS"
-msgstr "بطاقات"
-
-#: modules/jssupportticket/tpls/admin_controlpanel.php:6
-msgid "PRIORITES"
-msgstr "الأولويات"
-
-#: modules/jssupportticket/tpls/admin_controlpanel.php:7
-#: includes/jssupportticketadmin.php:51
-msgid "DEPARTMENTS"
-msgstr "الأقسام"
-
-#: modules/jssupportticket/tpls/admin_controlpanel.php:12
-msgid "ACTIVITY_LOG"
-msgstr "سجل النشاط"
-
-#: modules/jssupportticket/tpls/admin_controlpanel.php:13
-#: includes/jssupportticketadmin.php:79
-msgid "USER_FIELDS"
-msgstr "حقول المستخدم"
-
-#: modules/ticket/model.php:206
+#: modules/ticket/model.php:226
 msgid "TICKET_HAS_NOT_BEEN_STORED"
 msgstr "لا يمكن تخزين البطاقة"
 
-#: modules/ticket/model.php:228
-msgid "TICKET_HAS_BEEN_STORED"
-msgstr "تم تخزين البطاقة"
+#: modules/ticket/model.php:248
+msgid "TICKET_HAS_BEEN_STORED_CHECK_YOUR_MAIL_BOX_TO_BE_SURE_YOU_RECEIVED_THE_NOTIFICATION_(IF_YOU_COULDN"
+msgstr ""
 
-#: modules/ticket/model.php:234 modules/ticket/tpls/addticket.php:39
-#: modules/ticket/tpls/admin_addticket.php:38
+#: modules/ticket/tpls/addticket.php:22 modules/ticket/tpls/admin_addticket.php:21
+#: modules/ticket/tpls/admin_ticketdetail.php:15 modules/ticket/tpls/ticketdetail.php:19
+msgid "FILE_UPLOAD_LIMIT_EXCEED"
+msgstr "الملف المرفوع يتجاوز الحد"
+
+#: modules/ticket/tpls/addticket.php:49 modules/ticket/tpls/admin_addticket.php:36
+#: modules/ticket/tpls/admin_ticketdetail.php:35 modules/ticket/tpls/ticketdetail.php:39
+msgid "ERROR_FILE_SIZE_TO_LARGE"
+msgstr "خطأ، حجم الملف كبير"
+
+#: modules/ticket/tpls/addticket.php:50 modules/ticket/tpls/admin_addticket.php:37
+#: modules/ticket/tpls/admin_ticketdetail.php:36 modules/ticket/tpls/ticketdetail.php:40
+msgid "ERROR_FILE_EXT_MISMATCH"
+msgstr "خطأ، تنسيق الملف غير صالح"
+
+#: modules/ticket/tpls/addticket.php:52 modules/ticket/tpls/admin_addticket.php:39
 #: modules/ticket/tpls/admin_tickets.php:14
 msgid "ADD_NEW_TICKET"
 msgstr "إضافة بطاقة جديدة"
 
-#: modules/ticket/model.php:235
-msgid "TICKET_IS_CREATED_BY"
-msgstr "تم إنشاء البطاقة بواسطة"
+#: modules/ticket/tpls/addticket.php:60 modules/ticket/tpls/admin_addticket.php:46
+msgid "FULL_NAME"
+msgstr "الاسم الكامل"
 
-#: modules/ticket/model.php:254
-msgid "TICKET_HAS_BEEN_DELETED"
-msgstr "تم حذف البطاقة"
+#: modules/ticket/tpls/addticket.php:66 modules/ticket/tpls/admin_addticket.php:50
+msgid "PHONE_NOE"
+msgstr "رقم الهاتف"
 
-#: modules/ticket/model.php:257
-msgid "TICKET_HAS_NOT_BEEN_DELETED"
-msgstr "لا يمكن حذف البطاقة"
+#: modules/ticket/tpls/addticket.php:70 modules/ticket/tpls/admin_addticket.php:54
+msgid "PHONE_EXT"
+msgstr "تنسيق الهاتف"
 
-#: modules/ticket/model.php:266
-msgid "REMOVE_TICKET"
-msgstr "حذف بطاقة"
+#: modules/ticket/tpls/addticket.php:77
+msgid "SELECT_DEPARTEMNT"
+msgstr "تحديد القسم"
 
-#: modules/ticket/model.php:267
-msgid "TICKET_IS_REMOVE_BY"
-msgstr "تم حذف البطاقة بواسطة"
+#: modules/ticket/tpls/addticket.php:89 modules/ticket/tpls/admin_addticket.php:70
+msgid "ISSUE_SUMMARY"
+msgstr "ملخص المسألة"
 
-#: modules/ticket/model.php:274
-msgid "TICKET_IN_USE_CANNOT_DELETED"
-msgstr "البطاقة مستخدمة لا يمكن حذفها"
+#: modules/ticket/tpls/addticket.php:93 modules/ticket/tpls/admin_addticket.php:74
+#: modules/ticket/tpls/admin_ticketdetail.php:225 modules/ticket/tpls/ticketdetail.php:253
+msgid "ATTACHMENTS"
+msgstr "مرفقات"
 
-#: modules/ticket/model.php:352
-msgid "TICKET_HAS_BEEN_CLOSED"
-msgstr "البطاقة مغلقة"
+#: modules/ticket/tpls/addticket.php:102 modules/ticket/tpls/admin_addticket.php:83
+#: modules/ticket/tpls/admin_ticketdetail.php:234 modules/ticket/tpls/ticketdetail.php:262
+msgid "MAXIMUM_FILE_SIZE"
+msgstr "الحد الأقصى لحجم الملف"
 
-#: modules/ticket/model.php:356
-msgid "TICKET_HAS_NOT_BEEN_CLOSED"
-msgstr "لا يمكن إغلاق البطاقة"
+#: modules/ticket/tpls/addticket.php:102 modules/ticket/tpls/admin_addticket.php:83
+#: modules/ticket/tpls/admin_ticketdetail.php:234 modules/ticket/tpls/ticketdetail.php:262
+msgid "FILE_EXTENSION_TYPE"
+msgstr "نوع تنسيق الملف"
 
-#: modules/ticket/model.php:366
-msgid "TICKET_IS_CLOSE_BY"
-msgstr "تم إغلاق البطاقة بواسطة"
+#: modules/ticket/tpls/addticket.php:104 modules/ticket/tpls/admin_addticket.php:85
+#: modules/ticket/tpls/admin_ticketdetail.php:236 modules/ticket/tpls/ticketdetail.php:264
+msgid "ADD_MORE_FILE"
+msgstr "إضافة ملف آخر"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:15
-#: modules/ticket/tpls/addticket.php:22
-#: modules/ticket/tpls/admin_addticket.php:21
-#: modules/ticket/tpls/ticketdetail.php:15
-msgid "FILE_UPLOAD_LIMIT_EXCEED"
-msgstr "الملف المرفوع يتجاوز الحد"
+#: modules/ticket/tpls/addticket.php:111 modules/ticket/tpls/admin_addticket.php:92
+msgid "DELETE_ATTACHMENT"
+msgstr "حذف المرفق"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:35
-#: modules/ticket/tpls/addticket.php:36
-#: modules/ticket/tpls/admin_addticket.php:35
-#: modules/ticket/tpls/ticketdetail.php:35
-msgid "ERROR_FILE_SIZE_TO_LARGE"
-msgstr "خطأ، حجم الملف كبير"
+#: modules/ticket/tpls/addticket.php:207 modules/ticket/tpls/admin_addticket.php:197
+msgid "SAVE_TICKET"
+msgstr "حفظ البطاقة"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:36
-#: modules/ticket/tpls/addticket.php:37
-#: modules/ticket/tpls/admin_addticket.php:36
-#: modules/ticket/tpls/ticketdetail.php:36
-msgid "ERROR_FILE_EXT_MISMATCH"
-msgstr "خطأ، تنسيق الملف غير صالح"
+#: modules/ticket/tpls/admin_addticket.php:59
+msgid "SELECT_DEPARTMENT"
+msgstr "تحديد القسم"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:37
-#: modules/ticket/tpls/ticketdetail.php:37
+#: modules/ticket/tpls/admin_ticketdetail.php:37 modules/ticket/tpls/ticketdetail.php:41
 msgid "TICKET_DETAILS"
 msgstr "تفاصيل البطاقة"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:42
-#: modules/ticket/tpls/ticketdetail.php:42
+#: modules/ticket/tpls/admin_ticketdetail.php:42 modules/ticket/tpls/ticketdetail.php:46
 msgid "LOCK"
 msgstr "مغلق"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:45
-#: modules/ticket/tpls/myticket.php:50 modules/ticket/tpls/ticketdetail.php:45
-#: modules/ticket/tpls/admin_tickets.php:36
+#: modules/ticket/tpls/admin_ticketdetail.php:45 modules/ticket/tpls/admin_tickets.php:36
+#: modules/ticket/tpls/myticket.php:51 modules/ticket/tpls/ticketdetail.php:49
 msgid "NEW"
 msgstr "جديد"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:48
-#: modules/ticket/tpls/ticketdetail.php:48
+#: modules/ticket/tpls/admin_ticketdetail.php:48 modules/ticket/tpls/ticketdetail.php:52
 msgid "WAITING_REPLY"
 msgstr "انتظار الرد"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:51
-#: modules/ticket/tpls/myticket.php:56 modules/ticket/tpls/ticketdetail.php:51
-#: modules/ticket/tpls/admin_tickets.php:42
+#: modules/ticket/tpls/admin_ticketdetail.php:51 modules/ticket/tpls/admin_tickets.php:42
+#: modules/ticket/tpls/myticket.php:57 modules/ticket/tpls/ticketdetail.php:55
 msgid "IN_PROGRESS"
 msgstr "جاري المعالجة"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:54
-#: modules/ticket/tpls/ticketdetail.php:54
+#: modules/ticket/tpls/admin_ticketdetail.php:54 modules/ticket/tpls/ticketdetail.php:58
 msgid "REPLIED"
 msgstr "تم الرد"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:57
-#: modules/ticket/tpls/admin_ticketdetail.php:67
-#: modules/ticket/tpls/myticket.php:17 modules/ticket/tpls/myticket.php:62
-#: modules/ticket/tpls/ticketdetail.php:57
-#: modules/ticket/tpls/ticketdetail.php:67
-#: modules/ticket/tpls/admin_tickets.php:48
+#: modules/ticket/tpls/admin_ticketdetail.php:57 modules/ticket/tpls/admin_ticketdetail.php:67
+#: modules/ticket/tpls/admin_tickets.php:48 modules/ticket/tpls/myticket.php:18
+#: modules/ticket/tpls/myticket.php:63 modules/ticket/tpls/ticketdetail.php:61
+#: modules/ticket/tpls/ticketdetail.php:71
 msgid "CLOSED"
 msgstr "مغلق"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:67
-#: modules/ticket/tpls/myticket.php:14 modules/ticket/tpls/ticketdetail.php:67
-msgid "OPEN"
-msgstr "فتح"
-
-#: modules/ticket/tpls/admin_ticketdetail.php:85
-#: modules/ticket/tpls/myticket.php:91 modules/ticket/tpls/ticketdetail.php:85
-#: modules/ticket/tpls/admin_tickets.php:77
+#: modules/ticket/tpls/admin_ticketdetail.php:85 modules/ticket/tpls/admin_tickets.php:77
+#: modules/ticket/tpls/myticket.php:92 modules/ticket/tpls/ticketdetail.php:111
 msgid "LAST_REPLY"
 msgstr "آخر رد"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:86
-#: modules/ticket/tpls/myticket.php:92 modules/ticket/tpls/ticketdetail.php:86
-#: modules/ticket/tpls/admin_tickets.php:78
+#: modules/ticket/tpls/admin_ticketdetail.php:86 modules/ticket/tpls/admin_tickets.php:78
+#: modules/ticket/tpls/myticket.php:93 modules/ticket/tpls/ticketdetail.php:112
 msgid "NO_LAST_REPLY"
 msgstr "رقم آخر رد"
-
-#: modules/ticket/tpls/admin_ticketdetail.php:101
-#: modules/ticket/tpls/myticket.php:76
-#: modules/ticket/tpls/ticketdetail.php:101
-#: modules/ticket/tpls/admin_tickets.php:62
-msgid "FROM"
-msgstr "من"
 
 #: modules/ticket/tpls/admin_ticketdetail.php:111
 msgid "EDIT_TICKET"
 msgstr "تحرير البطاقة"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:114
-#: modules/ticket/tpls/ticketdetail.php:113
+#: modules/ticket/tpls/admin_ticketdetail.php:114 modules/ticket/tpls/ticketdetail.php:139
 msgid "REQUESTER_INFO"
 msgstr "معلومة مطلوبة"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:125
-#: modules/ticket/tpls/ticketdetail.php:124
+#: modules/ticket/tpls/admin_ticketdetail.php:125 modules/ticket/tpls/ticketdetail.php:150
 msgid "SHOW_DETAIL"
 msgstr "عرض التفاصيل"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:128
-#: modules/ticket/tpls/ticketdetail.php:127
+#: modules/ticket/tpls/admin_ticketdetail.php:128 modules/ticket/tpls/ticketdetail.php:153
 msgid "MORE_DETAIL"
 msgstr "عرض المزيد"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:131
-#: modules/ticket/tpls/ticketdetail.php:130
+#: modules/ticket/tpls/admin_ticketdetail.php:131 modules/ticket/tpls/ticketdetail.php:156
 msgid "PHONE"
 msgstr "الهاتف"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:135
-#: modules/ticket/tpls/addticket.php:100
-#: modules/ticket/tpls/admin_addticket.php:99
-#: modules/ticket/tpls/ticketdetail.php:134
-msgid "DUE_DATE"
-msgstr "تاريخ الاستحقاق"
-
-#: modules/ticket/tpls/admin_ticketdetail.php:145
-#: modules/ticket/tpls/ticketdetail.php:144
+#: modules/ticket/tpls/admin_ticketdetail.php:141 modules/ticket/tpls/ticketdetail.php:166
 msgid "TRUE"
 msgstr "صحيح"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:145
-#: modules/ticket/tpls/ticketdetail.php:144
+#: modules/ticket/tpls/admin_ticketdetail.php:141 modules/ticket/tpls/ticketdetail.php:166
 msgid "FALSE"
 msgstr "غير صحيح"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:151
-#: modules/ticket/tpls/ticketdetail.php:150
+#: modules/ticket/tpls/admin_ticketdetail.php:147 modules/ticket/tpls/ticketdetail.php:172
 msgid "NOT_FILLED"
-msgstr ""
+msgstr "غير معبأ"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:159
-#: modules/ticket/tpls/ticketdetail.php:158
+#: modules/ticket/tpls/admin_ticketdetail.php:155 modules/ticket/tpls/ticketdetail.php:180
 msgid "TICKET_THREAD"
-msgstr ""
+msgstr "تبويبة البطاقة"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:164
-#: modules/ticket/tpls/admin_ticketdetail.php:197
-#: modules/ticket/tpls/ticketdetail.php:163
-#: modules/ticket/tpls/ticketdetail.php:196
+#: modules/ticket/tpls/admin_ticketdetail.php:160 modules/ticket/tpls/admin_ticketdetail.php:193
+#: modules/ticket/tpls/ticketdetail.php:185 modules/ticket/tpls/ticketdetail.php:218
 msgid "REPLIED_BY"
 msgstr "تم الرد بواسطة"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:181
-#: modules/ticket/tpls/admin_ticketdetail.php:214
-#: modules/ticket/tpls/ticketdetail.php:180
-#: modules/ticket/tpls/ticketdetail.php:213
+#: modules/ticket/tpls/admin_ticketdetail.php:177 modules/ticket/tpls/admin_ticketdetail.php:210
+#: modules/ticket/tpls/ticketdetail.php:202 modules/ticket/tpls/ticketdetail.php:235
 msgid "DOWNLOAD"
 msgstr "تحميل"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:222
-#: modules/ticket/tpls/ticketdetail.php:221
+#: modules/ticket/tpls/admin_ticketdetail.php:218 modules/ticket/tpls/ticketdetail.php:246
 msgid "REPLY"
 msgstr "رد"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:225
-#: modules/ticket/tpls/ticketdetail.php:224
+#: modules/ticket/tpls/admin_ticketdetail.php:221 modules/ticket/tpls/ticketdetail.php:249
 msgid "RESPONSE"
 msgstr "استجابة"
 
-#: modules/ticket/tpls/admin_ticketdetail.php:229
-#: modules/ticket/tpls/addticket.php:74
-#: modules/ticket/tpls/admin_addticket.php:73
-#: modules/ticket/tpls/ticketdetail.php:228
-msgid "ATTACHMENTS"
-msgstr "مرفقات"
-
-#: modules/ticket/tpls/admin_ticketdetail.php:238
-#: modules/ticket/tpls/addticket.php:83
-#: modules/ticket/tpls/admin_addticket.php:82
-#: modules/ticket/tpls/ticketdetail.php:237
-msgid "MAXIMUM_FILE_SIZE"
-msgstr "الحد الأقصى لحجم الملف"
-
-#: modules/ticket/tpls/admin_ticketdetail.php:238
-#: modules/ticket/tpls/addticket.php:83
-#: modules/ticket/tpls/admin_addticket.php:82
-#: modules/ticket/tpls/ticketdetail.php:237
-msgid "FILE_EXTENSION_TYPE"
-msgstr "نوع تنسيق الملف"
-
-#: modules/ticket/tpls/admin_ticketdetail.php:240
-#: modules/ticket/tpls/addticket.php:85
-#: modules/ticket/tpls/admin_addticket.php:84
-#: modules/ticket/tpls/ticketdetail.php:239
-msgid "ADD_MORE_FILE"
-msgstr "إضافة ملف آخر"
-
-#: modules/ticket/tpls/admin_ticketdetail.php:244
-#: modules/ticket/tpls/ticketdetail.php:243
+#: modules/ticket/tpls/admin_ticketdetail.php:240 modules/ticket/tpls/ticketdetail.php:268
 msgid "POST_REPLY"
 msgstr "إضافة رد"
 
-#: modules/ticket/tpls/myticket.php:20
-msgid "ANSWERED"
-msgstr "تمت الإجابة"
+#: modules/ticket/tpls/admin_tickets.php:10 modules/ticket/tpls/myticket.php:28
+msgid "TICKET_ID_OR_SUBJECT"
+msgstr "رقم البطاقة أو عتوانها"
 
-#: modules/ticket/tpls/myticket.php:41
-#: modules/ticket/tpls/admin_tickets.php:24
-msgid "IS_ANSWERED"
-msgstr "تم الإجابة"
-
-#: modules/ticket/tpls/myticket.php:53
-msgid "WAITING_STAFF_REPLY"
-msgstr "انتظار رد الموظف"
-
-#: modules/ticket/tpls/myticket.php:59
-#: modules/ticket/tpls/admin_tickets.php:39
+#: modules/ticket/tpls/admin_tickets.php:39 modules/ticket/tpls/myticket.php:60
 msgid "WAITING_YOUR_REPLY"
 msgstr "انتظار الرد"
-
-#: modules/ticket/tpls/addticket.php:46
-#: modules/ticket/tpls/admin_addticket.php:45
-msgid "FULL_NAME"
-msgstr "الاسم الكامل"
-
-#: modules/ticket/tpls/addticket.php:50
-#: modules/ticket/tpls/admin_addticket.php:49
-msgid "PHONE_NOE"
-msgstr "رقم الهاتف"
-
-#: modules/ticket/tpls/addticket.php:54
-#: modules/ticket/tpls/admin_addticket.php:53
-msgid "PHONE_EXT"
-msgstr "تنسيق الهاتف"
-
-#: modules/ticket/tpls/addticket.php:70
-#: modules/ticket/tpls/admin_addticket.php:69
-msgid "ISSUE_SUMMARY"
-msgstr "ملخص المسألة"
-
-#: modules/ticket/tpls/addticket.php:92
-#: modules/ticket/tpls/admin_addticket.php:91
-msgid "DELETE_ATTACHMENT"
-msgstr "حذف المرفق"
-
-#: modules/ticket/tpls/addticket.php:170
-#: modules/ticket/tpls/admin_addticket.php:173
-msgid "SAVE_TICKET"
-msgstr "حفظ البطاقة"
 
 #: modules/ticket/tpls/admin_tickets.php:45
 msgid "WAITING_CUSTOMER_REPLY"
 msgstr "انتظار رد العميل"
 
 #: modules/ticket/tpls/admin_tickets.php:89
-msgid "REMOVE"
+msgid "DELETE"
 msgstr "حذف"
 
 #: modules/ticket/tpls/admin_tickets.php:90
 msgid "EDIT"
 msgstr "تحرير"
 
-#: modules/ticket/tpls/admin_tickets.php:91
-msgid "TICKET_DETAIL"
-msgstr "تفاصيل البطاقة"
+#: modules/ticket/tpls/myticket.php:54
+msgid "WAITING_STAFF_REPLY"
+msgstr "انتظار رد الموظف"
 
-#: includes/jssupportticketadmin.php:22
-msgid "JS_SUPPORT_TICKET_CONTROL_PANEL"
-msgstr "لوحة تحكم بطاقة الدعم"
+#: modules/ticket/tpls/ticketdetail.php:84
+msgid "DAY"
+msgstr "يوم"
 
-#: includes/jssupportticketadmin.php:23
-msgid "JS_SUPPORT_TICKET"
-msgstr "بطاقة دعم"
+#: modules/ticket/tpls/ticketdetail.php:88
+msgid "TODAY"
+msgstr "اليوم"
 
-#: includes/jssupportticketadmin.php:29
-msgid "JS_SUPPORT_TICKET_CONFIGURATION"
-msgstr "ترتيب بطاقة الدعم"
+#: modules/ticket/tpls/ticketdetail.php:93
+msgid "AGO"
+msgstr "منذ"
 
-#: includes/jssupportticketadmin.php:36
-msgid "JS_SUPPORT_TICKET_TICKETS"
-msgstr "بطاقات بطاقة الدعم"
+#: modules/userfeild/model.php:57
+msgid "USER_FIELD_HAS_NOT_BEEN_STORED"
+msgstr "اسم المستخدم خطأ، لا يمكن التخزين"
 
-#: includes/jssupportticketadmin.php:43
-msgid "JS_SUPPORT_TICKET_PRIORITIES"
-msgstr "أولويات بطاقة الدعم"
+#: modules/userfeild/model.php:59
+msgid "USER_FIELD_HAS_BEEN_STORED"
+msgstr "تم تخزين اسم المستخدم"
 
-#: includes/jssupportticketadmin.php:50
-msgid "JS_SUPPORT_TICKET_DEPARTMENT"
-msgstr "قسم بطاقة الدعم"
+#: modules/userfeild/model.php:89
+msgid "USER_FIELD_HAS_BEEN_DELETED"
+msgstr "تم حذف اسم المستخدم"
 
-#: includes/jssupportticketadmin.php:57
-msgid "JS_SUPPORT_TICKET_EMAILS"
-msgstr "رسائل بطاقة الدعم"
+#: modules/userfeild/model.php:92
+msgid "USER_FIELD_HAS_NOT_BEEN_DELETED"
+msgstr "لا يمكن حذف اسم المستخدم"
 
-#: includes/jssupportticketadmin.php:64
-msgid "JS_SUPPORT_TICKET_SYSTEM_ERROR"
-msgstr "خطأ نظام بطاقة الدعم"
+#: modules/userfeild/model.php:95
+msgid "USER_FIELD_IN_USE_CANNOT_DELETED"
+msgstr "اسم المستخدم قيد الاستخدام، لا يمكن حذفه"
 
-#: includes/jssupportticketadmin.php:71
-msgid "JS_SUPPORT_TICKET_EMAIL_TEMPLATES"
-msgstr "قوالب بريد بطاقات الدعم"
+#: modules/userfeild/tpls/admin_adduserfeild.php:103
+msgid "JS_OPTION_VALUE_IN_USE"
+msgstr "خيارات Js المستعملة"
 
-#: includes/jssupportticketadmin.php:72
-msgid "EMAIL_TEMPLATES"
-msgstr "قالب البريد"
+#: modules/userfeild/tpls/admin_adduserfeild.php:116
+msgid "ADD_NEW_USER_FIELD"
+msgstr "إضافة مستخدم جديد"
 
-#: includes/jssupportticketadmin.php:78
-msgid "JS_SUPPORT_TICKET_USER_FIELDS"
-msgstr "حقول مستخدم بطاقة الدعم"
+#: modules/userfeild/tpls/admin_adduserfeild.php:119 modules/userfeild/tpls/admin_userfeilds.php:22
+msgid "FIELD_TYPE"
+msgstr "نوع الحقل"
 
-#: includes/pagination.php:30
-msgid "&laquo;"
-msgstr "&laquo;"
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "TEXT_FIELD"
+msgstr "الحقل"
 
-#: includes/pagination.php:31
-msgid "&raquo;"
-msgstr "&raquo;"
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "DROP_DOWN"
+msgstr "قائمة منسدلة"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "CHECK_BOX"
+msgstr "مربع اختيار"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "DATE"
+msgstr "التاريخ"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:120
+msgid "TEXT_AREA"
+msgstr "الموقع"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:123 modules/userfeild/tpls/admin_userfeilds.php:10
+#: modules/userfeild/tpls/admin_userfeilds.php:20
+msgid "FIELD_NAME"
+msgstr "اسم الحقل"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:127 modules/userfeild/tpls/admin_userfeilds.php:21
+msgid "FIELD_TITLE"
+msgstr "اسم الحقل"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:131 modules/userfeild/tpls/admin_userfeilds.php:23
+msgid "REQUIRED"
+msgstr "مطلوب"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:135 modules/userfeild/tpls/admin_userfeilds.php:24
+msgid "READ_ONLY"
+msgstr "للقراءة فقط"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:139 modules/userfeild/tpls/admin_userfeilds.php:25
+msgid "PUBLISHED"
+msgstr "تم النشر"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:143
+msgid "FIELD_SIZE"
+msgstr "حجم الحقل"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:149
+msgid "MAX_LENGTH"
+msgstr "الحد الأقصى"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:155
+msgid "COLUMNS"
+msgstr "الأعمدة"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:159
+msgid "ROWS"
+msgstr "الصفوف"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:164
+msgid "USE_THE_TABLE_BELOW_TO_ADD_NEW_VALUES"
+msgstr "استخدم الجدول أدناه لإضافة قيم جديدة"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:165
+msgid "ADD_A_VALUE"
+msgstr "إدخال قيمة"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:169
+msgid "VALUE"
+msgstr "قيمة"
+
+#: modules/userfeild/tpls/admin_adduserfeild.php:217
+msgid "SAVE_USER_FIELD"
+msgstr "حفظ المستنخدم"
+
+#: modules/userfeild/tpls/admin_userfeilds.php:14
+msgid "ADD_USER_FIELD"
+msgstr "إضافة اسم مستخدم جديد"
+
+#~ msgid "TICKET_IS_CREATED_BY"
+#~ msgstr "تم إنشاء البطاقة بواسطة"
+
+#~ msgid "TICKET_HAS_BEEN_DELETED"
+#~ msgstr "تم حذف البطاقة"
+
+#~ msgid "TICKET_HAS_NOT_BEEN_DELETED"
+#~ msgstr "لا يمكن حذف البطاقة"
+
+#~ msgid "REMOVE_TICKET"
+#~ msgstr "حذف بطاقة"
+
+#~ msgid "TICKET_IS_REMOVE_BY"
+#~ msgstr "تم حذف البطاقة بواسطة"
+
+#~ msgid "TICKET_IN_USE_CANNOT_DELETED"
+#~ msgstr "البطاقة مستخدمة لا يمكن حذفها"
+
+#~ msgid "TICKET_HAS_BEEN_CLOSED"
+#~ msgstr "البطاقة مغلقة"
+
+#~ msgid "TICKET_HAS_NOT_BEEN_CLOSED"
+#~ msgstr "لا يمكن إغلاق البطاقة"
+
+#~ msgid "TICKET_IS_CLOSE_BY"
+#~ msgstr "تم إغلاق البطاقة بواسطة"
+
+#~ msgid "SIGNATURE"
+#~ msgstr "التوقيع"
+
+#~ msgid "APPEND_SIGNATURE"
+#~ msgstr "إضافة توقيع"
+
+#~ msgid "APPEND_SIGNATURE_WITH_REPLY"
+#~ msgstr "إضافة التوقيع مع الرد"
+
+#~ msgid "RESPONSE_TICKET"
+#~ msgstr "بطاقة رد"
+
+#~ msgid "SHOW_CURRENT_LOCATION"
+#~ msgstr "عرض الموقع الحالي"
+
+#~ msgid "SHOW_CURRENT_LOCATION_IN_YOUR_PLUGIN"
+#~ msgstr "عرض الموقع الحالي في الأداة الإضافية"
+
+#~ msgid "ACTIVITY_LOG"
+#~ msgstr "سجل النشاط"
+
+#~ msgid "TICKET_HAS_BEEN_STORED"
+#~ msgstr "تم تخزين البطاقة"
+
+#~ msgid "DUE_DATE"
+#~ msgstr "تاريخ الاستحقاق"
+
+#~ msgid "IS_ANSWERED"
+#~ msgstr "تم الإجابة"
+
+#~ msgid "REMOVE"
+#~ msgstr "حذف"
