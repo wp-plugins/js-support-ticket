@@ -4,7 +4,7 @@ Donate link: http://joomsky.com/index.php/products/js-support-ticket-1/js-suppro
 Tags: support ticket,support, ticket,helpdesk, help, desk, ticketing system, moniter desk
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -129,6 +129,10 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 11. Ticket Details - front-end
 
 == Changelog ==
+
+= 1.0.4 - 03/02/2015 =
+* Language patern change.
+* Bug fix.
 
 = 1.0.3 - 02/06/2015 =
 * New control panel layout.
