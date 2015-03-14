@@ -189,6 +189,8 @@ class jssupportticket {
 }
     add_action('init', 'custom_init_session', 1);
     function custom_init_session() {
+        wp_enqueue_script("jquery");
+        jssupportticket::addStyleSheets();
         if (!session_id())
             session_start();
     }
