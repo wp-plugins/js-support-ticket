@@ -37,16 +37,22 @@
             var producttype = $("input#producttype").val();
             var domain = $("input#domain").val();
             var JVERSION = $("input#JVERSION").val();
-            $.post(ajaxurl,{action:'jsticket_ajax',module:'proinstaller',task:'getmyversionlist',transactionkey:transactionkey,productcode:productcode,productversion:productversion,domain:domain,JVERSION:JVERSION,producttype:producttype},function(data){
-                if(data){
-                    var array = $.parseJSON(data);
-                    if(array[0] == 0){
-                        $("div#jsst_error_message").html(array[1]).show();
-                    }else{
-                        $("div#jsst_next_form").html(array[1]).show();;
-                    }
-                }
-            });
-        });
+            if(transactionkey.length < 5){
+               setTimeout(function() {
+                   // Do something after 5 seconds
+                   $("div#jsst_error_message").html('Invalid transaction key.').show();
+               }, 4000);
+            }else{
+               $.post(ajaxurl,{action:'jsticket_ajax',module:'proinstaller',task:'getmyversionlist',transactionkey:transactionkey,productcode:productcode,productversion:productversion,domain:domain,JVERSION:JVERSION,producttype:producttype},function(data){
+                       if(data){
+                           var array = $.parseJSON(data);
+                           if(array[0] == 0){
+                               $("div#jsst_error_message").html(array[1]).show();
+                           }else{
+                               $("div#jsst_next_form").html(array[1]).show();
+                           }
+                       }
+                   });
+           }        });
     });
 </script>

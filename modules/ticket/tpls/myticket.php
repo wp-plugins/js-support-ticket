@@ -127,14 +127,14 @@ if (jssupportticket::$_config['offline'] == 2) {
                     $style = "#9ACC00;";
                     $status = __('New', 'js-support-ticket');
                 } elseif ($ticket->status == 1) {
-                    $style = "#217ac3;";
-                    $status = __('Waiting Your Reply', 'js-support-ticket');
+                    $style = "#FFB613;";
+                    $status = __('Waiting Staff Reply', 'js-support-ticket');
                 } elseif ($ticket->status == 2) {
                     $style = "#FE7C2C;";
                     $status = __('In Progress', 'js-support-ticket');
                 } elseif ($ticket->status == 3) {
-                    $style = "#FFB613;";
-                    $status = __('Waiting Customer Reply', 'js-support-ticket');
+                    $style = "#217ac3;";
+                    $status = __('Waiting Your Reply', 'js-support-ticket');
                 } elseif ($ticket->status == 4) {
                     $style = "#F04646;";
                     $status = __('Closed', 'js-support-ticket');
