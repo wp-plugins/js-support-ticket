@@ -55,7 +55,7 @@ class JSSTuserfeildModel {
             if (jssupportticket::$_db->last_error != null) {
                 JSSTincluder::getJSModel('systemerror')->addSystemError(); // if there is an error add it to system errorrs
             }
-        }
+        }else jssupportticket::$_data[0] = array();
         return;
     }
 
