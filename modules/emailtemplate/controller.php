@@ -1,58 +1,52 @@
 <?php
-if(!defined('ABSPATH')) die('Restricted Access');
 
-class emailtemplateController{
-	
-	function __construct(){
-		self::handleRequest();
-	}
-	
-	function handleRequest(){
-		$task = request::getVar('task',null,'emailtemplate_emailtemplates');
-		if(self::canaddfile()){
-			$array = explode('_',$task);
-			if(is_admin()){
-				$action = request::getVar('action');
-				$action_array = explode("_",$action);
-				if($action_array[0] == 'admin'){
-					emailtemplateController::$action_array[1]();
-				}else{
-					$array[1] = 'admin_'.$array[1];
+if (!defined('ABSPATH'))
+    die('Restricted Access');
 
-				}				
-			}
-			switch($array[1]){
-				case 'admin_emailtemplates':
-					$tempfor = request::getVar('for',null,'tk-nw');
-					jssupportticket::$_data[1] = $tempfor;
-					includer::getJSModel('emailtemplate')->getTemplate($tempfor);
-				break;
-			}
-			includer::include_file($array[1],$array[0]);
-		}
-	}
-	function canaddfile(){
-		if(isset($_POST['form_request']) && $_POST['form_request'] == 'jssupportticket')
-			return false;
-		elseif(isset($_GET['action']) && $_GET['action'] == 'deleteitem')
-			return false;
-		else
-			return true;
-	}
+class JSSTemailtemplateController {
 
-	static function saveemailtemplate(){
-		$data = request::get('post');
-		includer::getJSModel('emailtemplate')->storeEmailTemplate($data);
-		if(is_admin()){		
-			$url = admin_url("admin.php?page=emailtemplate_emailtemplates&for=".request::getVar('for'));
-		}else{
-			$pageid = jssupportticket::$_db->get_var("Select id FROM `".jssupportticket::$_db->prefix."posts` WHERE post_name = 'priority_priorities'");
-			$url = site_url("?page_id=".$pageid."&priority_priorities");
-		}
-		wp_redirect($url); exit;
-	}
-	
+    function __construct() {
+        self::handleRequest();
+    }
+
+    function handleRequest() {
+        $layout = JSSTrequest::getLayout('layout', null, 'emailtemplates');
+        if (self::canaddfile()) {
+            switch ($layout) {
+                case 'admin_emailtemplates':
+                    $tempfor = JSSTrequest::getVar('for', null, 'tk-nw');
+                    jssupportticket::$_data[1] = $tempfor;
+                    JSSTincluder::getJSModel('emailtemplate')->getTemplate($tempfor);
+                    break;
+            }
+            $module = (is_admin()) ? 'page' : 'module';
+            $module = JSSTrequest::getVar($module, null, 'emailtemplate');
+            JSSTincluder::include_file($layout, $module);
+        }
+    }
+
+    function canaddfile() {
+        if (isset($_POST['form_request']) && $_POST['form_request'] == 'jssupportticket')
+            return false;
+        elseif (isset($_GET['action']) && $_GET['action'] == 'jstask')
+            return false;
+        else
+            return true;
+    }
+
+    static function saveemailtemplate() {
+        $data = JSSTrequest::get('post');
+        JSSTincluder::getJSModel('emailtemplate')->storeEmailTemplate($data);
+        if (is_admin()) {
+            $url = admin_url("admin.php?page=emailtemplate&for=" . JSSTrequest::getVar('for'));
+        } else {
+            $url = site_url("?page_id=" . jssupportticket::getPageid() . "&module=priority&layout=priorities");
+        }
+        wp_redirect($url);
+        exit;
+    }
+
 }
 
-$emailtemplateController = new emailtemplateController();
+$emailtemplateController = new JSSTemailtemplateController();
 ?>

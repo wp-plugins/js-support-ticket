@@ -1,64 +1,91 @@
 <script type="text/javascript">
-	function resetFrom(){
-		document.getElementById('title').value = ''; 
-		document.getElementById('jssupportticketform').submit();
-	}
+    function resetFrom() {
+        document.getElementById('title').value = '';
+        document.getElementById('jssupportticketform').submit();
+    }
 </script>
-<?php message::getMessage();?>
-<span class="js-admin-title"><?php echo __('PRIORITIES','js-support-ticket'); ?></span>
-<form class="js-filter-form" name="jssupportticketform" id="jssupportticketform" method="post" action="<?php echo admin_url("admin.php?page=priority_priorities&task=priority_priorities"); ?>">
-	<?php echo formfield::text('title',jssupportticket::$_data['prioritytitle'],array('class'=>'inputbox','placeholder'=>__('TITLE','js-support-ticket'))); ?>
-	<?php echo formfield::submitbutton(__('GO','js-support-ticket'),__('GO','js-support-ticket'),array('class'=>'button')); ?>
-	<?php echo formfield::button(__('RESET','js-support-ticket'),__('RESET','js-support-ticket'),array('class'=>'button','onclick'=>'resetFrom();')); ?>
+<?php JSSTmessage::getMessage(); ?>
+<span class="js-admin-title"><?php echo __('Priorities', 'js-support-ticket'); ?></span>
+<form class="js-filter-form" name="jssupportticketform" id="jssupportticketform" method="post" action="<?php echo admin_url("admin.php?page=priority&layout=priorities"); ?>">
+    <?php echo JSSTformfield::text('title', jssupportticket::$_data['filter']['title'], array('placeholder' => __('Title', 'js-support-ticket'))); ?>
+    <?php echo JSSTformfield::hidden('JSST_form_search', 'JSST_SEARCH'); ?>
+    <?php echo JSSTformfield::submitbutton('go', __('Search', 'js-support-ticket'), array('class' => 'button')); ?>
+    <?php echo JSSTformfield::button(__('Reset', 'js-support-ticket'), __('Reset', 'js-support-ticket'), array('class' => 'button', 'onclick' => 'resetFrom();')); ?>
 </form>
-<a class="js-add-link button" href="?page=priority_priorities&task=priority_addpriority"><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/add_icon.png" /><?php echo __('ADD_PRIORITY','js-support-ticket'); ?></a>
+<a class="js-add-link button" href="?page=priority&layout=addpriority"><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/add_icon.png" /><?php echo __('Add Priority', 'js-support-ticket'); ?></a>
+
 <?php
-  	if(!empty(jssupportticket::$_data[0])){ ?>
-			<table id="js-support-ticket-table">
-  				<tr>
-			    	<th class="left"><?php echo __('TITLE','js-support-ticket'); ?></th>
-			        <th><?php echo __('PUBLIC','js-support-ticket'); ?></th>
-			        <th><?php echo __('DEFAULT','js-support-ticket'); ?></th>
-			        <th><?php echo __('COLOR','js-support-ticket'); ?></th>
-			    	<th><?php echo __('ACTION','js-support-ticket'); ?></th>
-  				</tr>
-<?php
-		foreach(jssupportticket::$_data[0] AS $priority){	
-			$isdefault = ($priority->isdefault == 1) ? 'yes.png': 'no.png';
-			$ispublic = ($priority->ispublic == 1) ? 'yes.png': 'no.png';
+foreach (jssupportticket::$_data[0] AS $faq) {
+    $status = ($faq->status == 1) ? 'yes.png' : 'no.png';
+    ?>			
+
+    <?php }
 ?>
-			    <tr>
-					<td class="left"><a href="?page=priority_priorities&task=priority_addpriority&jssupportticket_priorityid=<?php echo $priority->id; ?>"><?php echo $priority->priority; ?></a></td>
-			    	<td><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/<?php echo $ispublic; ?>" /></td>
-			    	<td><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/<?php echo $isdefault; ?>" /></td>
-			    	<td style="background:<?php echo $priority->prioritycolour; ?>;color:#ffffff;"><?php echo $priority->prioritycolour; ?></td>
-			     	<td>
-				     	<a href="?page=priority_priorities&task=priority_addpriority&jssupportticket_priorityid=<?php echo $priority->id; ?>" alt=""><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/edit.png" /></a>&nbsp;&nbsp;
-				     	<a href="?page=priority_priorities&task=priority_deletepriority&action=deleteitem&priorityid=<?php echo $priority->id; ?>"><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/remove.png" /></a>
-			     	</td>
-				</tr>
-<?php				
-		}
-?>		
-			</table>
-<?php			
-		if ( jssupportticket::$_data[1] ) {
-		    echo '<div class="tablenav"><div class="tablenav-pages" style="margin: 1em 0">' . jssupportticket::$_data[1] . '</div></div>';
-		}
-	}else{ ?>
-        <div class="js_job_error_messages_wrapper">
-            <div class="js_job_messages_image_wrapper">
-                <img class="js_job_messages_image" src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/errors/2.png"/>
-            </div>
-            <div class="js_job_messages_data_wrapper">
-                <span class="js_job_messages_main_text">
-                    <?php echo __('NO_RECORED_FOUND','js-support-ticket'); ?>
-                </span>
-                <span class="js_job_messages_block_text">
-                    <?php echo __('NO_RECORED_FOUNT_TO_VIEW','js-support-ticket'); ?>
-                </span>
-            </div>
+<?php if (!empty(jssupportticket::$_data[0])) { ?>
+    <div class="js-filter-form-list">
+        <div class="js-filter-form-head js-filter-form-head-xs">
+            <div class="js-col-md-4 js-col-xs-12 first"><?php echo __('Title', 'js-support-ticket'); ?></div>
+            <div class="js-col-md-1 js-col-xs-12 second js-textaligncenter"><?php echo __('Public', 'js-support-ticket'); ?></div>
+            <div class="js-col-md-1 js-col-xs-12 third js-textaligncenter"><?php echo __('Default', 'js-support-ticket'); ?></div>
+            <div class="js-col-md-1 js-col-xs-12 fourth js-textaligncenter"><?php echo __('Order', 'js-support-ticket'); ?></div>
+            <div class="js-col-md-2 js-col-xs-12 fifth"><?php echo __('Color', 'js-support-ticket'); ?></div>
+            <div class="js-col-md-3 js-col-xs-12 sixth"><?php echo __('Action', 'js-support-ticket'); ?></div>
         </div>
-<?php		
-	}	
+
+        <?php
+        $number = 0;
+        $count = COUNT(jssupportticket::$_data[0]) - 1; //For zero base indexing
+        $pagenum = JSSTrequest::getVar('pagenum', 'get', 1);
+        $islastordershow = JSSTpagination::isLastOrdering(jssupportticket::$_data['total'], $pagenum);
+        foreach (jssupportticket::$_data[0] AS $priority) {
+            $isdefault = ($priority->isdefault == 1) ? 'yes.png' : 'no.png';
+            $ispublic = ($priority->ispublic == 1) ? 'yes.png' : 'no.png';
+            ?>				
+
+            <div class="js-filter-form-data">
+                <div class="js-col-md-4 js-col-xs-12 first"><span class="js-filter-form-data-xs"><?php echo __('Title', 'js-support-ticket');
+        echo " : "; ?></span><a href="?page=priority&layout=addpriority&jssupportticketid=<?php echo $priority->id; ?>"><?php echo __($priority->priority, 'js-support-ticket'); ?></a></div>
+                <div class="js-col-md-1 js-col-xs-12 second js-textaligncenter"><span class="js-filter-form-data-xs"><?php echo __('Public', 'js-support-ticket');
+        echo " : "; ?></span> <img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/<?php echo $ispublic; ?>" /></div>
+                <div class="js-col-md-1 js-col-xs-12 third js-textaligncenter"><span class="js-filter-form-data-xs"><?php echo __('Default', 'js-support-ticket');
+        echo " : "; ?></span> <a href="?page=priority&task=makedefault&action=jstask&priorityid=<?php echo $priority->id;
+        echo ($pagenum > 1) ? '&pagenum=' . $pagenum : ''; ?>" ><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/<?php echo $isdefault; ?>" /></a></div>
+
+                <div class="js-col-md-1 js-col-xs-12 fourth js-textaligncenter">
+                    <span class="js-filter-form-data-xs"><?php echo __('Order Level', 'js-support-ticket');
+            echo " : "; ?></span>
+                    <?php if ($number != 0 || $pagenum > 1) { ?>
+                        <a href="?page=priority&task=ordering&action=jstask&order=up&priorityid=<?php echo $priority->id;
+            echo ($pagenum > 1) ? '&pagenum=' . $pagenum : ''; ?>" ><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/uparrow.png" /></a>
+                    <?php
+                    }
+                    echo $priority->ordering;
+                    if ($number < $count) {
+                        ?>
+                        <a href="?page=priority&task=ordering&action=jstask&order=down&priorityid=<?php echo $priority->id;
+                        echo ($pagenum > 1) ? '&pagenum=' . $pagenum : ''; ?>" ><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/downarrow.png" /></a>
+        <?php } elseif ($islastordershow) { ?>
+                        <a href="?page=priority&task=ordering&action=jstask&order=down&priorityid=<?php echo $priority->id;
+            echo ($pagenum > 1) ? '&pagenum=' . $pagenum : ''; ?>" ><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/downarrow.png" /></a> <!-- last record on the page -->
+            <?php } ?>
+                </div>
+
+                <div class="js-col-md-2 js-col-xs-12 fifth js-textaligncenter js-nullpadding"><span class="js-filter-form-data-xs"><?php echo __('Color', 'js-support-ticket');
+        echo " : "; ?></span> <div class="js-ticket-admin-prirrity-color" style="background:<?php echo $priority->prioritycolour; ?>;color:#ffffff;"> <?php echo $priority->prioritycolour; ?></div></div>
+                <div class="js-col-md-3 js-col-xs-12 sixth js-filter-form-action-hl-xs">
+                    <a href="?page=priority&layout=addpriority&jssupportticketid=<?php echo $priority->id; ?>" alt=""><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/edit.png" /></a>&nbsp;&nbsp;
+                    <a onclick="return confirm('<?php echo __('Are you sure to delete', 'js-support-ticket'); ?>');" href="?page=priority&task=deletepriority&action=jstask&priorityid=<?php echo $priority->id; ?>"><img src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/remove.png" /></a>
+                </div>
+            </div>
+        <?php
+        $number++;
+    }
+    ?>		</div>
+    <?php
+    if (jssupportticket::$_data[1]) {
+        echo '<div class="tablenav"><div class="tablenav-pages" style="margin: 1em 0">' . jssupportticket::$_data[1] . '</div></div>';
+    }
+} else {
+    JSSTlayout::getNoRecordFound();
+}
 ?>

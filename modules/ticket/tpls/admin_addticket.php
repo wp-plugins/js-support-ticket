@@ -1,217 +1,323 @@
 <?php
-if( get_current_user_id() != 0 ){
-	wp_enqueue_script('jquery-ui-datepicker');
-	wp_enqueue_script('file_validate.js',jssupportticket::$_pluginpath.'includes/js/file_validate.js');
-	wp_enqueue_style('jquery-ui-css', jssupportticket::$_pluginpath.'includes/css/jquery-ui.css');
-	wp_enqueue_script('formvalidate.js',jssupportticket::$_pluginpath.'includes/js/jquery.form-validator.js');
+wp_enqueue_script('jquery-ui-datepicker');
+wp_enqueue_script('file_validate.js', jssupportticket::$_pluginpath . 'includes/js/file_validate.js');
+wp_enqueue_style('jquery-ui-css', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+wp_enqueue_script('formvalidate.js', jssupportticket::$_pluginpath . 'includes/js/jquery.form-validator.js');
 ?>
 <script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$('.custom_date').datepicker({
-			dateFormat : 'yy-mm-dd'
-		});
-	    jQuery("#tk_attachment_add").click(function(){
-	        var obj=this;
-	        var current_files=jQuery('input[type="file"]').length;
-	        var total_allow=<?php echo jssupportticket::$_config['no_of_attachement']; ?>;
-	        var append_text="<span class='tk_attachment_value_text'><input name='filename[]' type='file' onchange=\"uploadfile(this,'<?php echo jssupportticket::$_config['file_maximum_size']; ?>','<?php echo jssupportticket::$_config['file_extension']; ?>');\" size='20' maxlenght='30'  /><span  class='tk_attachment_remove'></span></span>";
-	        if(current_files < total_allow ){
-	            jQuery(".tk_attachment_value_wrapperform").append(append_text);
-	        }else if((current_files === total_allow) || (current_files > total_allow)){
-	            alert('<?php echo __('FILE_UPLOAD_LIMIT_EXCEED','js-support-ticket'); ?>');
-	            obj.hide();
-	        }
-	    });
-	    jQuery( document ).delegate( ".tk_attachment_remove", "click", function( e ) {
-	        jQuery(this).parent().remove();
-	        var current_files=jQuery('input[type="file"]').length;
-	        var total_allow=<?php echo jssupportticket::$_config['no_of_attachement']; ?>;
-	        if(current_files < total_allow ){
-	            jQuery("#tk_attachment_add").show();
-	        }
-	    });
-	    $.validate();
-	});
-</script>
-<span style="display:none" id="filesize"><?php echo __('ERROR_FILE_SIZE_TO_LARGE','js-support-ticket');?></span>
-<span style="display:none" id="fileext"><?php echo __('ERROR_FILE_EXT_MISMATCH','js-support-ticket');?></span>
+    jQuery(document).ready(function () {
+        jQuery("a#userpopup").click(function (e) {
+            e.preventDefault();
+            jQuery("div#userpopupblack").show();
+            jQuery("div#userpopup").slideDown('slow');
+        });
+        setUserLink();
+        function setUserLink() {
+            jQuery("a.js-userpopup-link").each(function () {
+                var anchor = jQuery(this);
+                jQuery(anchor).click(function (e) {
+                    var id = jQuery(this).attr('data-id');
+                    var name = jQuery(this).html();
+                    var email = jQuery(this).attr('data-email');
+                    var displayname = jQuery(this).attr('data-name');
+                    jQuery("input#username-text").val(name);
+                    if(jQuery('input#name').val() == ''){
+                        jQuery('input#name').val(displayname);
+                    }
+                    if(jQuery('input#email').val().length <= 1){                        
+                        jQuery('input#email').val(email);
+                    }
+                    jQuery("input#uid").val(id);
+                    jQuery("div#userpopup").slideUp('slow', function () {
+                        jQuery("div#userpopupblack").hide();
+                    });
+                });
+            });
+        }
+        jQuery("form#userpopupsearch").submit(function (e) {
+            e.preventDefault();
+            var name = jQuery("input#searchname").val();
+            var emailaddress = jQuery("input#searchemailaddress").val();
+            jQuery.post(ajaxurl, {action: 'jsticket_ajax', name: name, emailaddress: emailaddress, module: 'jssupportticket', task: 'getusersearchajax'}, function (data) {
+                if (data) {
+                    jQuery("div#records-inner").html(data);
+                    setUserLink();
+                }
+            });//jquery closed
+        });
+        jQuery("span.close, div#userpopupblack").click(function (e) {
+            jQuery("div#userpopup").slideUp('slow', function () {
+                jQuery("div#userpopupblack").hide();
+            });
 
-<span class="js-admin-title"><?php echo __('ADD_NEW_TICKET','js-support-ticket'); ?></span>
-<form method="post" action="<?php echo admin_url("?page=ticket_tickets&task=ticket_saveticket&action=admin_saveticket"); ?>" id="adminTicketform" enctype="multipart/form-data">
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('EMAIL','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::text('email',isset(jssupportticket::$_data[0]->email) ? jssupportticket::$_data[0]->email : '',array('class'=>'inputbox','data-validation'=>'email')) ?></div>
-	</div>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('FULL_NAME','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::text('name',isset(jssupportticket::$_data[0]->name) ? jssupportticket::$_data[0]->name : '',array('class'=>'inputbox','data-validation'=>'required')) ?></div>
-	</div>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('PHONE_NOE','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::text('phone',isset(jssupportticket::$_data[0]->phone) ? jssupportticket::$_data[0]->phone : '',array('class'=>'inputbox')) ?></div>
-	</div>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('PHONE_EXT','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::text('phoneext',isset(jssupportticket::$_data[0]->phoneext) ? jssupportticket::$_data[0]->phoneext : '',array('class'=>'inputbox')) ?></div>
-	</div>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('DEPARTMENT','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::select('departmentid',includer::getJSModel('department')->getDepartmentForCombobox(),isset(jssupportticket::$_data[0]->departmentid) ? jssupportticket::$_data[0]->departmentid : '',__('SELECT_DEPARTMENT','js-support-ticket'),array('class'=>'inputbox'));?></div>
-	</div>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('PRIORITY','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::select('priorityid',includer::getJSModel('priority')->getPriorityForCombobox(),isset(jssupportticket::$_data[0]->priorityid) ? jssupportticket::$_data[0]->priorityid : includer::getJSModel('priority')->getDefaultPriorityId(),__('SELECT_PRIORITY','js-support-ticket'),array('class'=>'inputbox'));?></div>
-	</div>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('SUBJECT','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::text('subject',isset(jssupportticket::$_data[0]->subject) ? jssupportticket::$_data[0]->subject : '',array('class'=>'inputbox','data-validation'=>'required')) ?></div>
-	</div>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('ISSUE_SUMMARY','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo wp_editor(isset(jssupportticket::$_data[0]->message) ? jssupportticket::$_data[0]->message : '','message',array( 'media_buttons' => false ));?></div>
-	</div>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('ATTACHMENTS','js-support-ticket'); ?></div>
-		<div class="js-form-field">
-	        <div class="tk_attachment_value_wrapperform">
-	            <span class="tk_attachment_value_text">
-	                <input type="file" class="inputbox" name="filename[]" onchange="uploadfile(this,'<?php echo jssupportticket::$_config['file_maximum_size']; ?>','<?php echo jssupportticket::$_config['file_extension']; ?>');" size="20" maxlenght='30'/>
-	                <span class='tk_attachment_remove'></span>
-	            </span>
-	        </div>
-	        <span class="tk_attachments_configform">
-	            <small><?php echo __('MAXIMUM_FILE_SIZE','js-support-ticket'); echo ' ('.jssupportticket::$_config['file_maximum_size']; ?>KB)<br><?php echo __('FILE_EXTENSION_TYPE','js-support-ticket'); echo ' ('.jssupportticket::$_config['file_extension'].')'; ?></small>
-	        </span>
-	        <span id="tk_attachment_add" class="tk_attachments_addform"><?php echo __('ADD_MORE_FILE','js-support-ticket'); ?></span>
-        	<?php 
-        		if(!empty(jssupportticket::$_data[5])){
-        			foreach(jssupportticket::$_data[5] AS $attachment){
-        				echo '
-        					<div class="js_ticketattachment">
-        						'.$attachment->filename.' ( '.$attachment->filesize.' ) '.'
-        						<a href="?page=attachment_attachments&task=attachment_deleteattachment&action=deleteitem&id='.$attachment->id.'&ticketid='.jssupportticket::$_data[0]->id.'">'._('DELETE_ATTACHMENT').'</a>
-        					</div>';
-        			}
-        		}
-        	?>
-		</div>
-	</div>
-	<?php /*
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('DUE_DATE','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::text('duedate',jssupportticket::$_data[0]->duedate,array('class'=>'custom_date')); ?></div>
-	</div>
-	*/ ?>
-	<div class="js-form-wrapper">
-		<div class="js-form-title"><?php echo __('STATUS','js-support-ticket'); ?></div>
-		<div class="js-form-field"><?php echo formfield::radiobutton('status',array('0'=>__('ACTIVE','js-support-ticket'),'4'=>__('DISABLED','js-support-ticket')),isset(jssupportticket::$_data[0]->status) ? jssupportticket::$_data[0]->status : 0,array('class'=>'radiobutton'));?></div>
-	</div>
-<?php
-$i = 0;
- foreach( jssupportticket::$_data[3] as $ufield){ 
-			$userfield = $ufield[0];
-            $i++;
-            echo '<div class="js-form-wrapper">
-            		<div class="js-form-title">';
-            			$required = 0;
-			            if($userfield->required == 1){
-			            	$required = 1;
-		                    echo '<label id="'.$userfield->name.'"msg for="'.$userfield->name.'">'.$userfield->title.'</label>:&nbsp;<font color="red">*</font>';
-		                    if($userfield->type == 'emailaddress') $cssclass = 'class ="inputbox required validate-email"';
-		                    else $cssclass = 'class="inputbox required"';
-			            }else{
-		                    echo $userfield->title.":&nbsp;";
-		                    if($userfield->type == 'emailaddress') $cssclass = 'class="inputbox validate-email"';
-		                    else  $cssclass = 'class="inputbox"';
-			            }
-            echo '	</div>
-            		<div class="js-form-field">';
-	                    $readonly = $userfield->readonly ? ' readonly="readonly"' : '';
-	                    $maxlength = $userfield->maxlength ? 'maxlength="'.$userfield->maxlength.'"' : '';
-	                    if(isset($ufield[1])){ $fvalue = $ufield[1]->data; $userdataid = $ufield[1]->id;}  else {$fvalue=""; $userdataid = ""; }
-	                    echo '<input type="hidden" id="userfields_'.$i.'_id" name="userfields_'.$i.'_id"  value="'.$userfield->id.'"  />';
-	                    echo '<input type="hidden" id="userdata_'.$i.'_id" name="userdata_'.$i.'_id"  value="'.$userdataid.'"  />';
-	                    switch( $userfield->type ) {
-	                        case 'text':
-	                        	if($required == 1)
-	                        		$fieldrequired = 'data-validation="required"';
-	                        	else
-	                        		$fieldrequired = '';
-                                echo '<input type="text" id="userfields_'.$i.'" '.$fieldrequired.' name="userfields_'.$i.'" size="'.$userfield->size.'" value="'. $fvalue .'" '.$cssclass .$maxlength . $readonly . ' />';
-                            break;
-	                        case 'emailaddress':
-                                echo '<input type="text" data-validation="email" id="userfields_'.$i.'" name="userfields_'.$i.'" size="'.$userfield->size.'" value="'. $fvalue .'" '.$cssclass .$maxlength . $readonly . ' />';
-                            break;
-	                        case 'date':
-                                $userfieldid = 'userfields_'.$i;
-                                $userfieldid = "'".$userfieldid."'";
-                                if($required == 1)
-                                	echo formfield::text('userfields_'.$i,$fvalue,array('class'=>'custom_date','data-validation'=>'date'));
-                            	else
-                                	echo formfield::text('userfields_'.$i,$fvalue,array('class'=>'custom_date'));
-                            break;
-	                        case 'textarea':
-	                        	if($required == 1)
-	                        		$fieldrequired = 'data-validation="required"';
-                                echo '<textarea name="userfields_'.$i.'" '.$fieldrequired.' id="userfields_'.$i.'_field" cols="'.$userfield->cols.'" rows="'.$userfield->rows.'" '.$readonly.'>'.$fvalue.'</textarea>';
-                            break;
-	                        case 'checkbox':
-	                        	if($required == 1)
-	                        		$fieldrequired = 'data-validation="required"';
-                                echo '<input type="checkbox" '.$fieldrequired.' name="userfields_'.$i.'" id="userfields_'.$i.'_field" value="1" '.  'checked="checked"' .'/>';
-                            break;
-	                        case 'select':
-	                        	if($required == 1)
-	                        		$fieldrequired = 'data-validation="required"';
-                                $htm = '<select name="userfields_'.$i.'" '.$fieldrequired.' id="userfields_'.$i.'" >';
-                                if (isset ($ufield[2])){
-                                        foreach($ufield[2] as $opt){
-                                                if ($opt->id == $fvalue)
-                                                        $htm .= '<option value="'.$opt->id.'" selected="yes">'. $opt->fieldtitle .' </option>';
-                                                else
-                                                        $htm .= '<option value="'.$opt->id.'">'. $opt->fieldtitle .' </option>';
-                                        }
-                                }
-                                $htm .= '</select>';
-                                echo $htm;
-                            break;
-                        }
-            echo '	</div>
-            	</div>';
-}
-        echo '<input type="hidden" id="userfields_total" name="userfields_total"  value="'.$i.'"  />';
-      ?>
-	<?php echo formfield::hidden('id',isset(jssupportticket::$_data[0]->id) ? jssupportticket::$_data[0]->id : ''); ?>
-	<?php echo formfield::hidden('ticketid',isset(jssupportticket::$_data[0]->ticketid) ? jssupportticket::$_data[0]->ticketid : ''); ?>
-	<?php echo formfield::hidden('created',isset(jssupportticket::$_data[0]->created) ? jssupportticket::$_data[0]->created : ''); ?>
-	<?php echo formfield::hidden('lastreply',isset(jssupportticket::$_data[0]->lastreply) ? jssupportticket::$_data[0]->lastreply : ''); ?>
-	<?php 
-		if(isset(jssupportticket::$_data[0]->uid)) $uid = jssupportticket::$_data[0]->uid;
-		else $uid = get_current_user_id();
-		echo formfield::hidden('uid', $uid ); 
-	?>
-	<?php echo formfield::hidden('updated',isset(jssupportticket::$_data[0]->updated) ? jssupportticket::$_data[0]->updated : ''); ?>
-	<?php echo formfield::hidden('action','ticket_saveticket'); ?>
-	<?php echo formfield::hidden('form_request','jssupportticket'); ?>
-	<div class="js-form-button">
-		<?php echo formfield::submitbutton('save',__('SAVE_TICKET','js-support-ticket'),array('class'=>'button')); ?>
-	</div>
-</form>
-		
-<?php }else{ ?>
-        <div class="js_job_error_messages_wrapper">
-            <div class="js_job_messages_image_wrapper">
-                <img class="js_job_messages_image" src="<?php echo jssupportticket::$_pluginpath; ?>includes/images/errors/1.png"/>
+        });
+    });
+    // to get premade and append to isssue summery
+    function getpremade(val) {
+        jQuery.post(ajaxurl, {action: 'jsticket_ajax', val: val, module: 'premademessage', task: 'getpremadeajax'}, function (data) {
+            if (data) {
+                var append = jQuery('input#append1:checked').length;
+                if (append == 1) {
+                    var content = tinyMCE.get('message').getContent();
+                    content = content + data;
+                    tinyMCE.get('message').execCommand('mceSetContent', false, content);
+                }
+                else {
+                    tinyMCE.get('message').execCommand('mceSetContent', false, data);
+                }
+            }
+        });//jquery closed
+    }
+    // to get premade and append to isssue summery
+    function getHelpTopicByDepartment(val) {
+        jQuery.post(ajaxurl, {action: 'jsticket_ajax', val: val, module: 'department', task: 'getHelpTopicByDepartment'}, function (data) {
+            if (data) {
+                jQuery("div#helptopic").html(data);
+            }
+        });//jquery closed
+    }
+
+    function getPremadeByDepartment(val) {
+        jQuery.post(ajaxurl, {action: 'jsticket_ajax', val: val, module: 'department', task: 'getPremadeByDepartment'}, function (data) {
+            if (data) {
+                jQuery("span#premade").html(data);
+            }
+        });//jquery closed
+    }
+
+    jQuery(document).ready(function ($) {
+        $('.custom_date').datepicker({dateFormat: 'yy-mm-dd'});
+        jQuery("#tk_attachment_add").click(function () {
+            var obj = this;
+            var current_files = jQuery('input[type="file"]').length;
+            var total_allow =<?php echo jssupportticket::$_config['no_of_attachement']; ?>;
+            var append_text = "<span class='tk_attachment_value_text'><input name='filename[]' type='file' onchange=\"uploadfile(this,'<?php echo jssupportticket::$_config['file_maximum_size']; ?>','<?php echo jssupportticket::$_config['file_extension']; ?>');\" size='20' maxlenght='30'  /><span  class='tk_attachment_remove'></span></span>";
+
+            if (current_files < total_allow) {
+                jQuery(".tk_attachment_value_wrapperform").append(append_text);
+            } else if ((current_files === total_allow) || (current_files > total_allow)) {
+                alert('<?php echo __('File upload limit exceed', 'js-support-ticket'); ?>');
+                obj.hide();
+            }
+        });
+
+        jQuery(document).delegate(".tk_attachment_remove", "click", function (e) {
+            jQuery(this).parent().remove();
+            var current_files = jQuery('input[type="file"]').length;
+            var total_allow =<?php echo jssupportticket::$_config['no_of_attachement']; ?>;
+            if (current_files < total_allow) {
+                jQuery("#tk_attachment_add").show();
+            }
+        });
+        $.validate();
+    });
+</script>
+<span style="display:none" id="filesize"><?php echo __('Error file size to large', 'js-support-ticket'); ?></span>
+<span style="display:none" id="fileext"><?php echo __('Error file ext mismatch', 'js-support-ticket'); ?></span>
+<span class="js-admin-title"><?php echo __('Add Ticket', 'js-support-ticket'); ?></span>
+<div id="userpopupblack" style="display:none;"></div>
+<div id="userpopup" style="display:none;">
+    <div class="js-row">
+        <form id="userpopupsearch">
+            <div class="search-center">
+                <div class="search-center-heading"><?php echo __('Select User', 'js-support-ticket'); ?></div>
+                <div class="js-search-xs-hide js-col-xs-12 js-col-md-2"><?php echo __('Search', 'js-support-ticket'); ?></div>
+                <div class="js-col-xs-12 js-col-md-4"><?php echo JSSTformfield::text('searchname', '', array('placeholder' => __('Username', 'js-support-ticket'))); ?> </div>
+                <div class="js-col-xs-12 js-col-md-4"><?php echo JSSTformfield::text('searchemailaddress', '', array('placeholder' => __('Email Address', 'js-support-ticket'))); ?></div>
+                <div class="js-col-xs-12 js-col-md-2"><?php echo JSSTformfield::submitbutton('submit', __('Search', 'js-support-ticket'), array('class' => 'js-searchbtn')); ?><span class="close"></span></div>
             </div>
-            <div class="js_job_messages_data_wrapper">
-                <span class="js_job_messages_main_text">
-                    <?php echo __('NOT_LOGIN','js-support-ticket'); ?>
-                </span>
-                <span class="js_job_messages_block_text">
-                    <?php echo __('YOU_ARE_NOT_ALLOWED_TO_VIEW','js-support-ticket'); ?>
-                </span>
+        </form>
+    </div>
+    <div id="records" class="js-">
+        <div class="js-col-md-2 js-title"><?php echo __('User ID', 'js-support-ticket'); ?></div>
+        <div class="js-col-md-3 js-title"><?php echo __('Username', 'js-support-ticket'); ?></div>
+        <div class="js-col-md-4 js-title"><?php echo __('Email Address', 'js-support-ticket'); ?></div>
+        <div class="js-col-md-3 js-title"><?php echo __('Display Name', 'js-support-ticket'); ?></div>
+        <div id="records-inner">
+        <?php
+        $users = JSSTincluder::getJSModel('jssupportticket')->getUserListForRegistration();
+        foreach ($users AS $user) {
+            ?>
+            <div class="user-records-wrapper js-value" style="display:inline-block;width:100%;">
+                <div class="js-col-xs-12 js-col-md-2"><span class="js-user-title-xs"><?php echo __('User ID', 'js-support-ticket'); ?> :</span> <?php echo $user->userid; ?></div>
+                <div class="js-col-xs-12 js-col-md-3">
+                    <span class="js-user-title-xs"><?php echo __('Username', 'js-support-ticket'); ?> :</span>
+                    <a href="#" class="js-userpopup-link" data-id="<?php echo $user->userid; ?>" data-email="<?php echo $user->useremail; ?>" data-name="<?php echo $user->userdisplayname; ?>"><?php echo $user->username; ?></a>
+                </div>
+                <div class="js-col-xs-12 js-col-md-4"><span class="js-user-title-xs"><?php echo __('Email Address', 'js-support-ticket'); ?> :</span> <?php echo $user->useremail; ?></div>
+                <div class="js-col-xs-12 js-col-md-3"><span class="js-user-title-xs"><?php echo __('Display Name', 'js-support-ticket'); ?> :</span> <?php echo $user->userdisplayname; ?></div>
             </div>
+            <?php }
+        ?>
         </div>
+    </div>          
+</div>
+
+<form method="post" action="<?php echo admin_url("admin.php?page=ticket&task=saveticket"); ?>" id="adminTicketform" enctype="multipart/form-data">
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Username', 'js-support-ticket'); ?></div>
+        <div class="js-form-value">
+            <?php if (isset(jssupportticket::$_data[0]->uid)) { ?>
+                <div id="username-div"><input type="text" value="<?php echo jssupportticket::$_data[0]->firstname . ' ' . jssupportticket::$_data[0]->lastname; ?>" id="username-text" readonly="readonly" data-validation="required"/></div>
+                <?php } else {
+                ?>
+                <div id="username-div"></div><input type="text" value="" id="username-text" readonly="readonly" data-validation="required"/><a href="#" id="userpopup"><?php echo __('Select User', 'js-support-ticket'); ?></a>
+                <?php
+            }
+            ?>              
+        </div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Email', 'js-support-ticket'); ?>&nbsp;<font color="red">*</font></div>
+        <div class="js-form-field"><?php echo JSSTformfield::text('email', isset(jssupportticket::$_data[0]->email) ? jssupportticket::$_data[0]->email : ' ', array('class' => 'inputbox', 'data-validation' => 'email')) ?></div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Full Name', 'js-support-ticket'); ?>&nbsp;<font color="red">*</font></div>
+        <div class="js-form-field"><?php echo JSSTformfield::text('name', isset(jssupportticket::$_data[0]->name) ? jssupportticket::$_data[0]->name : '', array('class' => 'inputbox', 'data-validation' => 'required')) ?></div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Phone No', 'js-support-ticket'); ?></div>
+        <div class="js-form-field"><?php echo JSSTformfield::text('phone', isset(jssupportticket::$_data[0]->phone) ? jssupportticket::$_data[0]->phone : '', array('class' => 'inputbox')) ?></div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Phone Ext', 'js-support-ticket'); ?></div>
+        <div class="js-form-field"><?php echo JSSTformfield::text('phoneext', isset(jssupportticket::$_data[0]->phoneext) ? jssupportticket::$_data[0]->phoneext : '', array('class' => 'inputbox')) ?></div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Department', 'js-support-ticket'); ?>&nbsp;<font color="red">*</font></div>
+        <div class="js-form-field"><?php echo JSSTformfield::select('departmentid', JSSTincluder::getJSModel('department')->getDepartmentForCombobox(), isset(jssupportticket::$_data[0]->departmentid) ? jssupportticket::$_data[0]->departmentid : '', __('Select Department', 'js-support-ticket'), array('class' => 'inputbox', 'onchange' => 'getPremadeByDepartment(this.value);getHelpTopicByDepartment(this.value);', 'data-validation' => 'required')); ?></div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Priority', 'js-support-ticket'); ?>&nbsp;<font color="red">*</font></div>
+        <div class="js-form-field"><?php echo JSSTformfield::select('priorityid', JSSTincluder::getJSModel('priority')->getPriorityForCombobox(), isset(jssupportticket::$_data[0]->priorityid) ? jssupportticket::$_data[0]->priorityid : JSSTincluder::getJSModel('priority')->getDefaultPriorityID(), __('Select Priority', 'js-support-ticket'), array('class' => 'inputbox', 'data-validation' => 'required')); ?></div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Subject', 'js-support-ticket'); ?>&nbsp;<font color="red">*</font></div>
+        <div class="js-form-field"><?php echo JSSTformfield::text('subject', isset(jssupportticket::$_data[0]->subject) ? jssupportticket::$_data[0]->subject : '', array('class' => 'inputbox', 'data-validation' => 'required')) ?></div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Issue Summary', 'js-support-ticket'); ?></div>
+        <div class="js-form-field"><?php echo wp_editor(isset(jssupportticket::$_data[0]->message) ? jssupportticket::$_data[0]->message : '', 'message', array('media_buttons' => false)); ?></div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Attachments', 'js-support-ticket'); ?></div>
+        <div class="js-form-field">
+            <div class="tk_attachment_value_wrapperform">
+                <span class="tk_attachment_value_text">
+                    <input type="file" class="inputbox" name="filename[]" onchange="uploadfile(this, '<?php echo jssupportticket::$_config['file_maximum_size']; ?>', '<?php echo jssupportticket::$_config['file_extension']; ?>');" size="20" maxlenght='30'/>
+                    <span class='tk_attachment_remove'></span>
+                </span>
+            </div>
+            <span class="tk_attachments_configform">
+                <small><?php echo __('Maximum File Size', 'js-support-ticket');
+            echo ' (' . jssupportticket::$_config['file_maximum_size']; ?>KB)<br><?php echo __('File Extension Type', 'js-support-ticket');
+            echo ' (' . jssupportticket::$_config['file_extension'] . ')'; ?></small>
+            </span>
+            <span id="tk_attachment_add" class="tk_attachments_addform"><?php echo __('Add More File', 'js-support-ticket'); ?></span>
+            <?php
+            if (!empty(jssupportticket::$_data[5])) {
+                foreach (jssupportticket::$_data[5] AS $attachment) {
+                    echo '
+		        					<div class="js_ticketattachment">
+		        						' . $attachment->filename . ' ( ' . $attachment->filesize . ' ) ' . '
+		        						<a href="?page=attachment&task=deleteattachment&action=jstask&id=' . $attachment->id . '&ticketid=' . jssupportticket::$_data[0]->id . '">' . __('Delete attachment','js-support-ticket') . '</a>
+		        					</div>';
+                }
+            }
+            ?>
+    </div>
+    </div>
+    <div class="js-form-wrapper">
+        <div class="js-form-title"><?php echo __('Status', 'js-support-ticket'); ?></div>
+				<div class="js-form-field"><?php echo JSSTformfield::select('status',array((Object)array('id'=> '1','text' =>__('Active','js-support-ticket')),(Object)array('id'=> '0', 'text' =>__('Disabled','js-support-ticket')),(Object)array('id' => '2', 'text' =>__('Waiting admin staff reply','js-support-ticket')),(Object)array('id'=>'4','text'=>__('Waiting customer reply','js-support-ticket')),(Object)array('id'=>'5','text'=>__('Close ticket','js-support-ticket'))),isset(jssupportticket::$_data[0]->status ) ? jssupportticket::$_data[0]->status : '1',__('Select Status','js-support-ticket'),array('class'=>'radiobutton'));?></div>
+    </div>
+    <?php
+    $i = null;
+    foreach (jssupportticket::$_data[3] as $ufield) {
+        $userfeild = $ufield[0];
+        $i++;
+        echo '<div class="js-form-wrapper">
+		            		<div class="js-form-title">';
+        if ($userfeild->required == 1) {
+            echo '<label id="' . $userfeild->name . '"msg for="' . $userfeild->name . '">' . $userfeild->title . '</label>:&nbsp;<font color="red">*</font>';
+            if ($userfeild->type == 'emailaddress')
+                $cssclass = 'class ="inputbox required validate-email"';
+            else
+                $cssclass = 'class="inputbox required"';
+        }else {
+            echo $userfeild->title . ":&nbsp;";
+            if ($userfeild->type == 'emailaddress')
+                $cssclass = 'class="inputbox validate-email"';
+            else
+                $cssclass = 'class="inputbox"';
+        }
+        echo '	</div>
+		            		<div class="js-form-field">';
+        $readonly = ($userfeild->readonly == 1) ? ' readonly="readonly"' : '';
+        $required = ($userfeild->required == 1) ? ' data-validation="required"' : '';
+        $maxlength = ($userfeild->maxlength > 0) ? 'maxlength="' . $userfeild->maxlength . '"' : '';
+        if (isset($ufield[1])) {
+            $fvalue = $ufield[1]->data;
+            $userdataid = $ufield[1]->id;
+        } else {
+            $fvalue = "";
+            $userdataid = "";
+        }
+        echo '<input type="hidden" id="userfeilds_' . $i . '_id" name="userfeilds_' . $i . '_id"  value="' . $userfeild->id . '"  />';
+        echo '<input type="hidden" id="userdata_' . $i . '_id" name="userdata_' . $i . '_id"  value="' . $userdataid . '"  />';
+        switch ($userfeild->type) {
+            case 'text':
+                echo '<input type="text" id="userfeilds_' . $i . '" name="userfeilds_' . $i . '" size="' . $userfeild->size . '" value="' . $fvalue . '" ' . $cssclass . $maxlength . $readonly . $required . ' />';
+                break;
+            case 'email':
+                echo '<input type="text" id="userfeilds_' . $i . '" name="userfeilds_' . $i . '" size="' . $userfeild->size . '" value="' . $fvalue . '" ' . $cssclass . $maxlength . $readonly . $required . ' data-validation="email" />';
+                break;
+            case 'date':
+                $userfeildid = 'userfeilds_' . $i;
+                $userfeildid = "'" . $userfeildid . "'";
+                echo JSSTformfield::text('userfeilds_' . $i, $fvalue, array('class' => 'custom_date'));
+                break;
+            case 'textarea':
+                echo '<textarea name="userfeilds_' . $i . '" id="userfeilds_' . $i . '_field" cols="' . $userfeild->cols . '" rows="' . $userfeild->rows . '" ' . $readonly . $required . '>' . $fvalue . '</textarea>';
+                break;
+            case 'checkbox':
+                echo '<input type="checkbox" name="userfeilds_' . $i . '" id="userfeilds_' . $i . '_field" value="1" ' . 'checked="checked"' . '/>';
+                break;
+            case 'select':
+                $htm = '<select name="userfeilds_' . $i . '" id="userfeilds_' . $i . '" ' . $required . ' >';
+                if (isset($ufield[2])) {
+                    foreach ($ufield[2] as $opt) {
+                        if ($opt->id == $fvalue)
+                            $htm .= '<option value="' . $opt->id . '" selected="yes">' . $opt->fieldtitle . ' </option>';
+                        else
+                            $htm .= '<option value="' . $opt->id . '">' . $opt->fieldtitle . ' </option>';
+                    }
+                }
+                $htm .= '</select>';
+                echo $htm;
+                break;
+        }
+        echo '	</div>
+		            	</div>';
+
+        echo '<input type="hidden" id="userfeilds_total" name="userfeilds_total"  value="' . $i . '"  />';
+    }
+    ?>
+    <?php echo JSSTformfield::hidden('id', isset(jssupportticket::$_data[0]->id) ? jssupportticket::$_data[0]->id : '') ?>
+        <?php echo JSSTformfield::hidden('ticketid', isset(jssupportticket::$_data[0]->ticketid) ? jssupportticket::$_data[0]->ticketid : ''); ?>
+        <?php echo JSSTformfield::hidden('created', isset(jssupportticket::$_data[0]->created) ? jssupportticket::$_data[0]->created : ''); ?>
+<?php echo JSSTformfield::hidden('lastreply', isset(jssupportticket::$_data[0]->lastreply) ? jssupportticket::$_data[0]->lastreply : ''); ?>
 <?php
-}
+if (isset(jssupportticket::$_data[0]->uid))
+    $uid = jssupportticket::$_data[0]->uid;
+else
+    $uid = get_current_user_id();
+echo JSSTformfield::hidden('uid', $uid);
 ?>
+<?php echo JSSTformfield::hidden('updated', isset(jssupportticket::$_data[0]->updated) ? jssupportticket::$_data[0]->updated : '' ); ?>
+<?php echo JSSTformfield::hidden('action', 'ticket_saveticket'); ?>
+<?php echo JSSTformfield::hidden('form_request', 'jssupportticket'); ?>
+    <div class="js-form-button">
+<?php echo JSSTformfield::submitbutton('save', __('Save Ticket', 'js-support-ticket'), array('class' => 'button')); ?>
+    </div>
+</form>	

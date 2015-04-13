@@ -1,43 +1,44 @@
 <?php
-if(!defined('ABSPATH')) die('Restricted Access');
 
-class controlpanelController{
-	
-	function __construct(){
-		self::handleRequest();
-	}
-	
-	function handleRequest(){
-		$task = request::getVar('task',null,'jssupportticket_controlpanel');
-		if(self::canaddfile()){
-			$array = explode('_',$task);
-			if(is_admin()){
-				$action = request::getVar('action');
-				$action_array = explode("_",$action);
-				if($action_array[0] == 'admin'){
-					controlpanelController::$action_array[1]();
-				}else{
-					$array[1] = 'admin_'.$array[1];
+if (!defined('ABSPATH'))
+    die('Restricted Access');
 
-				}				
-			}
-			switch($array[1]){
-				case 'admin_controlpanel':
-					includer::getJSModel('jssupportticket')->getControlPanelData();
-				break;
-			}
-			includer::include_file($array[1],$array[0]);
-		}
-	}
-	function canaddfile(){
-		if(isset($_POST['form_request']) && $_POST['form_request'] == 'jssupportticket')
-			return false;
-		elseif(isset($_GET['action']) && $_GET['action'] == 'deleteitem')
-			return false;
-		else
-			return true;
-	}
+class JSSTjssupportticketController {
+
+    function __construct() {
+        self::handleRequest();
+    }
+
+    function handleRequest() {
+        $layout = JSSTrequest::getLayout('layout', null, 'controlpanel');
+        if (self::canaddfile()) {
+            switch ($layout) {
+                case 'admin_controlpanel':
+                    include_once jssupportticket::$_path.'includes/updates/updates.php';
+                    JSSTupdates::checkUpdates();
+                    JSSTincluder::getJSModel('jssupportticket')->getControlPanelData();
+                    break;
+                case 'controlpanel':
+                    JSSTincluder::getJSModel('jssupportticket')->getControlPanelData();
+                    break;
+            }
+            $module = (is_admin()) ? 'page' : 'module';
+            $module = JSSTrequest::getVar($module, null, 'jssupportticket');
+            JSSTincluder::include_file($layout, $module);
+        }
+    }
+
+    function canaddfile() {
+        if (isset($_POST['form_request']) && $_POST['form_request'] == 'jssupportticket')
+            return false;
+        elseif (isset($_GET['action']) && $_GET['action'] == 'jstask')
+            return false;
+        else
+            return true;
+    }
+
+
 }
 
-$controlpanelController = new controlpanelController();
+$controlpanelController = new JSSTjssupportticketController();
 ?>

@@ -1,23 +1,24 @@
 === JS Support Ticket ===
-Contributors: JoomSky.com
+Contributors: rabilal
 Donate link: http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-pro-wp
-Tags: support ticket,support, ticket,helpdesk, help, desk, ticketing system, moniter desk
+Tags: support ticket,support, ticket,helpdesk, help, desk, ticketing system, ticket system, monitor desk
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 JS Support Ticket is a powerful and easy to use support system that helps you to provide support system elegantly.
 
 == Description ==
-JS Support Ticket is a trusted open source ticket system. JS Support ticket is a simple, easy to use, web-based customer support system. User can create ticket from front-end. JS support ticket comes packed with lot features than most of the expensive(and complex) support ticket system on market. The best part is, It completely free.  
+JS Support Ticket is a trusted open source ticket system. JS Support ticket is a simple, easy to use, web-based customer support system. User can create ticket from front-end. JS support ticket comes packed with lot features than most of the expensive(and complex) support ticket system on market. The best part is, It completely free [Demo](http://jssupportticket.joomshark.com/).  
  [Plugin Homepage](http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-wp/) 
- [Demo](http://jssupportticket.joomshark.com/)
+ 
 
 = Major Features =
 
 * Unlimited Tickets
+* Front-end ticket creation
 * Strength & Flexibility
 * Easy to Use
 * Notifications & Autoresponder
@@ -31,7 +32,7 @@ JS Support Ticket is a trusted open source ticket system. JS Support ticket is a
 * Fully Customizable & Configurable
 * Easy To Translate
 
-Add Ticket Support system in your wordpress website so you can help your customer in profesional way. Delivering enterprise-level quality and features, backed by a name you can trust.
+Add Ticket Support system in your wordpress website so you can help your customer in professional way. Delivering enterprise-level quality and features, backed by a name you can trust.
 
 = Unlimited Tickets =
 
@@ -48,9 +49,16 @@ Ticket system build on the basis on latest style. You will find it very easy to 
 = Notifications & Autoresponder = 
 
 Autoresponder is the term used for acknowledgement email dispatched when a new ticket is created in helpdesk. You can configure it, and also modify the content as well as layout.
-Email notification send to admin and user on certian action i.e reply ticket, close ticket etc
+Email notification send to admin and user on certain action i.e reply ticket, close ticket etc
 
 = Short Codes =
+
+JS Support Ticket using these shortcodes.
+- [jssupportticket] for JS Support Ticket control panel
+- [jssupportticket_addticket] for add new ticket form
+- [jssupportticket_mytickets] for my tickets
+
+= Responsive Design =
 
 JS Support Ticket using these shortcodes.
 - [jssupportticket] for JS Support Ticket control panel
@@ -130,8 +138,17 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Changelog ==
 
+= 1.0.5 =
+* Admin can create ticket on behalf of any user 
+* User redirect to JS Support Ticket control panel after login [configurable]
+* Add count in my tickets tabs i.e Open (15) Answered (25)
+* Add reports 
+* -By departments 
+* -By priorities 
+* -By status & priorities
+
 = 1.0.4 - 03/02/2015 =
-* Language patern change.
+* Language pattern change.
 * Bug fix.
 
 = 1.0.3 - 02/06/2015 =
@@ -139,7 +156,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 * Admin responsive layout, now JS Support Ticket fully responsive.
 * SEF improve
 * Implement short codes
-* Add breadcrum
+* Add breadcrumb
 * Pagination bug fix
 
 = 1.0.2 - 11/17/2014 =
@@ -151,7 +168,7 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 * Email alert in HTML format.
 
 = 1.0.0 - 10/07/2014 =
-* Just releae.
+* Just release.
 
 
 == Frequently Asked Questions ==

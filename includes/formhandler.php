@@ -1,46 +1,52 @@
 <?php
-if(!defined('ABSPATH')) die('Restricted Access');
 
-class formhandler{
-	
-	function __construct(){
-		add_action('init',array($this,'checkFormRequest'));
-		add_action('init',array($this,'checkDeleteRequest'));
-	}
-	
-	/*
-	 * Handle Form request
-	 */
-	function checkFormRequest(){
-		$formrequest = request::getVar('form_request','post');
-		if($formrequest == 'jssupportticket'){
-			//handle the request
-			$action = request::getVar('action','post');
-			$array = explode('_',$action);
-			includer::include_file($array[0]);			
-			$class = $array[0]."Controller";
-			$obj = new $class;
-			$obj->$array[1]();
-		}
-	}
+if (!defined('ABSPATH'))
+    die('Restricted Access');
 
-	/*
-	 * Handle Form request
-	 */
-	function checkDeleteRequest(){
-		$jssupportticket_action = request::getVar('action','get');
-		if($jssupportticket_action == 'deleteitem'){
-			//handle the request
-			$action = request::getVar('task');
-			$array = explode('_',$action);
-			includer::include_file($array[0]);			
-			$class = $array[0]."Controller";
-			$obj = new $class;
-			$obj->$array[1]();
-		}
-	}
-	
+class JSSTformhandler {
+
+    function __construct() {
+        add_action('init', array($this, 'checkFormRequest'));
+        add_action('init', array($this, 'checkDeleteRequest'));
+    }
+
+    /*
+     * Handle Form request
+     */
+
+    function checkFormRequest() {
+        $formrequest = JSSTrequest::getVar('form_request', 'post');
+        if ($formrequest == 'jssupportticket') {
+            //handle the request
+            $modulename = (is_admin()) ? 'page' : 'module';
+            $module = JSSTrequest::getVar($modulename);
+            JSSTincluder::include_file($module);
+            $class = 'JSST' . $module . "Controller";
+            $task = JSSTrequest::getVar('task');
+            $obj = new $class;
+            $obj->$task();
+        }
+    }
+
+    /*
+     * Handle Form request
+     */
+
+    function checkDeleteRequest() {
+        $jssupportticket_action = JSSTrequest::getVar('action', 'get');
+        if ($jssupportticket_action == 'jstask') {
+            //handle the request
+            $modulename = (is_admin()) ? 'page' : 'module';
+            $module = JSSTrequest::getVar($modulename);
+            JSSTincluder::include_file($module);
+            $class = 'JSST' . $module . "Controller";
+            $action = JSSTrequest::getVar('task');
+            $obj = new $class;
+            $obj->$action();
+        }
+    }
+
 }
 
-$formhandler = new formhandler();
+$formhandler = new JSSTformhandler();
 ?>

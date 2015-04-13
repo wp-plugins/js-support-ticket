@@ -1,64 +1,87 @@
 <?php
-if(!defined('ABSPATH')) die('Restricted Access');
 
-class departmentController{
-	
-	function __construct(){
-		self::handleRequest();
-	}
-	
-	function handleRequest(){
-		$task = request::getVar('task',null,'department_departments');
-		if(self::canaddfile()){
-			$array = explode('_',$task);
-			if(is_admin()){
-				$action = request::getVar('action');
-				$action_array = explode("_",$action);
-				if($action_array[0] == 'admin'){
-					departmentController::$action_array[1]();
-				}else{
-					$array[1] = 'admin_'.$array[1];
+if (!defined('ABSPATH'))
+    die('Restricted Access');
 
-				}				
-			}
-			switch($array[1]){
-				case 'admin_departments':
-					includer::getJSModel('department')->getDepartments();
-				break;
-				
-				case 'admin_adddepartment':
-					$id = request::getVar('jssupportticket_departmentid','get');
-					includer::getJSModel('department')->getDepartmentForForm($id);
-					break;
-				
-			}
-			includer::include_file($array[1],$array[0]);
-		}
-	}
-	function canaddfile(){
-		if(isset($_POST['form_request']) && $_POST['form_request'] == 'jssupportticket')
-			return false;
-		elseif(isset($_GET['action']) && $_GET['action'] == 'deleteitem')
-			return false;
-		else
-			return true;
-	}
-	static function savedepartment(){		
-		$data = request::get('post');
-		includer::getJSModel('department')->storeDepartment($data);
-		$url = admin_url("admin.php?page=department_departments&task=department_departments");
-		wp_redirect($url); exit;
+class JSSTdepartmentController {
 
-	}
+    function __construct() {
+        self::handleRequest();
+    }
 
-	static function deletedepartment(){
-		$id = request::getVar('departmentid');
-		includer::getJSModel('department')->removeDepartment($id);
-		$url = admin_url("admin.php?page=department_departments&task=department_departments");
-		wp_redirect($url); exit;
+    function handleRequest() {
+        $layout = JSSTrequest::getLayout('layout', null, 'departments');
+        if (self::canaddfile()) {
+            switch ($layout) {
+                case 'admin_departments':
+                        JSSTincluder::getJSModel('department')->getDepartments();
+                    break;
+                case 'admin_adddepartment':
+                    $id = JSSTrequest::getVar('jssupportticketid');
+                        JSSTincluder::getJSModel('department')->getDepartmentForForm($id);
+                    break;
+            }
+            $module = (is_admin()) ? 'page' : 'module';
+            $module = JSSTrequest::getVar($module, null, 'department');
+            JSSTincluder::include_file($layout, $module);
+        }
+    }
 
-	}
+    function canaddfile() {
+        if (isset($_POST['form_request']) && $_POST['form_request'] == 'jssupportticket')
+            return false;
+        elseif (isset($_GET['action']) && $_GET['action'] == 'jstask')
+            return false;
+        else
+            return true;
+    }
+
+    static function savedepartment() {
+        $data = JSSTrequest::get('post');
+        JSSTincluder::getJSModel('department')->storeDepartment($data);
+        if (is_admin()) {
+            $url = admin_url("admin.php?page=department&layout=departments");
+        } else {
+            $url = site_url("?page_id=" . jssupportticket::getPageid() . "&module=department&layout=departments");
+        }
+        wp_redirect($url);
+        exit;
+    }
+
+    static function deletedepartment() {
+        $id = JSSTrequest::getVar('departmentid');
+        JSSTincluder::getJSModel('department')->removeDepartment($id);
+        if (is_admin()) {
+            $url = admin_url("admin.php?page=department&layout=departments");
+        } else {
+            $url = site_url("?page_id=" . jssupportticket::getPageid() . "&module=department&layout=departments");
+        }
+        wp_redirect($url);
+        exit;
+    }
+
+    static function changestatus() {
+        $id = JSSTrequest::getVar('departmentid');
+        JSSTincluder::getJSModel('department')->changeStatus($id);
+        $url = admin_url("admin.php?page=department&layout=departments");
+        if ($pagenum)
+            $url .= '&pagenum=' . $pagenum;
+        wp_redirect($url);
+        exit;
+    }
+
+    static function ordering() {
+        $id = JSSTrequest::getVar('departmentid');
+        JSSTincluder::getJSModel('department')->setOrdering($id);
+        $pagenum = JSSTrequest::getVar('pagenum');
+        $url = "admin.php?page=department&layout=departments";
+        if ($pagenum)
+            $url .= '&pagenum=' . $pagenum;
+        wp_redirect($url);
+        exit;
+    }
+
 }
 
-$departmentController = new departmentController();
+$departmentController = new JSSTdepartmentController();
 ?>

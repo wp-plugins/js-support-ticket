@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JS Support Ticket 1.0\n"
-"POT-Creation-Date: 2014-08-21 16:41+0500\n"
-"PO-Revision-Date: 2014-08-21 16:41+0500\n"
+"POT-Creation-Date: 2015-02-28 12:00+0500\n"
+"PO-Revision-Date: 2015-04-13 13:07+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,1441 +16,2966 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: modules/department/model.php:75
-msgid "DEPARTMENT_HAS_BEEN_STORED"
-msgstr "Department Has Been Stored"
+msgid "Control Panel"
+msgstr ""
+
+msgid "Announcements"
+msgstr ""
+
+msgid "Announcement Detail"
+msgstr ""
+
+msgid "Edit Announcement"
+msgstr ""
+
+msgid "Departments"
+msgstr ""
+
+msgid "Add Department"
+msgstr ""
+
+msgid "Downloads"
+msgstr ""
+
+msgid "Add Download"
+msgstr ""
+
+msgid "FAQ's"
+msgstr ""
+
+msgid "Edit FAQ"
+msgstr ""
+
+msgid "FAQ Detail"
+msgstr ""
+
+msgid "Knowledge Base"
+msgstr ""
+
+msgid "Add Knowledge base"
+msgstr ""
+
+msgid "Categories"
+msgstr ""
+
+msgid "Add Category"
+msgstr ""
+
+msgid "Knowledge Base Detail"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Send Message"
+msgstr ""
+
+msgid "Inbox"
+msgstr ""
+
+msgid "Outbox"
+msgstr ""
+
+msgid "Roles"
+msgstr ""
+
+msgid "Add Role"
+msgstr ""
+
+msgid "Role permissions"
+msgstr ""
+
+msgid "Staffs"
+msgstr ""
+
+msgid "Add Staff"
+msgstr ""
+
+msgid "Edit Staff"
+msgstr ""
+
+msgid "Staff Permissions"
+msgstr ""
+
+msgid "Tickets"
+msgstr ""
+
+msgid "Add Ticket"
+msgstr ""
+
+msgid "My Tickets"
+msgstr ""
+
+msgid "Ticket Detail"
+msgstr ""
+
+msgid "Ticket Status"
+msgstr ""
+
+msgid "Pervious"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "JS Support Ticket Control Panel"
+msgstr ""
+
+msgid "JS Support Ticket"
+msgstr ""
+
+msgid "JS Support Ticket Tickets"
+msgstr ""
+
+msgid "JS Support Ticket Staff Members"
+msgstr ""
+
+msgid "Staff Members"
+msgstr ""
+
+msgid "JS Support Ticket Configuration"
+msgstr ""
+
+msgid "Configurations"
+msgstr ""
+
+msgid "JS Support Ticket Knowledge Base"
+msgstr ""
+
+msgid "JS Support Ticket FAQ"
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "Check Ticket Status"
+msgstr ""
+
+msgid "Add Knowledge Base"
+msgstr ""
+
+msgid "Oooops"
+msgstr ""
+
+msgid "Record not found"
+msgstr ""
+
+msgid "Access Denied"
+msgstr ""
+
+msgid "You are not allowed to view this page"
+msgstr ""
+
+msgid "You are not staff member"
+msgstr ""
+
+msgid "Your account is disabled please contact to administrator"
+msgstr ""
+
+msgid "System Offline"
+msgstr ""
+
+msgid "You are not login"
+msgstr ""
+
+msgid "To access this page please login"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Plus"
+msgstr ""
+
+msgid "Equals"
+msgstr ""
+
+msgid "Minus"
+msgstr ""
+
+msgid "Mail Notification Widget"
+msgstr ""
+
+msgid "Show new and reply mail notifications"
+msgstr ""
+
+msgid "New mail from"
+msgstr ""
+
+msgid "Replied By"
+msgstr ""
+
+msgid "Mail Notification"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "Vertical"
+msgstr ""
+
+msgid "Horizontal"
+msgstr ""
+
+msgid "Maximum Records"
+msgstr ""
+
+msgid "My Ticket Widget"
+msgstr ""
+
+msgid "Show unanswered tickets"
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "Waiting Your Reply"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "Max record"
+msgstr ""
+
+msgid "You are not allow to assign permissions"
+msgstr ""
+
+msgid "Premade department message has been stored"
+msgstr ""
+
+msgid "Premade department message has not been stored"
+msgstr ""
+
+msgid "Premade department message has been deleted"
+msgstr ""
+
+msgid "Premade department message has not been deleted"
+msgstr ""
+
+msgid "Premade message status has been changed"
+msgstr ""
+
+msgid "Premade message status has not been changed"
+msgstr ""
+
+msgid "Active"
+msgstr ""
+
+msgid "Offline"
+msgstr ""
+
+msgid "Premade Messages"
+msgstr ""
+
+msgid "Select Department"
+msgstr ""
+
+msgid "Select Status"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Add Premade Message"
+msgstr ""
+
+msgid "Department"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Last Updated"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid "Not updated"
+msgstr ""
+
+msgid "Reply Title"
+msgstr ""
+
+msgid "Are you sure to delete"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Answer Department Under Which The Answer Will Be Made Available"
+msgstr ""
+
+msgid "Save premade message"
+msgstr ""
+
+msgid "You are not allowed"
+msgstr ""
+
+msgid "Department has been stored"
+msgstr ""
+
+msgid "Department has not been stored"
+msgstr ""
+
+msgid "Departments ordering has been changed"
+msgstr ""
+
+msgid "Departments ordering has not changed"
+msgstr ""
+
+msgid "You are not allow to delete department"
+msgstr ""
+
+msgid "Department has been deleted"
+msgstr ""
+
+msgid "Department has not been deleted"
+msgstr ""
+
+msgid "Department in use cannot deleted"
+msgstr ""
+
+msgid "Department status has been changed"
+msgstr ""
+
+msgid "Department status has not been changed"
+msgstr ""
+
+msgid "Select Help Topic"
+msgstr ""
+
+msgid "Select Premade"
+msgstr ""
+
+msgid "Outgoing Email"
+msgstr ""
+
+msgid "Select Email"
+msgstr ""
+
+msgid "Is Public"
+msgstr ""
+
+msgid "Public"
+msgstr ""
+
+msgid "Private"
+msgstr ""
+
+msgid "Signature"
+msgstr ""
+
+msgid "Append Signature"
+msgstr ""
+
+msgid "Append signature with reply"
+msgstr ""
+
+msgid "Approved"
+msgstr ""
+
+msgid "Not Approved"
+msgstr ""
+
+msgid "Save Department"
+msgstr ""
+
+msgid "Department Name"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Ordering"
+msgstr ""
+
+msgid "Created"
+msgstr ""
+
+msgid "Order Level"
+msgstr ""
+
+msgid "Select Type"
+msgstr ""
+
+msgid "System Errors"
+msgstr ""
+
+msgid "Error"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "File size greater then default filesize"
+msgstr ""
+
+msgid "File extension does not match"
+msgstr ""
+
+msgid "Attachment has been removed"
+msgstr ""
+
+msgid "Attachment has not been removed"
+msgstr ""
+
+msgid "Field Ordering"
+msgstr ""
+
+msgid "S.No."
+msgstr ""
+
+msgid "Field"
+msgstr ""
+
+msgid "Mail has not been mark as read"
+msgstr ""
+
+msgid "Mail has been send"
+msgstr ""
+
+msgid "Mail has not been send"
+msgstr ""
+
+msgid "Mail has been deleted"
+msgstr ""
+
+msgid "Mail has not been deleted"
+msgstr ""
+
+msgid "Mail in use cannot deleted"
+msgstr ""
+
+msgid "Mail cannot mark as read"
+msgstr ""
+
+msgid "Mail mark as read"
+msgstr ""
+
+msgid "Mail cannot mark as unread"
+msgstr ""
+
+msgid "Mail mark as unread"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Inbox ("
+msgstr ""
+
+msgid " )"
+msgstr ""
+
+msgid "Outbox ("
+msgstr ""
+
+msgid " )  "
+msgstr ""
+
+msgid "Compose"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Replies"
+msgstr ""
+
+msgid "Reply"
+msgstr ""
+
+msgid "Send"
+msgstr ""
+
+msgid "Subject Title"
+msgstr ""
+
+msgid "Re"
+msgstr ""
+
+msgid "Compose Message"
+msgstr ""
+
+msgid "Select Staff"
+msgstr ""
+
+msgid "Email template has been stored"
+msgstr ""
+
+msgid "Email template has not been stored"
+msgstr ""
+
+msgid "Email Templates"
+msgstr ""
+
+msgid "New ticket"
+msgstr ""
+
+msgid "New Ticket"
+msgstr ""
+
+msgid "Staff Ticket"
+msgstr ""
+
+msgid "New Department"
+msgstr ""
+
+msgid "New Staff"
+msgstr ""
+
+msgid "New Help Topic"
+msgstr ""
+
+msgid "Reassign Ticket"
+msgstr ""
+
+msgid "Ban Email"
+msgstr ""
+
+msgid "Ban email try to create ticket"
+msgstr ""
+
+msgid "Department Transfer"
+msgstr ""
+
+msgid "Ban Email and Close Ticket"
+msgstr ""
+
+msgid "Unban Email"
+msgstr ""
+
+msgid "Response Ticket"
+msgstr ""
+
+msgid "Reply Ticket"
+msgstr ""
+
+msgid "New Ticket Admin Alert"
+msgstr ""
+
+msgid "Lock Ticket"
+msgstr ""
+
+msgid "Unlock Ticket"
+msgstr ""
+
+msgid "In Progress Ticket"
+msgstr ""
+
+msgid "Ticket Priority Is Changed By"
+msgstr ""
+
+msgid "Default alert email"
+msgstr ""
+
+msgid "Body"
+msgstr ""
+
+msgid "Parameters"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Tracking ID"
+msgstr ""
+
+msgid "Help Topic"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Ticket URL"
+msgstr ""
+
+msgid "Department title"
+msgstr ""
+
+msgid "Group Title"
+msgstr ""
+
+msgid "Staff member name"
+msgstr ""
+
+msgid "Help topic title"
+msgstr ""
+
+msgid "Email Address"
+msgstr ""
+
+msgid "Ticket ID"
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+msgid "Save email template"
+msgstr ""
+
+msgid "Ban email log has been stored"
+msgstr ""
+
+msgid "Ban Email log has not been stored"
+msgstr ""
+
+msgid "Ban email log has been deleted"
+msgstr ""
+
+msgid "Ban Email log has not been deleted"
+msgstr ""
+
+msgid "Ban email log does not exist"
+msgstr ""
+
+msgid "Ban Email Log List"
+msgstr ""
+
+msgid "Logger Email"
+msgstr ""
+
+msgid "Log"
+msgstr ""
+
+msgid "Logger"
+msgstr ""
+
+msgid "IP Address"
+msgstr ""
+
+msgid "Ticket"
+msgstr ""
+
+msgid "Activity log has not been updated"
+msgstr ""
+
+msgid "Cannot open file"
+msgstr ""
+
+msgid "New theme has been applied"
+msgstr ""
+
+msgid "Error applying new theme"
+msgstr ""
+
+msgid "Color Chooser"
+msgstr ""
+
+msgid "Preset Theme"
+msgstr ""
+
+msgid "Color 1"
+msgstr ""
+
+msgid "Top menu heading background"
+msgstr ""
+
+msgid "Color 2"
+msgstr ""
+
+msgid "Top header line color"
+msgstr ""
+
+msgid "Button Hover"
+msgstr ""
+
+msgid "Heading text"
+msgstr ""
+
+msgid "Color 3"
+msgstr ""
+
+msgid "Content Background Color"
+msgstr ""
+
+msgid "Color 4"
+msgstr ""
+
+msgid "Content Text Color"
+msgstr ""
+
+msgid "Color 5"
+msgstr ""
+
+msgid "Border color"
+msgstr ""
+
+msgid "Lines"
+msgstr ""
+
+msgid "Color 6"
+msgstr ""
+
+msgid "Button Color"
+msgstr ""
+
+msgid "Color 7"
+msgstr ""
+
+msgid "Top header text color"
+msgstr ""
+
+msgid "Save Theme"
+msgstr ""
+
+msgid "Color Effect Preview"
+msgstr ""
+
+msgid "Open"
+msgstr ""
+
+msgid "Closed"
+msgstr ""
+
+msgid "Answered"
+msgstr ""
+
+msgid "Overdue"
+msgstr ""
+
+msgid "All Tickets"
+msgstr ""
+
+msgid "Last Reply"
+msgstr ""
+
+msgid "No Last Reply"
+msgstr ""
+
+msgid "Blue"
+msgstr ""
+
+msgid "Red"
+msgstr ""
+
+msgid "Greenish"
+msgstr ""
+
+msgid "Brown"
+msgstr ""
+
+msgid "Orange"
+msgstr ""
+
+msgid "Green"
+msgstr ""
+
+msgid "Black"
+msgstr ""
+
+msgid "About Us"
+msgstr ""
+
+msgid "Component Detail"
+msgstr ""
+
+msgid "Component for on-line ticket support system"
+msgstr ""
+
+msgid "Created By"
+msgstr ""
+
+msgid "Company"
+msgstr ""
+
+msgid "Plugin Name"
+msgstr ""
+
+msgid "Goto Web"
+msgstr ""
+
+msgid "Our Products"
+msgstr ""
+
+msgid "Short Codes"
+msgstr ""
+
+msgid "JS Support Ticket main control panel"
+msgstr ""
+
+msgid "Add new ticket form for both user and staff"
+msgstr ""
+
+msgid "My tickets for both user and staff"
+msgstr ""
+
+msgid "List downloads"
+msgstr ""
+
+msgid "Lastest Downlods"
+msgstr ""
+
+msgid "Show latest downloads"
+msgstr ""
+
+msgid "Popular Downloads"
+msgstr ""
+
+msgid "Show popular downloads"
+msgstr ""
+
+msgid "List knowledge base"
+msgstr ""
+
+msgid "Latest knowledge base"
+msgstr ""
+
+msgid "Show latest knowledge base"
+msgstr ""
+
+msgid "Popular knoweldge base"
+msgstr ""
+
+msgid "Show popular knowledge base"
+msgstr ""
+
+msgid "List FAQ's"
+msgstr ""
+
+msgid "Latest FAQ's"
+msgstr ""
+
+msgid "Show latest FAQ's"
+msgstr ""
+
+msgid "Popular FAQ's"
+msgstr ""
+
+msgid "Show popular FAQ's"
+msgstr ""
+
+msgid "List announcements"
+msgstr ""
+
+msgid "Latest Announcements"
+msgstr ""
+
+msgid "Show latest announcements"
+msgstr ""
+
+msgid "Popular Announcements"
+msgstr ""
+
+msgid "Show popular announcements"
+msgstr ""
+
+msgid "Open Ticket"
+msgstr ""
+
+msgid "Staff"
+msgstr ""
+
+msgid "Mail"
+msgstr ""
+
+msgid "My Profile"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "All Ticket"
+msgstr ""
+
+msgid "Statistics"
+msgstr ""
+
+msgid "Priorities"
+msgstr ""
+
+msgid "System Emails"
+msgstr ""
+
+msgid "Help Topics"
+msgstr ""
+
+msgid "User Fields"
+msgstr ""
+
+msgid "Ban Emails"
+msgstr ""
+
+msgid "Ban email log list"
+msgstr ""
+
+msgid "Themes"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Support Area"
+msgstr ""
+
+msgid "Documentation"
+msgstr ""
+
+msgid "Forum"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Latest Tickets"
+msgstr ""
+
+msgid "Waiting Staff Reply"
+msgstr ""
+
+msgid "In Progress"
+msgstr ""
+
+msgid "You are not allow to post internal note"
+msgstr ""
+
+msgid "Notes has been stored"
+msgstr ""
+
+msgid "Successfully"
+msgstr ""
+
+msgid "Notes has not been stored"
+msgstr ""
+
+msgid "Internal note is posted by"
+msgstr ""
+
+msgid "Pass"
+msgstr ""
+
+msgid "Download has been stored"
+msgstr ""
+
+msgid "Download has not been stored"
+msgstr ""
+
+msgid "You are not allow to delete download"
+msgstr ""
+
+msgid "Download has been deleted"
+msgstr ""
+
+msgid "Download has not been deleted"
+msgstr ""
+
+msgid "Download in use cannot deleted"
+msgstr ""
+
+msgid "Download status has been changed"
+msgstr ""
+
+msgid "Download status has not been changed"
+msgstr ""
+
+msgid "Select Category"
+msgstr ""
+
+msgid "Category"
+msgstr ""
+
+msgid "Files"
+msgstr ""
+
+msgid "Search Download"
+msgstr ""
+
+msgid "File upload limit exceed"
+msgstr ""
+
+msgid "Error file size to large"
+msgstr ""
+
+msgid "Error file ext mismatch"
+msgstr ""
+
+msgid "Parent Category"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Attachment"
+msgstr ""
+
+msgid "Maximum File Size"
+msgstr ""
+
+msgid "File Extension Type"
+msgstr ""
+
+msgid "Add More File"
+msgstr ""
+
+msgid "Delete attachment"
+msgstr ""
+
+msgid "Delete Attachment"
+msgstr ""
+
+msgid "Save Download"
+msgstr ""
+
+msgid "Download Title"
+msgstr ""
+
+msgid "Announcement has been stored"
+msgstr ""
+
+msgid "Announcement has not been stored"
+msgstr ""
+
+msgid "You are not allow to delete announcement"
+msgstr ""
+
+msgid "Announcement has been deleted"
+msgstr ""
+
+msgid "Announcement has not been deleted"
+msgstr ""
+
+msgid "Announcement in use cannot deleted"
+msgstr ""
+
+msgid "Announcement status has been changed"
+msgstr ""
+
+msgid "Announcement status has not been changed"
+msgstr ""
+
+msgid "Announcement ordering has been changed"
+msgstr ""
+
+msgid "Announcement ordering has not changed"
+msgstr ""
+
+msgid "Search Announcement"
+msgstr ""
+
+msgid "Save Announcement"
+msgstr ""
+
+msgid "User already staff member"
+msgstr ""
+
+msgid "Child staff member has not been stored"
+msgstr ""
+
+msgid "Staff member has been stored"
+msgstr ""
+
+msgid "Staff member has not been stored"
+msgstr ""
+
+msgid "You are not allow to delete user"
+msgstr ""
+
+msgid "Staff member has been deleted"
+msgstr ""
+
+msgid "Staff member has not been deleted"
+msgstr ""
+
+msgid "Staff member in use cannot deleted"
+msgstr ""
+
+msgid "Staff status has been changed"
+msgstr ""
+
+msgid "Staff status has not been changed"
+msgstr ""
+
+msgid "Some thing wrong try again later"
+msgstr ""
+
+msgid "Role"
+msgstr ""
+
+msgid "First Name"
+msgstr ""
+
+msgid "Last Name"
+msgstr ""
+
+msgid "Office Phone"
+msgstr ""
+
+msgid "Account status"
+msgstr ""
+
+msgid "Premission"
+msgstr ""
+
+msgid "Assign Tickets"
+msgstr ""
+
+msgid "Department Section"
+msgstr ""
+
+msgid "Ticket Section"
+msgstr ""
+
+msgid "Staff Section"
+msgstr ""
+
+msgid "Knowledge Base Section"
+msgstr ""
+
+msgid "FAQ Section"
+msgstr ""
+
+msgid "Download Section"
+msgstr ""
+
+msgid "Announcement Section"
+msgstr ""
+
+msgid "Mail Section"
+msgstr ""
+
+msgid "Select / Deselect All"
+msgstr ""
+
+msgid "Save Permissions"
+msgstr ""
+
+msgid "Select Role"
+msgstr ""
+
+msgid "Add Staff Member"
+msgstr ""
+
+msgid "Full Name"
+msgstr ""
+
+msgid "Permissions"
+msgstr ""
+
+msgid "Select User"
+msgstr ""
+
+msgid "Already staff member"
+msgstr ""
+
+msgid "User ID"
+msgstr ""
+
+msgid "Display Name"
+msgstr ""
+
+msgid "extension"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Picture"
+msgstr ""
+
+msgid "Append"
+msgstr ""
+
+msgid "Account Status"
+msgstr ""
+
+msgid "Save Staff Member"
+msgstr ""
+
+msgid "Priority Title Already Exist"
+msgstr ""
+
+msgid "Priority has been stored"
+msgstr ""
+
+msgid "Priority has not been stored"
+msgstr ""
+
+msgid "Priority has been deleted"
+msgstr ""
+
+msgid "Priority has not been deleted"
+msgstr ""
+
+msgid "Priority in use cannot deleted"
+msgstr ""
+
+msgid "Default priority cannot delete"
+msgstr ""
+
+msgid "Priority has been make default"
+msgstr ""
+
+msgid "Priority has not been make default"
+msgstr ""
+
+msgid "Priority ordering has been changed"
+msgstr ""
+
+msgid "Priority ordering has not changed"
+msgstr ""
+
+msgid "Add Priority"
+msgstr ""
+
+msgid "Priority Color"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Is Default"
+msgstr ""
+
+msgid "Save Priority"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "The name already exisits"
+msgstr ""
+
+msgid "Role has been stored"
+msgstr ""
+
+msgid "Role has not been stored"
+msgstr ""
+
+msgid "You are not allow to delete role"
+msgstr ""
+
+msgid "Role has been deleted"
+msgstr ""
+
+msgid "Role has not been deleted"
+msgstr ""
+
+msgid "Internal error role cannot deleted"
+msgstr ""
+
+msgid "Role in use cannot deleted"
+msgstr ""
+
+msgid "Role Permission"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Save Role"
+msgstr ""
+
+msgid "Role Name"
+msgstr ""
+
+msgid "Ticket information is incorrect"
+msgstr ""
+
+msgid "Banned email cannot create ticket"
+msgstr ""
+
+msgid "Limit exceeds maximum tickets"
+msgstr ""
+
+msgid "Limit exceeds maximum open tickets"
+msgstr ""
+
+msgid "Incorrect Captcha code"
+msgstr ""
+
+msgid "Ticket validation error you cannot add new ticket"
+msgstr ""
+
+msgid "Ticket has not been stored"
+msgstr ""
+
+msgid "Ticket has been stored"
+msgstr ""
+
+msgid "Ticket is updated by"
+msgstr ""
+
+msgid "Ticket is created by"
+msgstr ""
+
+msgid "You are not allow to delete ticket"
+msgstr ""
+
+msgid "Ticket has been deleted"
+msgstr ""
+
+msgid "Ticket has not been deleted"
+msgstr ""
+
+msgid "Remove Ticket"
+msgstr ""
+
+msgid "Ticket is remove by"
+msgstr ""
+
+msgid "Ticket in use cannot be deleted"
+msgstr ""
+
+msgid "You are not allow to close ticket"
+msgstr ""
+
+msgid "Ticket already closed"
+msgstr ""
+
+msgid "Ticket has been closed"
+msgstr ""
+
+msgid "Ticket has not been closed"
+msgstr ""
+
+msgid "Ticket is closed by"
+msgstr ""
+
+msgid "You are not allow to lock ticket"
+msgstr ""
+
+msgid "Ticket has been locked"
+msgstr ""
+
+msgid "Ticket has not been locked"
+msgstr ""
+
+msgid "Ticket is locked by"
+msgstr ""
+
+msgid "Ticket has been unlocked"
+msgstr ""
+
+msgid "Ticket has not been unlocked"
+msgstr ""
+
+msgid "Ticket is unlocked by"
+msgstr ""
+
+msgid "Your are not allow to transfer ticket department"
+msgstr ""
+
+msgid "Ticket department has been transfered"
+msgstr ""
+
+msgid "Ticket department has not been transfered"
+msgstr ""
+
+msgid "Transfer Department"
+msgstr ""
+
+msgid "Department is transfered by"
+msgstr ""
+
+msgid "You are not allow to assign ticket to staff"
+msgstr ""
+
+msgid "Ticket has been assigned to staff"
+msgstr ""
+
+msgid "Ticket has not been assigned to staff"
+msgstr ""
+
+msgid "Assign ticket to staff"
+msgstr ""
+
+msgid "Ticket is assigned to staff by"
+msgstr ""
+
+msgid "Ticket already have same priority"
+msgstr ""
+
+msgid "You are not allow to change priority"
+msgstr ""
+
+msgid "Ticket priority has been changed"
+msgstr ""
+
+msgid "Ticket priority has not been changed"
+msgstr ""
+
+msgid "Change Priority"
+msgstr ""
+
+msgid "Ticket has been released"
+msgstr ""
+
+msgid "Ticket has not been released"
+msgstr ""
+
+msgid "Ticket is released by"
+msgstr ""
+
+msgid "Email already banned"
+msgstr ""
+
+msgid "Email has been banned"
+msgstr ""
+
+msgid "Email has not been banned"
+msgstr ""
+
+msgid "Email is banned by"
+msgstr ""
+
+msgid "Ticket already marked overdue"
+msgstr ""
+
+msgid "You are not allow to mark overdue ticket"
+msgstr ""
+
+msgid "Ticket has been marked as overdue"
+msgstr ""
+
+msgid "Ticket has not been marked as overdue"
+msgstr ""
+
+msgid "Mark ticket as overdue"
+msgstr ""
+
+msgid "Ticket is marked as overdue by"
+msgstr ""
+
+msgid "You are not allow to banned email and close ticket"
+msgstr ""
+
+msgid "You are not allow to reopen ticket"
+msgstr ""
+
+msgid "Ticket has been reopend"
+msgstr ""
+
+msgid "Ticket has not been reopened"
+msgstr ""
+
+msgid "Ticket is reopened by"
+msgstr ""
+
+msgid "Ticket reopen time limit end"
+msgstr ""
+
+msgid "You are not allow to Unban email"
+msgstr ""
+
+msgid "Email has been unbanned"
+msgstr ""
+
+msgid "Email has not been unbanned"
+msgstr ""
+
+msgid "Unbanned Email"
+msgstr ""
+
+msgid "Email is unbanned by"
+msgstr ""
+
+msgid "Email cannot be unbanned"
+msgstr ""
+
+msgid "Ticket already marked in progress"
+msgstr ""
+
+msgid "You are not allow to mark in progress ticket"
+msgstr ""
+
+msgid "Ticket has been marked as in progress"
+msgstr ""
+
+msgid "Ticket has not been marked as in progress"
+msgstr ""
+
+msgid "Ticket is marked as in progress by"
+msgstr ""
+
+msgid "Please fill message field"
+msgstr ""
+
+msgid "Ticket History"
+msgstr ""
+
+msgid "Lock"
+msgstr ""
+
+msgid "Waiting reply"
+msgstr ""
+
+msgid "Replied"
+msgstr ""
+
+msgid "Ticket Details"
+msgstr ""
+
+msgid "Day"
+msgstr ""
+
+msgid "Days"
+msgstr ""
+
+msgid "Today"
+msgstr ""
+
+msgid "Ago"
+msgstr ""
+
+msgid "Created via Email"
+msgstr ""
+
+msgid "More Option"
+msgstr ""
+
+msgid "Are you sure to close ticket Ticket"
+msgstr ""
+
+msgid "Delete ticket"
+msgstr ""
+
+msgid "Mark in Progress"
+msgstr ""
+
+msgid "Requester Info"
+msgstr ""
+
+msgid "Show Detail"
+msgstr ""
+
+msgid "More Detail"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "True"
+msgstr ""
+
+msgid "False"
+msgstr ""
+
+msgid "Not Filled"
+msgstr ""
+
+msgid "Internal Notes"
+msgstr ""
+
+msgid "Posted by"
+msgstr ""
+
+msgid "Ticket Thread"
+msgstr ""
+
+msgid "Response"
+msgstr ""
+
+msgid "Attachments"
+msgstr ""
+
+msgid "Post Reply"
+msgstr ""
+
+msgid "Post reply"
+msgstr ""
+
+msgid "Internal Note"
+msgstr ""
+
+msgid "Assign to Staff"
+msgstr ""
+
+msgid "Premade"
+msgstr ""
+
+msgid "Own Signature"
+msgstr ""
+
+msgid "Department Signature"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Assign to me"
+msgstr ""
+
+msgid "Close on reply"
+msgstr ""
+
+msgid "Transfer"
+msgstr ""
+
+msgid "Staff Member"
+msgstr ""
+
+msgid "Assign"
+msgstr ""
+
+msgid "Phone No"
+msgstr ""
+
+msgid "Phone Ext"
+msgstr ""
+
+msgid "Select Priority"
+msgstr ""
+
+msgid "Issue Summary"
+msgstr ""
+
+msgid "Internal Note Title"
+msgstr ""
+
+msgid "Reason for edit ticket"
+msgstr ""
+
+msgid "Due Date"
+msgstr ""
+
+msgid "Save Ticket"
+msgstr ""
+
+msgid "Or"
+msgstr ""
+
+msgid "Email address"
+msgstr ""
+
+msgid "Start Date"
+msgstr ""
+
+msgid "End Date"
+msgstr ""
+
+msgid "Waiting Customer Reply"
+msgstr ""
+
+msgid "Ticket mark overdue"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Waiting admin staff reply"
+msgstr ""
+
+msgid "In progress"
+msgstr ""
+
+msgid "Waiting customer reply"
+msgstr ""
+
+msgid "Close ticket"
+msgstr ""
+
+msgid "Assign to"
+msgstr ""
 
-#: modules/department/model.php:78
-msgid "DEPARTMENT_HAS_NOT_BEEN_STORED"
+msgid "Captcha"
 msgstr ""
 
-#: modules/department/model.php:88
-msgid "DEPARTMENT_HAS_BEEN_DELETED"
+msgid "Not Given"
 msgstr ""
 
-#: modules/department/model.php:91
-msgid "DEPARTMENT_HAS_NOT_BEEN_DELETED"
+msgid "Note Title"
 msgstr ""
 
-#: modules/department/model.php:94
-msgid "DEPARTMENT_IN_USE_CANNOT_DELETED"
+msgid "Post internal note"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:8
-#: modules/ticket/tpls/admin_ticketdetail.php:105
-#: modules/ticket/tpls/myticket.php:80 modules/ticket/tpls/addticket.php:58
-#: modules/ticket/tpls/admin_addticket.php:57
-#: modules/ticket/tpls/ticketdetail.php:105
-#: modules/ticket/tpls/admin_tickets.php:66
-msgid "DEPARTMENT"
+msgid "Assign to Staff Member"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:10
-#: modules/department/tpls/admin_departments.php:20
-msgid "DEPARTMENT_NAME"
+msgid "View Tickets"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:11
-#: modules/userfeild/tpls/admin_userfeilds.php:11
-#: modules/priority/tpls/admin_priorities.php:11
-#: modules/ticket/tpls/myticket.php:29
-#: modules/ticket/tpls/admin_tickets.php:11
-msgid "GO"
+msgid "JS Support Ticket Pro Installer"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:12
-#: modules/userfeild/tpls/admin_userfeilds.php:12
-#: modules/priority/tpls/admin_priorities.php:12
-#: modules/ticket/tpls/myticket.php:30
-#: modules/ticket/tpls/admin_tickets.php:12
-msgid "RESET"
+msgid "Configuration"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:14
-msgid "ADD_DEPARTMENT"
+msgid "Installation"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:21
-msgid "TYPE"
+msgid "Finish"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:22
-msgid "OUTGOING_EMAIL"
+msgid "Quick Configuration"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:23
-#: modules/department/tpls/admin_adddepartment.php:28
-#: modules/email/tpls/admin_addemail.php:19
-#: modules/priority/tpls/admin_addpriority.php:27
-#: modules/ticket/tpls/myticket.php:42
-#: modules/ticket/tpls/admin_addticket.php:103
-#: modules/ticket/tpls/admin_tickets.php:25
-msgid "STATUS"
+msgid "Error occured"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:24
-#: modules/email/tpls/admin_emails.php:23
-#: modules/systemerror/tpls/admin_systemerrors.php:21
-#: modules/ticket/tpls/admin_ticketdetail.php:89
-#: modules/ticket/tpls/myticket.php:43 modules/ticket/tpls/ticketdetail.php:89
-#: modules/ticket/tpls/admin_tickets.php:26
-#: modules/ticket/tpls/admin_tickets.php:88
-msgid "CREATED"
+msgid "PHP version smaller then recomended"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:25
-#: modules/userfeild/tpls/admin_userfeilds.php:26
-#: modules/email/tpls/admin_emails.php:24
-#: modules/priority/tpls/admin_priorities.php:23
-msgid "ACTION"
+msgid "CURL not exist"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:29
-#: modules/department/tpls/admin_adddepartment.php:17
-#: modules/priority/tpls/admin_priorities.php:20
-msgid "PUBLIC"
+msgid "GD library not exist"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:29
-#: modules/department/tpls/admin_adddepartment.php:17
-msgid "PRIVATE"
+msgid "Zip library not exist"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:30
-#: modules/department/tpls/admin_adddepartment.php:29
-#: modules/priority/tpls/admin_addpriority.php:28
-msgid "APPROVED"
+msgid "Setting"
 msgstr ""
 
-#: modules/department/tpls/admin_departments.php:30
-#: modules/department/tpls/admin_adddepartment.php:29
-#: modules/priority/tpls/admin_addpriority.php:28
-msgid "NOT_APPROVED"
+msgid "Recomended"
 msgstr ""
 
-#: modules/department/tpls/admin_adddepartment.php:5
-msgid "ADD_NEW_DEPARTMENT"
+msgid "Current"
 msgstr ""
 
-#: modules/department/tpls/admin_adddepartment.php:8
-#: modules/userfeild/tpls/admin_adduserfeild.php:168
-#: modules/priority/tpls/admin_priorities.php:10
-#: modules/priority/tpls/admin_priorities.php:19
-#: modules/configuration/tpls/admin_configurations.php:36
-msgid "TITLE"
+msgid "PHP"
 msgstr ""
 
-#: modules/department/tpls/admin_adddepartment.php:12
-msgid "OUT_GOING_EMAIL"
+msgid "5.0"
 msgstr ""
 
-#: modules/department/tpls/admin_adddepartment.php:16
-#: modules/priority/tpls/admin_addpriority.php:19
-msgid "IS_PUBLIC"
+msgid "CURL exist"
 msgstr ""
 
-#: modules/department/tpls/admin_adddepartment.php:20
-msgid "SIGNATURE"
+msgid "GD library"
 msgstr ""
 
-#: modules/department/tpls/admin_adddepartment.php:24
-msgid "APPEND_SIGNATURE"
+msgid "Zip library"
 msgstr ""
 
-#: modules/department/tpls/admin_adddepartment.php:25
-msgid "APPEND_SIGNATURE_WITH_REPLY"
+msgid "Next step"
 msgstr ""
 
-#: modules/department/tpls/admin_adddepartment.php:37
-msgid "SAVE_DEPARTMENT"
+msgid "JS Ticket Pro Installed Successfully!... "
 msgstr ""
 
-#: modules/userfeild/model.php:61
-msgid "USER_FIELD_HAS_NOT_BEEN_STORED"
+msgid "Thanks For Installing JS Ticket Pro"
 msgstr ""
 
-#: modules/userfeild/model.php:63
-msgid "USER_FIELD_HAS_BEEN_STORED"
+msgid "Start using"
 msgstr ""
 
-#: modules/userfeild/model.php:94
-msgid "USER_FIELD_HAS_BEEN_DELETED"
+msgid "Directory permissions error"
 msgstr ""
 
-#: modules/userfeild/model.php:97
-msgid "USER_FIELD_HAS_NOT_BEEN_DELETED"
+msgid "Database create table not allowed"
 msgstr ""
 
-#: modules/userfeild/model.php:100
-msgid "USER_FIELD_IN_USE_CANNOT_DELETED"
+msgid "Database insert record not allowed"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_userfeilds.php:10
-#: modules/userfeild/tpls/admin_userfeilds.php:20
-#: modules/userfeild/tpls/admin_adduserfeild.php:123
-msgid "FIELD_NAME"
+msgid "Database update record not allowed"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_userfeilds.php:14
-msgid "ADD_USER_FIELD"
+msgid "Database delete record not allowed"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_userfeilds.php:21
-#: modules/userfeild/tpls/admin_adduserfeild.php:127
-msgid "FIELD_TITLE"
+msgid "Database drop table not allowed"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_userfeilds.php:22
-#: modules/userfeild/tpls/admin_adduserfeild.php:119
-msgid "FIELD_TYPE"
+msgid "Error file not downloaded"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_userfeilds.php:23
-#: modules/userfeild/tpls/admin_adduserfeild.php:131
-msgid "REQUIRED"
+msgid "Directory"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_userfeilds.php:24
-#: modules/userfeild/tpls/admin_adduserfeild.php:135
-msgid "READ_ONLY"
+msgid "Database CRUD"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_userfeilds.php:25
-#: modules/userfeild/tpls/admin_adduserfeild.php:139
-msgid "PUBLISHED"
+msgid "File download"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:103
-msgid "JS_OPTION_VALUE_IN_USE"
+msgid "Please insert activation key and press start"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:116
-msgid "ADD_NEW_USER_FIELD"
+msgid "Activation key"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "TEXT_FIELD"
+msgid "Start"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "DROP_DOWN"
+msgid "It may take few minutes"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:99
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:103
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:112
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:117
-#: modules/email/tpls/admin_emails.php:20
-msgid "EMAIL_ADDRESS"
+msgid "You are not allow to attach files"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "CHECK_BOX"
+msgid "User field has not been stored"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "DATE"
+msgid "User field has been stored"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:120
-msgid "TEXT_AREA"
+msgid "User field has been deleted"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:132
-#: modules/userfeild/tpls/admin_adduserfeild.php:136
-#: modules/userfeild/tpls/admin_adduserfeild.php:140
-#: modules/email/tpls/admin_addemail.php:16
-#: modules/priority/tpls/admin_addpriority.php:20
-#: modules/priority/tpls/admin_addpriority.php:24
-#: modules/configuration/tpls/admin_configurations.php:13
-msgid "YES"
+msgid "User field has not been deleted"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:132
-#: modules/userfeild/tpls/admin_adduserfeild.php:136
-#: modules/userfeild/tpls/admin_adduserfeild.php:140
-#: modules/email/tpls/admin_addemail.php:16
-#: modules/priority/tpls/admin_addpriority.php:20
-#: modules/priority/tpls/admin_addpriority.php:24
-#: modules/configuration/tpls/admin_configurations.php:14
-msgid "NO"
+msgid "User field in use cannot deleted"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:143
-msgid "FIELD_SIZE"
+msgid "Field Name"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:149
-msgid "MAX_LENGTH"
+msgid "Add User Field"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:155
-msgid "COLUMNS"
+msgid "Field Title"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:159
-msgid "ROWS"
+msgid "Required"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:164
-msgid "USE_THE_TABLE_BELOW_TO_ADD_NEW_VALUES"
+msgid "Read Only"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:165
-msgid "ADD_A_VALUE"
+msgid "Published"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:169
-msgid "VALUE"
+msgid "Option value in use"
 msgstr ""
 
-#: modules/userfeild/tpls/admin_adduserfeild.php:217
-msgid "SAVE_USER_FIELD"
+msgid "Text field"
 msgstr ""
 
-#: modules/emailtemplate/model.php:59
-msgid "EMAIL_TEMPLATE_HAS_BEEN_STORED"
+msgid "Drop down"
 msgstr ""
 
-#: modules/emailtemplate/model.php:62
-msgid "EMAIL_TEMPLATE_HAS_NOT_BEEN_STORED"
+msgid "Check box"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:5
-msgid "EMAIL_TEMPLATE"
+msgid "Date"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:9
-#: modules/configuration/tpls/admin_configurations.php:188
-msgid "NEW_TICKET"
+msgid "Text area"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:10
-msgid "STAFF_TICKET"
+msgid "Field Type"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:11
-msgid "NEW_DEPARTMENT"
+msgid "Field Size"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:12
-msgid "NEW_GROUP"
+msgid "Max Length"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:13
-msgid "NEW_STAFF"
+msgid "Columns"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:14
-msgid "NEW_HELP_TOPIC"
+msgid "Rows"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:15
-msgid "REASSIGN_TICKET"
+msgid "Use the table below to add new values"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:16
-#: modules/ticket/model.php:365 modules/ticket/tpls/admin_ticketdetail.php:110
-#: modules/ticket/tpls/ticketdetail.php:110
-msgid "CLOSE_TICKET"
+msgid "Add a value"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:17
-msgid "DELETE_TICKET"
+msgid "Value"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:18
-msgid "MARK_OVERDUE_TICKET"
+msgid "Save User Field"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:19
-msgid "BAN_EMAIL"
+msgid "Ban Email has been stored"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:20
-msgid "BAN_EMAIL_TRY_CREATE_TICKET"
+msgid "Ban Email has not been stored"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:21
-msgid "DEPARTMENT_TRANSFER"
+msgid "Ban email has been deleted"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:22
-msgid "EMAIL_BAN_CLOSE_TICKET"
+msgid "Ban Email has not been deleted"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:23
-msgid "UNBAN_EMAIL"
+msgid "Ban email does not exist"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:24
-msgid "RESPONSE_TICKET"
+msgid "Banned Emails"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:25
-msgid "REPLY_TICKET"
+msgid "Add Email"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:26
-msgid "NEW_TICKET_ADMIN_ALERT"
+msgid "Emails"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:30
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:43
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:53
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:122
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:131
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:140
-#: modules/ticket/tpls/admin_ticketdetail.php:97
-#: modules/ticket/tpls/myticket.php:38 modules/ticket/tpls/myticket.php:72
-#: modules/ticket/tpls/addticket.php:66
-#: modules/ticket/tpls/admin_addticket.php:65
-#: modules/ticket/tpls/ticketdetail.php:97
-#: modules/ticket/tpls/admin_tickets.php:21
-#: modules/ticket/tpls/admin_tickets.php:58
-msgid "SUBJECT"
+msgid "Submitter"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:34
-msgid "BODY"
+msgid "Save Email"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:38
-msgid "PARAMETERS"
+msgid "Email has been stored"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:42
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:52
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:121
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:130
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:139
-msgid "USERNAME"
+msgid "Email has not been stored"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:44
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:54
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:79
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:85
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:90
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:94
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:107
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:123
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:132
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:141
-msgid "TRACKING_ID"
+msgid "Email has been deleted"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:45
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:55
-msgid "HELP_TOPIC"
+msgid "Email has not been deleted"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:46
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:56
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:124
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:133
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:142
-#: modules/email/tpls/admin_emails.php:10
-#: modules/email/tpls/admin_addemail.php:7
-#: modules/ticket/tpls/addticket.php:42
-#: modules/ticket/tpls/admin_addticket.php:41
-msgid "EMAIL"
+msgid "Email in use cannot deleted"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:47
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:57
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:125
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:134
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:143
-msgid "MESSAGE"
+msgid "System email used for sending email"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:48
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:58
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:81
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:86
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:95
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:126
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:135
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:144
-msgid "TICKET_URL"
+msgid "Autoresponse"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:62
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:75
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:108
-msgid "DEPARTMENT_TITLE"
+msgid "Add System Email"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:66
-msgid "GROUP_TITLE"
+msgid "Category has been stored"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:70
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:80
-msgid "STAFF_MEMBER_TITLE"
+msgid "Category has not been stored"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:74
-msgid "HELPTOPIC_TITLE"
+msgid "You are not allow to delete Knowledgebase category"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:113
-#: modules/ticket/tpls/admin_ticketdetail.php:75
-#: modules/ticket/tpls/myticket.php:27 modules/ticket/tpls/myticket.php:40
-#: modules/ticket/tpls/myticket.php:87 modules/ticket/tpls/ticketdetail.php:75
-#: modules/ticket/tpls/admin_tickets.php:10
-#: modules/ticket/tpls/admin_tickets.php:23
-#: modules/ticket/tpls/admin_tickets.php:73
-msgid "TICKET_ID"
+msgid "Category has been deleted"
 msgstr ""
 
-#: modules/emailtemplate/tpls/admin_emailtemplates.php:150
-msgid "SAVE_EMAIL_TEMPLATE"
+msgid "Category has not been deleted"
 msgstr ""
 
-#: modules/attachment/model.php:64
-msgid "CANNOT_OPEN_FILE"
+msgid "Category in use cannot deleted"
 msgstr ""
 
-#: modules/attachment/model.php:125
-msgid "FILE_SIZE_GREATER_THEN_DEFAULT_FILESIZE"
+msgid "Category status has been changed"
 msgstr ""
 
-#: modules/attachment/model.php:131
-msgid "FILE_EXTENSION_DOES_NOT_MATCH"
+msgid "Category status has not been changed"
 msgstr ""
 
-#: modules/attachment/model.php:177
-msgid "ATTACHMENT_HAS_BEEN_REMOVED"
+msgid "Knowledge base article has been stored"
 msgstr ""
 
-#: modules/attachment/model.php:180
-msgid "ATTACHMENT_HAS_NOT_BEEN_REMOVED"
+msgid "Knowledge base article has not been stored"
 msgstr ""
 
-#: modules/reply/model.php:81
-msgid "REPLY_HAS_BEEN_STORED"
+msgid "You are not allow to delete Knowledgebase article"
 msgstr ""
 
-#: modules/reply/model.php:82 modules/ticket/model.php:209
-#: modules/ticket/model.php:253 modules/ticket/model.php:353
-msgid "SUCCESSFULLY"
+msgid "Article has been deleted"
 msgstr ""
 
-#: modules/reply/model.php:85
-msgid "REPLY_HAS_NOT_BEEN_STORED"
+msgid "Article has not been deleted"
 msgstr ""
 
-#: modules/reply/model.php:86
-#: modules/systemerror/tpls/admin_systemerrors.php:10
-#: modules/systemerror/tpls/admin_systemerrors.php:19
-#: modules/ticket/model.php:204 modules/ticket/model.php:258
-#: modules/ticket/model.php:357
-msgid "ERROR"
+msgid "Article status has been changed"
 msgstr ""
 
-#: modules/reply/model.php:95
-msgid "TICKET_IS_REPLIED_BY"
+msgid "Article status has not been changed"
 msgstr ""
 
-#: modules/reply/model.php:109
-msgid "REPLY_HAS_BEEN_DELETED"
+msgid "You parent[s] does not have this type"
 msgstr ""
 
-#: modules/reply/model.php:112
-msgid "REPLY_HAS_NOT_BEEN_DELETED"
+msgid "Would you like to add this type to parent[s]"
 msgstr ""
 
-#: modules/email/model.php:274
-#: modules/configuration/tpls/admin_configurations.php:212
-msgid "ADMIN"
+msgid "Your child[s] have this type"
 msgstr ""
 
-#: modules/email/model.php:361
-msgid "EMAIL_HAS_BEEN_STORED"
+msgid "You cannot unmark it "
 msgstr ""
 
-#: modules/email/model.php:364
-msgid "EMAIL_HAS_NOT_BEEN_STORED"
+msgid "Article ordering has been changed"
 msgstr ""
 
-#: modules/email/model.php:374
-msgid "EMAIL_HAS_BEEN_DELETED"
+msgid "Article ordering has not changed"
 msgstr ""
 
-#: modules/email/model.php:377
-msgid "EMAIL_HAS_NOT_BEEN_DELETED"
+msgid "Draft"
 msgstr ""
 
-#: modules/email/model.php:380
-msgid "EMAIL_IN_USE_CANNOT_DELETED"
+msgid "Category Title"
 msgstr ""
 
-#: modules/email/tpls/admin_emails.php:8
-#: modules/jssupportticket/tpls/admin_controlpanel.php:10
-#: includes/jssupportticketadmin.php:58
-msgid "SYSTEM_EMAILS"
+msgid "Category Name"
 msgstr ""
 
-#: modules/email/tpls/admin_emails.php:14
-msgid "ADD_EMAIL"
+msgid "Logo"
 msgstr ""
 
-#: modules/email/tpls/admin_emails.php:21
-msgid "AUTORESPONSE"
+msgid "Category For"
 msgstr ""
 
-#: modules/email/tpls/admin_emails.php:22
-#: modules/email/tpls/admin_addemail.php:11
-#: modules/priority/tpls/admin_addpriority.php:7
-#: modules/ticket/tpls/admin_ticketdetail.php:79
-#: modules/ticket/tpls/myticket.php:39 modules/ticket/tpls/myticket.php:95
-#: modules/ticket/tpls/addticket.php:62
-#: modules/ticket/tpls/admin_addticket.php:61
-#: modules/ticket/tpls/ticketdetail.php:79
-#: modules/ticket/tpls/admin_tickets.php:22
-#: modules/ticket/tpls/admin_tickets.php:81
-#: includes/jssupportticketadmin.php:44
-msgid "PRIORITY"
+msgid "Announcement"
 msgstr ""
 
-#: modules/email/tpls/admin_addemail.php:4
-msgid "ADD_NEW_SYSTEM_EMAIL"
+msgid "Meta Data Options"
 msgstr ""
 
-#: modules/email/tpls/admin_addemail.php:15
-msgid "AUTO_RESPONSE"
+msgid "Meta Description"
 msgstr ""
 
-#: modules/email/tpls/admin_addemail.php:20
-#: modules/ticket/tpls/admin_addticket.php:104
-msgid "ACTIVE"
+msgid "Meta Key"
 msgstr ""
 
-#: modules/email/tpls/admin_addemail.php:20
-#: modules/configuration/tpls/admin_configurations.php:18
-#: modules/ticket/tpls/admin_addticket.php:104
-msgid "DISABLED"
+msgid "Save Category"
 msgstr ""
 
-#: modules/email/tpls/admin_addemail.php:28
-msgid "SAVE_EMAIL"
+msgid "Content"
 msgstr ""
 
-#: modules/priority/model.php:81
-msgid "PRIORITY_HAS_BEEN_STORED"
+msgid "Save Knowledge Base"
 msgstr ""
 
-#: modules/priority/model.php:84
-msgid "PRIORITY_HAS_NOT_BEEN_STORED"
+msgid "Search Knowledge Base"
 msgstr ""
 
-#: modules/priority/model.php:103
-msgid "PRIORITY_HAS_BEEN_DELETED"
+msgid "Article Attachment"
 msgstr ""
 
-#: modules/priority/model.php:106
-msgid "PRIORITY_HAS_NOT_BEEN_DELETED"
+msgid "Service is running please close the page"
 msgstr ""
 
-#: modules/priority/model.php:109
-msgid "PRIORITY_IN_USE_CANNOT_DELETED"
+msgid "Help topic has been stored"
 msgstr ""
 
-#: modules/priority/tpls/admin_priorities.php:8
-msgid "PRIORITIES"
+msgid "Help topic has not been stored"
 msgstr ""
 
-#: modules/priority/tpls/admin_priorities.php:14
-msgid "ADD_PRIORITY"
+msgid "Help topic has been deleted"
 msgstr ""
 
-#: modules/priority/tpls/admin_priorities.php:21
-msgid "DEFAULT"
+msgid "Help topic has not been deleted"
 msgstr ""
 
-#: modules/priority/tpls/admin_priorities.php:22
-msgid "COLOR"
+msgid "Help topic in use cannot deleted"
 msgstr ""
 
-#: modules/priority/tpls/admin_addpriority.php:4
-msgid "ADD_NEW_PRIORITY"
+msgid "Help topic status has been changed"
 msgstr ""
 
-#: modules/priority/tpls/admin_addpriority.php:11
-msgid "PRIORITY_COLOR"
+msgid "Help topic status has not been changed"
 msgstr ""
 
-#: modules/priority/tpls/admin_addpriority.php:15
-msgid "PRIORITY_URGENCY"
+msgid "Help topic ordering has been changed"
 msgstr ""
 
-#: modules/priority/tpls/admin_addpriority.php:23
-msgid "IS_DEFAULT"
+msgid "Help topic ordering has not changed"
 msgstr ""
 
-#: modules/priority/tpls/admin_addpriority.php:35
-msgid "SAVE_PRIORITY"
+msgid "Add Help Topic"
 msgstr ""
 
-#: modules/activitylog/model.php:50
-msgid "TICKET"
+msgid "Auto Response"
 msgstr ""
 
-#: modules/activitylog/model.php:67
-msgid "ACTIVITY_LOG_HAS_NOT_BEEN_UPDATED"
+msgid "Auto response for this topic ( override department setting )"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:17
-msgid "ENABLED"
+msgid "Save Help Topic"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:24
-#: modules/configuration/tpls/admin_configurations.php:33
-msgid "GENERAL_SETTING"
+msgid "FAQ has been stored"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:25
-#: modules/configuration/tpls/admin_configurations.php:93
-msgid "TICKET_SETTING"
+msgid "FAQ has not been stored"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:26
-#: modules/configuration/tpls/admin_configurations.php:129
-msgid "STAFF_MEMBERS"
+msgid "You are not allow to delete FAQ"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:27
-#: modules/configuration/tpls/admin_configurations.php:147
-msgid "DEFAULT_SYSTEM_EMAIL"
+msgid "FAQ has been deleted"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:28
-msgid "KNOWLDEGE_BASE"
+msgid "FAQ has not been deleted"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:29
-msgid "MAIL_SETTING"
+msgid "FAQ in use cannot deleted"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:38
-msgid "SET_THE_HEADING_OF_YOUR_PLUGIN"
+msgid "FAQ status has been changed"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:41
-#: modules/configuration/tpls/admin_configurations.php:42
-msgid "OFFLINE"
+msgid "FAQ status has not been changed"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:42
-msgid "ONLINE"
+msgid "Save FAQ"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:43
-msgid "SET_YOUR_PLUGIN_OFFLINE_FOR_FRONT_END"
+msgid "Search FAQ"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:46
-msgid "OFFLINE_MESSAGE"
+msgid "You are not allow to reply"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:48
-msgid "SET_THE_OFFLINE_MESSAGE_FOR_YOUR_USER"
+msgid "Reply has been stored"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:51
-msgid "DATA_DIRECTORY"
+msgid "Reply has not been stored"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:53
-msgid "SET_THE_NAME_FOR_YOUR_DATA_DIRECTORY"
+msgid "Ticket is replied by"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:56
-msgid "DATE_FORMAT"
+msgid "Reply has been deleted"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:58
-msgid "SET_THE_DEFAULT_DATE_FORMAT"
+msgid "Reply has not been deleted"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:61
-msgid "TICKET_OVERDUE"
+msgid "User permissions has not been saved"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:62
-#: modules/configuration/tpls/admin_configurations.php:67
-msgid "DAYS"
+msgid "User permissions has been saved"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:63
-msgid "SET_NO_OF_DAYS_TO_MARK_TICKET_AS_OVERDUE"
+msgid "Pagination default page size not saved"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:66
-msgid "TICKET_AUTOCLOSE"
+msgid "Configuration has been stored"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:68
-msgid "TICKET_AUTOCLOSE_IF_USER_NOT_RESPOND_WITHIN_GIVEN_DAYS"
+msgid "Configuration not has been stored"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:71
-msgid "NO_OF_ATTACHMENT"
+msgid "Google Recaptcha"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:73
-msgid "NO_OF_ATTACHMENT_ALLOWED_AT_A_TIME"
+msgid "Own Captcha"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:76
-msgid "FILE_MAXIMUM_SIZE"
+msgid "2"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:77
-msgid "KB"
+msgid "3"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:78
-msgid "MAXIMUM_FILE_SIZE_IN_BYTES"
+msgid "Any"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:81
-msgid "FILE_EXTENSION"
+msgid "Addition"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:83
-msgid "FILE_EXTENSION_ALLOWED_TO_ATTACH"
+msgid "Subtraction"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:86
-msgid "SHOW_CURRENT_LOCATION"
+msgid "Show"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:88
-msgid "SHOW_CURRENT_LOCATION_IN_YOUR_PLUGIN"
+msgid "Hide"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:96
-msgid "MAXIMUM_OPEN_TICKET_PER_EMAIL"
+msgid "Enabled"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:98
-msgid "MAXIMUM_TICKET_CAN_BE_OPENED_BY_ONE_EMAIL"
+msgid "Only New Tickets"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:101
-msgid "REOPEN_TICKET_WITHIN_DAYS"
+msgid "Only Replies"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:103
-msgid "TICKET_CAN_BE_REOPEN_WITHIN_GIVEN_NUMBER_OF_DAYS"
+msgid "Both"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:106
-msgid "STAFF_CAN_LOCK_TICKET"
+msgid "Gmail"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:108
-msgid "CAN_STAFF_MEMBER_LOCK_TICKET_OR_NOT"
+msgid "Yahoo"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:111
-msgid "VISITOR_CAN_CREATE_TICKET"
+msgid "Aol"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:113
-msgid "CAN_VISITOR_CREATE_TICKET_OR_NOT"
+msgid "Other"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:116
-msgid "SHOW_CAPTCHA_ON_VISITOR_FORM_TICKET"
+msgid "General Setting"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:118
-msgid "SHOW_CAPTCHA_WHEN_VISITOR_WANT_TO_CREATE_TICKET"
+msgid "Ticket Setting"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:121
-msgid "STAFF_IDENTITY"
+msgid "Default System Email"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:123
-msgid "DESCRIPTION"
+msgid "Mail Setting"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:131
-msgid "VIEW_TICKETS"
+msgid "Ticket via Email"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:132
-msgid "SHOW_ALL_TICKETS"
+msgid "Menu Setting"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:132
-msgid "SHOW_ASSIGN_TICKETS"
+msgid "Set the heading of your plugin"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:133
-msgid "SET_STAFF_MEMBER_CAN_SEE_TICKETS"
+msgid "Online"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:139
-msgid "DEFAULT_EMAIL_SYSTEM"
+msgid "Set your plugin offline for front end"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:142
-msgid "DEFAULT_ALERT_EMAIL"
+msgid "Offline Message"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:144
-msgid "SET_DEFAULT_ALERT_EMAIL_TO_SEND_ALERTS"
+msgid "Set the offline message for your user"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:149
-msgid "SET_DEFAULT_SYSTEM_EMAIL"
+msgid "Data Directory"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:152
-msgid "DEFAULT_ADMIN_EMAIL"
+msgid "Set the name for your data directory"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:154
-msgid "SET_DEFAULT_ADMIN_EMAIL_TO_RECEVICE_ADMIN_EMAILS"
+msgid "Date Format"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:157
-msgid "ARTICLES_PER_ROW"
+msgid "Set the default date format"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:159
-msgid "SET_HOW_MANY_ARTICLE_SHOW_PER_ROW"
+msgid "Ticket Overdue"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:166
-msgid "STAFF_MEMBER_KNOWLEDGEBASE_SETTING"
+msgid "Set no. of days to mark ticket as overdue"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:169
-msgid "ENABLE"
+msgid "Ticket auto close"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:171
-msgid "SET_KNOWLEDGEBASE_ENABLE_OR_DISABLE"
+msgid "Ticket auto close if user not respond within given days"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:174
-msgid "STAFF_CREATE_CATEGORIES"
+msgid "No. of attachment"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:176
-msgid "CAN_STAFF_MEMBER_CREATE_CATEGORIES_OR_NOT"
+msgid "No. of attachment allowed at a time"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:179
-msgid "STAFF_CREATE_ARTICLES"
+msgid "File maximum size"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:181
-msgid "CAN_STAFF_MEMBER_CREATE_ARTICLE_OR_NOT"
+msgid "Kb"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:191
-#: modules/configuration/tpls/admin_configurations.php:204
-msgid "MAIL_TO_ADMIN"
+msgid "Maximum file size in bytes"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:193
-msgid "EMAIL_SEND_TO_ADMIN_WHEN_NEW_TICKET_CREATED"
+msgid "File extension"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:196
-msgid "MAIL_TO_STAFF_MEMBERS"
+msgid "File extension allowed to attach"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:198
-msgid "EMAIL_SEND_TO_STAFF_MEMBER_WHEN_NEW_TICKET_CREATED"
+msgid "Pagination default page size"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:201
-msgid "BAN_EMAIL_NEW_TICKET"
+msgid "Set the no. of record per page"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:206
-msgid "EMAIL_SEND_TO_ADMIN_WHEN_BANNED_EMAIL_TRY_TO_CREATE_TICKET"
+msgid "Breadcrumbs"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:211
-msgid "OPERATIONS"
+msgid "Show hide breadcrumbs in plugin"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:213
-msgid "STAFF"
+msgid "Maximum tickets"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:214
-msgid "USER"
+msgid "Maximum ticket per user"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:217
-msgid "TICKET_REASSIGN"
+msgid "Maximum open tickets"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:223
-msgid "TICKET_CLOSE"
+msgid "Maximum opened tickets per user"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:229
-msgid "TICKET_DELETE"
+msgid "Reopen ticket within days"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:235
-msgid "TICKET_MARK_OVERDUE"
+msgid "Ticket can be reopen within given number of days"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:241
-msgid "TICKET_BAN_EMAIL"
+msgid "Visitor can create ticket"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:247
-msgid "TICKET_DEPARTMENT_TRANSFER"
+msgid "Can visitor created ticket or not"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:253
-msgid "TICKET_REPLY_(_TICKET_USER_)"
+msgid "Show captcha on visitor form ticket"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:259
-msgid "TICKET_RESPONSE_(_STAFF_)"
+msgid "Show captcha when visitor want to create ticket"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:265
-msgid "TICKET_BAN_EMAIL_AND_CLOSE_TICKET"
+msgid "Captcha selection"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:271
-msgid "TICKET_UNBAN_EMAIL"
+msgid "Which captcha you want to add"
 msgstr ""
 
-#: modules/configuration/tpls/admin_configurations.php:287
-msgid "SAVE_CONFIGURATION"
+msgid "Google recaptcha public key"
 msgstr ""
 
-#: modules/systemerror/tpls/admin_systemerrors.php:8
-#: modules/jssupportticket/tpls/admin_controlpanel.php:11
-#: includes/jssupportticketadmin.php:65
-msgid "SYSTEM_ERRORS"
+msgid "Google recaptcha private key"
 msgstr ""
 
-#: modules/systemerror/tpls/admin_systemerrors.php:20
-msgid "VIEW"
+msgid "Own captcha calculation type"
 msgstr ""
 
-#: modules/jssupportticket/tpls/controlpanel.php:5
-msgid "OPEN_TICKET"
+msgid "Select calculation type addition or subtraction"
 msgstr ""
 
-#: modules/jssupportticket/tpls/controlpanel.php:6
-#: modules/jssupportticket/tpls/controlpanel.php:13
-msgid "ABC_DESCRIPTION_PROVIDED_AHMED_KHAN"
+msgid "Own captcha operands"
 msgstr ""
 
-#: modules/jssupportticket/tpls/controlpanel.php:12
-#: modules/ticket/tpls/myticket.php:23
-msgid "MY_TICKETS"
+msgid "Select the total operands to be given"
 msgstr ""
 
-#: modules/jssupportticket/tpls/admin_controlpanel.php:1
-msgid "ADMIN_CONTROL_PANEL"
+msgid "Own captcha subtraction answer positive"
 msgstr ""
 
-#: modules/jssupportticket/tpls/admin_controlpanel.php:4
-#: includes/jssupportticketadmin.php:30
-msgid "CONFIGURATIONS"
+msgid "Is subtraction answer should be positive"
 msgstr ""
 
-#: modules/jssupportticket/tpls/admin_controlpanel.php:5
-#: modules/ticket/tpls/myticket.php:11 modules/ticket/tpls/admin_tickets.php:8
-#: includes/jssupportticketadmin.php:37
-msgid "TICKETS"
+msgid "New ticket message"
 msgstr ""
 
-#: modules/jssupportticket/tpls/admin_controlpanel.php:6
-msgid "PRIORITES"
+msgid "This message will show on new ticket"
 msgstr ""
 
-#: modules/jssupportticket/tpls/admin_controlpanel.php:7
-#: includes/jssupportticketadmin.php:51
-msgid "DEPARTMENTS"
+msgid "Default email system"
 msgstr ""
 
-#: modules/jssupportticket/tpls/admin_controlpanel.php:12
-msgid "ACTIVITY_LOG"
+msgid "Default Email System"
 msgstr ""
 
-#: modules/jssupportticket/tpls/admin_controlpanel.php:13
-#: includes/jssupportticketadmin.php:79
-msgid "USER_FIELDS"
+msgid "Set default alert email to send alerts"
 msgstr ""
 
-#: modules/ticket/model.php:206
-msgid "TICKET_HAS_NOT_BEEN_STORED"
+msgid "Default admin email"
 msgstr ""
 
-#: modules/ticket/model.php:228
-msgid "TICKET_HAS_BEEN_STORED"
+msgid "Set default admin email to receive admin emails"
 msgstr ""
 
-#: modules/ticket/model.php:234 modules/ticket/tpls/addticket.php:39
-#: modules/ticket/tpls/admin_addticket.php:38
-#: modules/ticket/tpls/admin_tickets.php:14
-msgid "ADD_NEW_TICKET"
+msgid "Ban email new ticket"
 msgstr ""
 
-#: modules/ticket/model.php:235
-msgid "TICKET_IS_CREATED_BY"
+msgid "Ban Email New Ticket"
 msgstr ""
 
-#: modules/ticket/model.php:254
-msgid "TICKET_HAS_BEEN_DELETED"
+msgid "Mail to admin"
 msgstr ""
 
-#: modules/ticket/model.php:257
-msgid "TICKET_HAS_NOT_BEEN_DELETED"
+msgid "Email send to admin when banned email try to create ticket"
 msgstr ""
 
-#: modules/ticket/model.php:266
-msgid "REMOVE_TICKET"
+msgid "Operations"
 msgstr ""
 
-#: modules/ticket/model.php:267
-msgid "TICKET_IS_REMOVE_BY"
+msgid "Admin"
 msgstr ""
 
-#: modules/ticket/model.php:274
-msgid "TICKET_IN_USE_CANNOT_DELETED"
+msgid "User"
 msgstr ""
 
-#: modules/ticket/model.php:352
-msgid "TICKET_HAS_BEEN_CLOSED"
+msgid "Ticket reassign"
 msgstr ""
 
-#: modules/ticket/model.php:356
-msgid "TICKET_HAS_NOT_BEEN_CLOSED"
+msgid "Ticket close"
 msgstr ""
 
-#: modules/ticket/model.php:366
-msgid "TICKET_IS_CLOSE_BY"
+msgid "Ticket delete"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:15
-#: modules/ticket/tpls/addticket.php:22
-#: modules/ticket/tpls/admin_addticket.php:21
-#: modules/ticket/tpls/ticketdetail.php:15
-msgid "FILE_UPLOAD_LIMIT_EXCEED"
+msgid "Ticket ban email"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:35
-#: modules/ticket/tpls/addticket.php:36
-#: modules/ticket/tpls/admin_addticket.php:35
-#: modules/ticket/tpls/ticketdetail.php:35
-msgid "ERROR_FILE_SIZE_TO_LARGE"
+msgid "Ticket department transfer"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:36
-#: modules/ticket/tpls/addticket.php:37
-#: modules/ticket/tpls/admin_addticket.php:36
-#: modules/ticket/tpls/ticketdetail.php:36
-msgid "ERROR_FILE_EXT_MISMATCH"
+msgid "Ticket reply ( Ticket User )"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:37
-#: modules/ticket/tpls/ticketdetail.php:37
-msgid "TICKET_DETAILS"
+msgid "Ticket Response ( Staff )"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:42
-#: modules/ticket/tpls/ticketdetail.php:42
-msgid "LOCK"
+msgid "Ticket ban email and close ticket"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:45
-#: modules/ticket/tpls/myticket.php:50 modules/ticket/tpls/ticketdetail.php:45
-#: modules/ticket/tpls/admin_tickets.php:36
-msgid "NEW"
+msgid "Ticket unban email"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:48
-#: modules/ticket/tpls/ticketdetail.php:48
-msgid "WAITING_REPLY"
+msgid "Ticket create via email"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:51
-#: modules/ticket/tpls/myticket.php:56 modules/ticket/tpls/ticketdetail.php:51
-#: modules/ticket/tpls/admin_tickets.php:42
-msgid "IN_PROGRESS"
+msgid "Ticket Create Via Email"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:54
-#: modules/ticket/tpls/ticketdetail.php:54
-msgid "REPLIED"
+msgid "Enable ticket via email"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:57
-#: modules/ticket/tpls/admin_ticketdetail.php:67
-#: modules/ticket/tpls/myticket.php:17 modules/ticket/tpls/myticket.php:62
-#: modules/ticket/tpls/ticketdetail.php:57
-#: modules/ticket/tpls/ticketdetail.php:67
-#: modules/ticket/tpls/admin_tickets.php:48
-msgid "CLOSED"
+msgid "Ticket Type"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:67
-#: modules/ticket/tpls/myticket.php:14 modules/ticket/tpls/ticketdetail.php:67
-msgid "OPEN"
+msgid "Which email type to read"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:85
-#: modules/ticket/tpls/myticket.php:91 modules/ticket/tpls/ticketdetail.php:85
-#: modules/ticket/tpls/admin_tickets.php:77
-msgid "LAST_REPLY"
+msgid "Save attachments if found in email"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:86
-#: modules/ticket/tpls/myticket.php:92 modules/ticket/tpls/ticketdetail.php:86
-#: modules/ticket/tpls/admin_tickets.php:78
-msgid "NO_LAST_REPLY"
+msgid "Email Reading After"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:101
-#: modules/ticket/tpls/myticket.php:76
-#: modules/ticket/tpls/ticketdetail.php:101
-#: modules/ticket/tpls/admin_tickets.php:62
-msgid "FROM"
+msgid "Seconds"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:111
-msgid "EDIT_TICKET"
+msgid "Email reads after given seconds"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:114
-#: modules/ticket/tpls/ticketdetail.php:113
-msgid "REQUESTER_INFO"
+msgid "Host Type"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:125
-#: modules/ticket/tpls/ticketdetail.php:124
-msgid "SHOW_DETAIL"
+msgid "Select your email service provider"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:128
-#: modules/ticket/tpls/ticketdetail.php:127
-msgid "MORE_DETAIL"
+msgid "Host Name"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:131
-#: modules/ticket/tpls/ticketdetail.php:130
-msgid "PHONE"
+msgid "Email address to read emails"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:135
-#: modules/ticket/tpls/addticket.php:100
-#: modules/ticket/tpls/admin_addticket.php:99
-#: modules/ticket/tpls/ticketdetail.php:134
-msgid "DUE_DATE"
+msgid "Password"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:145
-#: modules/ticket/tpls/ticketdetail.php:144
-msgid "TRUE"
+msgid "Password for given email address"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:145
-#: modules/ticket/tpls/ticketdetail.php:144
-msgid "FALSE"
+msgid "Staff members control panel links"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:151
-#: modules/ticket/tpls/ticketdetail.php:150
-msgid "NOT_FILLED"
+msgid "Staff Members Control Panel Links"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:159
-#: modules/ticket/tpls/ticketdetail.php:158
-msgid "TICKET_THREAD"
+msgid "Staff Top Menu Links"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:164
-#: modules/ticket/tpls/admin_ticketdetail.php:197
-#: modules/ticket/tpls/ticketdetail.php:163
-#: modules/ticket/tpls/ticketdetail.php:196
-msgid "REPLIED_BY"
+msgid "User Control Panel Links"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:181
-#: modules/ticket/tpls/admin_ticketdetail.php:214
-#: modules/ticket/tpls/ticketdetail.php:180
-#: modules/ticket/tpls/ticketdetail.php:213
-msgid "DOWNLOAD"
+msgid "User Top Menu Links"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:222
-#: modules/ticket/tpls/ticketdetail.php:221
-msgid "REPLY"
+msgid "Save Configurations"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:225
-#: modules/ticket/tpls/ticketdetail.php:224
-msgid "RESPONSE"
+msgid "Edit Ticket"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:229
-#: modules/ticket/tpls/addticket.php:74
-#: modules/ticket/tpls/admin_addticket.php:73
-#: modules/ticket/tpls/ticketdetail.php:228
-msgid "ATTACHMENTS"
+msgid "Close Ticket"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:238
-#: modules/ticket/tpls/addticket.php:83
-#: modules/ticket/tpls/admin_addticket.php:82
-#: modules/ticket/tpls/ticketdetail.php:237
-msgid "MAXIMUM_FILE_SIZE"
+msgid "Reopen Ticket"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:238
-#: modules/ticket/tpls/addticket.php:83
-#: modules/ticket/tpls/admin_addticket.php:82
-#: modules/ticket/tpls/ticketdetail.php:237
-msgid "FILE_EXTENSION_TYPE"
+msgid "Assign Ticket To Staff"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:240
-#: modules/ticket/tpls/addticket.php:85
-#: modules/ticket/tpls/admin_addticket.php:84
-#: modules/ticket/tpls/ticketdetail.php:239
-msgid "ADD_MORE_FILE"
+msgid "Ticket Department Transfer"
 msgstr ""
 
-#: modules/ticket/tpls/admin_ticketdetail.php:244
-#: modules/ticket/tpls/ticketdetail.php:243
-msgid "POST_REPLY"
+msgid "Mark Overdue"
 msgstr ""
 
-#: modules/ticket/tpls/myticket.php:20
-msgid "ANSWERED"
+msgid "Mark In Progress"
 msgstr ""
 
-#: modules/ticket/tpls/myticket.php:41
-#: modules/ticket/tpls/admin_tickets.php:24
-msgid "IS_ANSWERED"
+msgid "Change Ticket Priority"
 msgstr ""
 
-#: modules/ticket/tpls/myticket.php:53
-msgid "WAITING_STAFF_REPLY"
+msgid "Delete Ticket"
 msgstr ""
 
-#: modules/ticket/tpls/myticket.php:59
-#: modules/ticket/tpls/admin_tickets.php:39
-msgid "WAITING_YOUR_REPLY"
+msgid "Ban Email And Close Ticket"
 msgstr ""
 
-#: modules/ticket/tpls/addticket.php:46
-#: modules/ticket/tpls/admin_addticket.php:45
-msgid "FULL_NAME"
+msgid "Post Internal Note"
 msgstr ""
 
-#: modules/ticket/tpls/addticket.php:50
-#: modules/ticket/tpls/admin_addticket.php:49
-msgid "PHONE_NOE"
+msgid "Duedate Ticket"
 msgstr ""
 
-#: modules/ticket/tpls/addticket.php:54
-#: modules/ticket/tpls/admin_addticket.php:53
-msgid "PHONE_EXT"
+msgid "View Ticket"
 msgstr ""
 
-#: modules/ticket/tpls/addticket.php:70
-#: modules/ticket/tpls/admin_addticket.php:69
-msgid "ISSUE_SUMMARY"
+msgid "Release Ticket"
 msgstr ""
 
-#: modules/ticket/tpls/addticket.php:92
-#: modules/ticket/tpls/admin_addticket.php:91
-msgid "DELETE_ATTACHMENT"
+msgid "New Ticket Notification"
 msgstr ""
 
-#: modules/ticket/tpls/addticket.php:170
-#: modules/ticket/tpls/admin_addticket.php:173
-msgid "SAVE_TICKET"
+msgid "Assign Role Permissions"
 msgstr ""
 
-#: modules/ticket/tpls/admin_tickets.php:45
-msgid "WAITING_CUSTOMER_REPLY"
+msgid "Edit Role"
 msgstr ""
 
-#: modules/ticket/tpls/admin_tickets.php:89
-msgid "REMOVE"
+msgid "Assign Role To User"
 msgstr ""
 
-#: modules/ticket/tpls/admin_tickets.php:90
-msgid "EDIT"
+msgid "Add User"
 msgstr ""
 
-#: modules/ticket/tpls/admin_tickets.php:91
-msgid "TICKET_DETAIL"
+msgid "Edit User"
 msgstr ""
 
-#: includes/jssupportticketadmin.php:22
-msgid "JS_SUPPORT_TICKET_CONTROL_PANEL"
+msgid "Assign User Permissions"
 msgstr ""
 
-#: includes/jssupportticketadmin.php:23
-msgid "JS_SUPPORT_TICKET"
+msgid "Edit Department"
 msgstr ""
 
-#: includes/jssupportticketadmin.php:29
-msgid "JS_SUPPORT_TICKET_CONFIGURATION"
+msgid "Delete Department"
 msgstr ""
 
-#: includes/jssupportticketadmin.php:36
-msgid "JS_SUPPORT_TICKET_TICKETS"
+msgid "View Department"
 msgstr ""
 
-#: includes/jssupportticketadmin.php:43
-msgid "JS_SUPPORT_TICKET_PRIORITIES"
+msgid "Delete Role"
 msgstr ""
 
-#: includes/jssupportticketadmin.php:50
-msgid "JS_SUPPORT_TICKET_DEPARTMENT"
+msgid "Delete User"
 msgstr ""
 
-#: includes/jssupportticketadmin.php:57
-msgid "JS_SUPPORT_TICKET_EMAILS"
+msgid "Mail To Staff"
 msgstr ""
 
-#: includes/jssupportticketadmin.php:64
-msgid "JS_SUPPORT_TICKET_SYSTEM_ERROR"
-msgstr "JS Support Ticket System Error"
+msgid "View Role"
+msgstr ""
+
+msgid "View User"
+msgstr "View User"
+
+msgid "Edit Category"
+msgstr ""
+
+msgid "Edit Knowledge Base"
+msgstr ""
+
+msgid "View Category"
+msgstr ""
+
+msgid "View Knowledge Base"
+msgstr ""
+
+msgid "Delete Category"
+msgstr ""
+
+msgid "Delete Knowledge Base"
+msgstr ""
+
+msgid "Add FAQ"
+msgstr ""
+
+msgid "View FAQ"
+msgstr ""
+
+msgid "Delete FAQ"
+msgstr ""
+
+msgid "Edit Download"
+msgstr ""
+
+msgid "View Download"
+msgstr ""
+
+msgid "Delete Download"
+msgstr ""
+
+msgid "Add Announcement"
+msgstr ""
+
+msgid "View Announcement"
+msgstr ""
+
+msgid "Delete Announcement"
+msgstr ""
+
+msgid "Allow Mail System"
+msgstr ""
+
+msgid "Please enter the google recaptcha private key from"
+msgstr ""
+
+msgid "Please enter the google recaptcha public key from"
+msgstr ""
+
+msgid "Download All"
+msgstr ""
+
+msgid "JS Support Ticket FAQ's"
+msgstr ""
+
+msgid "JS Support Ticket Downloads"
+msgstr ""
+
+msgid "JS Support Ticket Announcements"
+msgstr ""
+
+msgid "JS Support Ticket Priorities"
+msgstr ""
+
+msgid "JS Support Ticket Department"
+msgstr ""
+
+msgid "JS Support Ticket Emails"
+msgstr ""
+
+msgid "JS Support Ticket System Error"
+msgstr ""
+
+msgid "JS Support Ticket Email Templates"
+msgstr ""
+
+msgid "JS Support Ticket User Fields"
+msgstr ""
+
+msgid "JS Support Ticket Premade Messages"
+msgstr ""
+
+msgid "JS Support Ticket Help topics"
+msgstr ""
+
+msgid "JS Support Ticket Roles"
+msgstr ""
+
+msgid "JS Support Ticket Mail"
+msgstr ""
+
+msgid "JS Support Ticket ban email"
+msgstr ""
+
+msgid "JS Support Ticket banlist log"
+msgstr ""
+
+msgid "Banlist log"
+msgstr ""
+
+msgid "JS Support Ticket Field Ordering"
+msgstr ""
+
+msgid "JS Support Ticket Update"
+msgstr ""
+
+msgid "In progress ticket"
+msgstr ""
+
+msgid "Ticket priority is changed by"
+msgstr ""
+
+msgid "Mail has been mark as read"
+msgstr ""
+
+msgid "Default Alert Email"
+msgstr ""
+
+msgid "Cron Job"
+msgstr ""
+
+msgid "Web Cron Job"
+msgstr ""
+
+msgid "Wget"
+msgstr ""
+
+msgid "Curl"
+msgstr ""
+
+msgid "PHP Script"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "Configuration of a backup job with webcron org"
+msgstr ""
+
+msgid "Name of cron job"
+msgstr ""
+
+msgid "Log in to webcron org in the cron area click on"
+msgstr ""
+
+msgid "Timeout"
+msgstr ""
+
+msgid ""
+"180 sec if the backup doesnot complete increase it most sites will work with "
+"a setting of 180 600"
+msgstr ""
+
+msgid "URL you want to execute"
+msgstr ""
+
+msgid "Leave this blank"
+msgstr ""
+
+msgid "Execution time"
+msgstr ""
+
+msgid "That the grid below the other options select when and how"
+msgstr ""
+
+msgid "Alerts"
+msgstr ""
+
+msgid ""
+"If you have already set up alerts methods in webcron org interface we "
+"recommend choosing an alert"
+msgstr ""
+
+msgid "Cron scheduling using wget"
+msgstr ""
+
+msgid "Cron scheduling using Curl"
+msgstr ""
+
+msgid "OR"
+msgstr ""
+
+msgid "Custom PHP script to run the cron job"
+msgstr ""
+
+msgid "Sorry the cron job didnot work"
+msgstr ""
 
-#: includes/jssupportticketadmin.php:71
-msgid "JS_SUPPORT_TICKET_EMAIL_TEMPLATES"
-msgstr "JS Support Ticket Email Templates"
+msgid "URL for use with your won scripts and third party"
+msgstr ""
+
+msgid "Recommended run script once a day"
+msgstr ""
+
+msgid "Staff top menu links"
+msgstr ""
+
+msgid "User control panel links"
+msgstr ""
+
+msgid "User top menu links"
+msgstr ""
+
+msgid "Ticket Via Email"
+msgstr ""
+
+msgid "Reports"
+msgstr ""
+
+msgid "Login redirect"
+msgstr ""
+
+msgid "Redirect user to JS Support Ticket control panel after login"
+msgstr ""
+
+msgid "Show count on my tickets"
+msgstr ""
+
+msgid "Show number of open, closed, answered ticket in my ticket"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Cannot unpublish field"
+msgstr ""
+
+msgid "Pending"
+msgstr ""
+
+msgid "Show latest downloads. Options: text_color=\""
+msgstr ""
+
+msgid "\" and background_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_downloads_latest text_color=\""
+msgstr ""
+
+msgid "\" background_color=\""
+msgstr ""
+
+msgid "\"]"
+msgstr ""
+
+msgid "Show popular downloads. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_downloads_popular text_color=\""
+msgstr ""
+
+msgid "Show latest knowledge base. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_knowledgebase_latest text_color=\""
+msgstr ""
+
+msgid "Show popular knowledge base. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_knowledgebase_popular text_color=\""
+msgstr ""
+
+msgid "Show latest FAQ's. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_faqs_latest text_color=\""
+msgstr ""
+
+msgid "Show popular FAQ's. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_faqs_popular text_color=\""
+msgstr ""
+
+msgid "Show latest announcements. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_announcements_latest text_color=\""
+msgstr ""
+
+msgid "Show popular announcements. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_announcements_popular text_color=\""
+msgstr ""
+
+msgid "Tickets By Status"
+msgstr ""
+
+msgid "Direct"
+msgstr ""
+
+msgid "Tickets By Department"
+msgstr ""
+
+msgid "Ticket by departments"
+msgstr ""
+
+msgid "Tickets By Priority"
+msgstr ""
+
+msgid "Tickets by priorities"
+msgstr ""
+
+msgid "Staff Member Tickets"
+msgstr ""
+
+msgid "Overall Report"
+msgstr ""
+
+msgid "Tickets By Departments"
+msgstr ""
+
+msgid "Tickets By Priorities"
+msgstr ""
+
+msgid "Tickets By Status & Priorities"
+msgstr ""
+
+msgid "Tickets By Channel"
+msgstr ""
+
+msgid "Tickets By Staff"
+msgstr ""
+
+msgid "Overall Statistics"
+msgstr ""
+
+msgid "Staff Reports"
+msgstr ""
+
+msgid "User Reports"
+msgstr ""
+
+msgid "Dates"
+msgstr ""
+
+msgid "Report By Staff Member"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Not a staff member"
+msgstr ""
+
+msgid "User is staff member"
+msgstr ""
+
+msgid "Staff member"
+msgstr ""
+
+msgid "Email reads sucessfully"
+msgstr ""
+
+msgid "Connection established but we cannot ready any email."
+msgstr ""
+
+msgid "IMAP is either not installed or not enable in your server"
+msgstr ""
+
+msgid "Please enter the hostname first"
+msgstr ""
+
+msgid "Please enable ticket via email setting first"
+msgstr ""
+
+msgid "Check Settings"
+msgstr ""
+
+msgid ""
+"If system not respond in 30 second, it means system unable to connect email "
+"server."
+msgstr ""
+
+msgid "Save Settings"
+msgstr ""
+
+msgid "Recommended run script hourly"
+msgstr ""
 
-#: includes/jssupportticketadmin.php:72
-msgid "EMAIL_TEMPLATES"
-msgstr "Email Templates"
+msgid "Report By Users"
+msgstr ""
 
-#: includes/jssupportticketadmin.php:78
-msgid "JS_SUPPORT_TICKET_USER_FIELDS"
-msgstr "JS Support Ticket User Fields"
+msgid "Users"
+msgstr ""
 
-#: includes/pagination.php:30
-msgid "&laquo;"
+msgid "Report By Staff Members"
 msgstr ""
 
-#: includes/pagination.php:31
-msgid "&raquo;"
+msgid "Report By User"
 msgstr ""
