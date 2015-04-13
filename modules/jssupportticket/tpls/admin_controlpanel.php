@@ -21,12 +21,12 @@
       chart.draw(view, options);
     }
 </script>
-<span class="js-admin-title"><?php echo __('Statistics', 'js-support-ticket'); ?>&nbsp;
+<span class="js-admin-title"><?php echo __('Statistics', 'js-support-ticket'); ?>&nbsp;<small>
     <?php 
         $curdate = date('Y-m-d');
         $fromdate = date('Y-m-d', strtotime("now -1 month"));
-        echo " ( $curdate - $fromdate )"; 
-    ?>
+        echo " ($fromdate - $curdate)"; 
+    ?></small>
 </span>
 <div class="js-wrapper">
     <div class="js-col-md-12">
