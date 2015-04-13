@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JS Support Ticket 1.0\n"
 "POT-Creation-Date: 2015-02-28 12:00+0500\n"
-"PO-Revision-Date: 2015-03-02 16:21+0500\n"
+"PO-Revision-Date: 2015-04-13 13:06+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -2787,4 +2787,195 @@ msgid "User control panel links"
 msgstr ""
 
 msgid "User top menu links"
+msgstr ""
+
+msgid "Ticket Via Email"
+msgstr ""
+
+msgid "Reports"
+msgstr ""
+
+msgid "Login redirect"
+msgstr ""
+
+msgid "Redirect user to JS Support Ticket control panel after login"
+msgstr ""
+
+msgid "Show count on my tickets"
+msgstr ""
+
+msgid "Show number of open, closed, answered ticket in my ticket"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Cannot unpublish field"
+msgstr ""
+
+msgid "Pending"
+msgstr ""
+
+msgid "Show latest downloads. Options: text_color=\""
+msgstr ""
+
+msgid "\" and background_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_downloads_latest text_color=\""
+msgstr ""
+
+msgid "\" background_color=\""
+msgstr ""
+
+msgid "\"]"
+msgstr ""
+
+msgid "Show popular downloads. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_downloads_popular text_color=\""
+msgstr ""
+
+msgid "Show latest knowledge base. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_knowledgebase_latest text_color=\""
+msgstr ""
+
+msgid "Show popular knowledge base. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_knowledgebase_popular text_color=\""
+msgstr ""
+
+msgid "Show latest FAQ's. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_faqs_latest text_color=\""
+msgstr ""
+
+msgid "Show popular FAQ's. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_faqs_popular text_color=\""
+msgstr ""
+
+msgid "Show latest announcements. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_announcements_latest text_color=\""
+msgstr ""
+
+msgid "Show popular announcements. Options: text_color=\""
+msgstr ""
+
+msgid "\" i.e. [jssupportticket_announcements_popular text_color=\""
+msgstr ""
+
+msgid "Tickets By Status"
+msgstr ""
+
+msgid "Direct"
+msgstr ""
+
+msgid "Tickets By Department"
+msgstr ""
+
+msgid "Ticket by departments"
+msgstr ""
+
+msgid "Tickets By Priority"
+msgstr ""
+
+msgid "Tickets by priorities"
+msgstr ""
+
+msgid "Staff Member Tickets"
+msgstr ""
+
+msgid "Overall Report"
+msgstr ""
+
+msgid "Tickets By Departments"
+msgstr ""
+
+msgid "Tickets By Priorities"
+msgstr ""
+
+msgid "Tickets By Status & Priorities"
+msgstr ""
+
+msgid "Tickets By Channel"
+msgstr ""
+
+msgid "Tickets By Staff"
+msgstr ""
+
+msgid "Overall Statistics"
+msgstr ""
+
+msgid "Staff Reports"
+msgstr ""
+
+msgid "User Reports"
+msgstr ""
+
+msgid "Dates"
+msgstr ""
+
+msgid "Report By Staff Member"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Not a staff member"
+msgstr ""
+
+msgid "User is staff member"
+msgstr ""
+
+msgid "Staff member"
+msgstr ""
+
+msgid "Email reads sucessfully"
+msgstr ""
+
+msgid "Connection established but we cannot ready any email."
+msgstr ""
+
+msgid "IMAP is either not installed or not enable in your server"
+msgstr ""
+
+msgid "Please enter the hostname first"
+msgstr ""
+
+msgid "Please enable ticket via email setting first"
+msgstr ""
+
+msgid "Check Settings"
+msgstr ""
+
+msgid ""
+"If system not respond in 30 second, it means system unable to connect email "
+"server."
+msgstr ""
+
+msgid "Save Settings"
+msgstr ""
+
+msgid "Recommended run script hourly"
+msgstr ""
+
+msgid "Report By Users"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "Report By Staff Members"
+msgstr ""
+
+msgid "Report By User"
 msgstr ""
