@@ -12,9 +12,9 @@ JS Support Ticket is a powerful and easy to use support system that helps you to
 
 == Description ==
 JS Support Ticket is a trusted open source ticket system. JS Support ticket is a simple, easy to use, web-based customer support system. User can create ticket from front-end. JS support ticket comes packed with lot features than most of the expensive(and complex) support ticket system on market. The best part is, It completely free.
-- [JS Support Ticket demo] (http://demo.joomshark.com/tickets/free/)  
-- [JS Support Ticket Pro demo] (http://demo.joomshark.com/tickets/pro/)
-- [Plugin Homepage](http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-wp/) 
+* [Demo](http://demo.joomshark.com/tickets/free)  
+* [Pro Version Demo](http://demo.joomshark.com/tickets/pro)  
+* [Plugin Homepage](http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-wp/) 
  
 
 = Major Features =
