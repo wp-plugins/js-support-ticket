@@ -42,6 +42,7 @@ class JSSTshortcodes {
         /*
          * Fetch data from the database according to the params values
          */
+		jssupportticket::$_data['short_code_header'] = 'addticket';
         JSSTincluder::getJSModel('ticket')->getTicketsForForm(null);
         JSSTincluder::include_file('addticket', 'ticket');
 
@@ -68,6 +69,7 @@ class JSSTshortcodes {
         /*
          * Fetch data from the database according to the params values
          */
+		jssupportticket::$_data['short_code_header'] = 'myticket';
         JSSTincluder::getJSModel('ticket')->getMyTickets($list, $ticketid);
         JSSTincluder::include_file('myticket', 'ticket');
 
