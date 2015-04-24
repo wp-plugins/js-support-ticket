@@ -13,6 +13,7 @@ class JSSTshortcodes {
 
     function show_main_ticket($raw_args, $content = null) {
         //default set of parameters for the front end shortcodes
+        ob_start();
         $defaults = array(
             'module' => '',
             'layout' => '',
@@ -27,12 +28,14 @@ class JSSTshortcodes {
         jssupportticket::$_pageid = $pageid;
         jssupportticket::setPageID($pageid);
         JSSTincluder::include_slug('');
+        $content .= ob_get_clean();
 
         return $content;
     }
     
     function show_form_ticket($raw_args, $content = null) {
         //default set of parameters for the front end shortcodes
+        ob_start();
         $defaults = array(
             'job_type' => '',
             'city' => '',
@@ -45,12 +48,14 @@ class JSSTshortcodes {
 		jssupportticket::$_data['short_code_header'] = 'addticket';
         JSSTincluder::getJSModel('ticket')->getTicketsForForm(null);
         JSSTincluder::include_file('addticket', 'ticket');
+        $content .= ob_get_clean();
 
         return $content;
     }
 
     function show_my_ticket($raw_args, $content = null) {
         //default set of parameters for the front end shortcodes
+        ob_start();
         $defaults = array(
             'list' => '',
             'ticketid' => '',
@@ -72,6 +77,7 @@ class JSSTshortcodes {
 		jssupportticket::$_data['short_code_header'] = 'myticket';
         JSSTincluder::getJSModel('ticket')->getMyTickets($list, $ticketid);
         JSSTincluder::include_file('myticket', 'ticket');
+        $content .= ob_get_clean();
 
         return $content;
     }
