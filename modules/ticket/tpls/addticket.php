@@ -121,6 +121,7 @@ if (jssupportticket::$_config['offline'] == 2) {
                         </div>
                         <?php
                         $count = 0;
+                        $i = 0;
                         if (isset(jssupportticket::$_data[3]))
                             foreach (jssupportticket::$_data[3] as $ufield) {
                                 $userfeild = $ufield[0];

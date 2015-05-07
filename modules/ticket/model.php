@@ -354,6 +354,7 @@ class JSSTticketModel {
 
     function getRandomTicketId() {
         $query = "SELECT ticketid FROM `" . jssupportticket::$_db->prefix . "js_ticket_tickets`";
+        $match='';
         do {
             $ticketid = "";
             $length = 9;
@@ -432,7 +433,7 @@ class JSSTticketModel {
             'subject' => $data['subject'],
             'message' => wpautop(wptexturize(stripslashes($data['message']))),
             'status' => $data['status'],
-            'duedate' => $data['duedate'],
+            'duedate' => '',
             'lastreply' => $data['lastreply'],
             'created' => $created,
             'updated' => $updated,

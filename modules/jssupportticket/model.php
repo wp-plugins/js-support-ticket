@@ -44,6 +44,7 @@ class JSSTjssupportticketModel {
         jssupportticket::$_data['ticket_total']['overdueticket'] = 0;
         jssupportticket::$_data['ticket_total']['pendingticket'] = 0;
         jssupportticket::$_data['ticket_total']['answeredticket'] = 0;
+        $overdueticket_pr = 0;
 
         $count = count($openticket_pr);
         for($i = 0;$i < $count; $i++){
