@@ -91,28 +91,28 @@
 
     jQuery(document).ready(function () {
         toggleType(jQuery('#type').val());
-    });
-    jQuery("span.jquery_span_closetr").each(function () {
-        var span = jQuery(this);
-        jQuery(span).click(function () {
-            var span_current = jQuery(this);
-            if (jQuery(span_current).attr('data-optionid') != 'undefined') {
-                jQuery.post("index.php?option=com_jstickets&c=tickets&task=deleteuserfieldoption", {id: jQuery(span_current).attr('data-optionid')}, function (data) {
-                    if (data) {
-                        var tr_id = jQuery(span_current).attr('data-rowid');
-                        jQuery('#' + tr_id).remove();
-                        document.adminForm.valueCount.value = document.adminForm.valueCount.value - 1;
-                    } else {
-                        alert('<?php echo __('Option value in use', 'js-support-ticket'); ?>');
+        jQuery("span.jquery_span_closetr").each(function () {       
+            var span = jQuery(this);
+            jQuery(span).click(function () {
+                var span_current = jQuery(this);
+                if (jQuery(span_current).attr('data-optionid') != 'undefined') {                    
+                    jQuery.post(ajaxurl, {action: 'jsticket_ajax', module: 'userfeild', task: 'deleteuserfieldoption',id: jQuery(span_current).attr('data-optionid')}, function (data) {
+                        if (data) {
+                            var tr_id = jQuery(span_current).attr('data-rowid');
+                            jQuery('#' + tr_id).remove();
+                            jQuery('input#valueCount').val(jQuery('input#valueCount').val() - 1);
+                        } else {
+                            alert('<?php echo __('Option value in use', 'js-support-ticket'); ?>');
 
-                    }
+                        }
 
-                });
-            } else {
-                var tr_id = jQuery(span_current).attr('data-rowid');
-                jQuery('#' + tr_id).remove();
-                document.adminForm.valueCount.value = document.adminForm.valueCount.value - 1;
-            }
+                    });
+                } else {
+                    var tr_id = jQuery(span_current).attr('data-rowid');
+                    jQuery('#' + tr_id).remove();
+                    jQuery('input#valueCount').val(jQuery('input#valueCount').val() - 1);
+                }
+            });
         });
     });
 </script>

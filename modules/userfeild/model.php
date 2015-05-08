@@ -235,6 +235,31 @@ class JSSTuserfeildModel {
         return;
     }
 
+    function deleteuserfieldoption(){
+        $id = JSSTrequest::getVar('id');
+        if(!is_numeric($id)) return false;
+        if($this->canRemoveUserFieldOption($id)){
+            jssupportticket::$_db->delete(jssupportticket::$_db->prefix . 'js_ticket_userfieldvalues', array('id' => $id));
+            if (jssupportticket::$_db->last_error != null) {
+                JSSTincluder::getJSModel('systemerror')->addSystemError();
+                return false;
+            }else{
+                return true;
+            }
+        }else{ // Userfield option cannot be delete
+            return false;
+        }
+        exit;
+    }
+    function canRemoveUserFieldOption($id){
+        if(!is_numeric($id)) return false;
+        $query = "SELECT COUNT(id) FROM `".jssupportticket::$_db->prefix."js_ticket_userfield_data` WHERE data = $id";
+        $result = jssupportticket::$_db->get_var($query);
+        if($result == 0)
+            return true;
+        else
+            return false;
+    }
 }
 
 ?>
