@@ -1,7 +1,9 @@
 === JS Support Ticket ===
 Contributors: rabilal
 Donate link: http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-pro-wp
-Tags: support ticket,support, ticket,helpdesk, help, desk, ticketing system, ticket system, monitor desk
+Tags: support ticket,support, help, support plugin, ticket plugin, support system, ticket, helpdesk, desk, ticketing system, ticket system, monitor desk, help desk, IMAP, ticket via email, staff management
+  
+
 Requires at least: 3.5
 Tested up to: 4.1
 Stable tag: 1.0.5
