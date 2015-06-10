@@ -42,6 +42,7 @@ class JSSTactivation {
             $id = jssupportticket::getPageid();
             jssupportticket::$_db->get_var("UPDATE `" . jssupportticket::$_db->prefix . "posts` SET post_status = 'publish' WHERE ID = $id");
         }
+        update_option('rewrite_rules','');
     }
 
     static private function runSQL() {
