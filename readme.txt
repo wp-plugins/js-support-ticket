@@ -20,22 +20,86 @@ JS Support Ticket is a trusted open source ticket system. JS Support ticket is a
 * [Pro Version Demo](http://demo.joomshark.com/tickets/pro)  
 * [Plugin Homepage](http://joomsky.com/index.php/products/js-support-ticket-1/js-supprot-ticket-wp/)  
 
-= Major Features =
+= Free Version Major Features =
 
-* Unlimited Tickets
 * Front-end ticket creation
+* Admin create ticket for behalf on any user
+* Multiple file attachments for ticket and reply
+* Powerful filters on ticket for user and admin
+* Priority for ticket and highlighted priority with in ticket listing
+* Assign department to ticket for proper management
+* Show proper ticket status message and highlight it
+* New ticket email notification according to admin configuration
+* Admin can edit ticket at any time
+* HTML editor for ticket issue
+* Notifications and Autoresponder on new ticket creation
+* Fully responsive design for front-end and admin
+* Admin can modify the email text easily
+* Custom fields for ticket.
+* Admin can esily publish unpublish ticket fields
+* Admin can easily change order of ticket fields
 * Strength & Flexibility
 * Easy to Use
-* Notifications & Autoresponder
-* Responsive Design
-* User Fields
 * Unlimited Departments
 * Shortcodes for the My Tickets and New Ticket Form
-* Email Templates
-* Priority
-* Attachments
 * Fully Customizable & Configurable
 * Easy To Translate
+* Bootstrap base design
+
+
+= Pro Version Major Features =
+
+* Front-end ticket creation
+* Visitor/Guest can create ticket from front-end
+* Admin/staff create ticket for behalf on any user
+* Multiple file attachments for ticket and reply
+* Powerful filters on ticket for user and admin
+* Email is one of the easiest ways in which your customers can reach you, customers can open or reply ticket from his email.
+* Staff members management
+* Easily manage staff member permissions, just click on box what allow to him
+* Priority for ticket and highlighted priority with in ticket listing
+* Assign department to ticket for proper management
+* Help topic for ticket associate with department
+* Show proper ticket status message and highlight it
+* New ticket email notification according to admin configuration
+* New ticket notification to staff on base of department assign
+* Assign to other staff member at any time
+* Post internal note on ticket. Internal notes visible only for admin and staff
+* Admin/staff can edit ticket at any time
+* HTML editor for ticket issue
+* Notifications and Autoresponder on new ticket creation
+* Admin can store most common answers in premade and it available at ticket reply. 
+* Fully responsive design for front-end and admin
+* Admin can modify the email text easily
+* Custom fields for ticket.
+* Admin can esily publish unpublish ticket fields
+* Admin can easily change order of ticket fields
+* Email notification on every action
+* Ticket history with all action on ticket detail page
+* Strength & Flexibility
+* Easy to Use
+* Unlimited Departments
+* Shortcodes for the My Tickets and New Ticket Form
+* Fully Customizable & Configurable
+* Easy To Translate
+* Bootstrap base design
+* JS Support Ticket Captcha and Google ReCaptcha are include
+* No need to edit CSS any more, just click and change any color of plugin with powerful theme tool
+* Ban email user can not open new ticket in system. Admin / staff can ban or unban any user email.
+* Knowledge base -Add all your self-help documents for issues on the knowledge base portal.
+* FAQ’s -Reduce the number of in-bound customer support requests by displaying faq in the system in very easy way.
+* Downloads -Admin/staff members easily add files in the system that available to your users for download.
+* Announcements -Disply your announcement to your users is not a problem in JS Support Ticket, admin/staff member easily manage it.
+* JS Support Ticket have reports on 
+	-Get a summary of tickets handled by every staff members
+	-Get a detail report of tickets handled by every staff members
+	-Get a detail report of tickets created by every users
+	-Get a summary of tickets by status
+	-Get a summary of tickets by priorities
+	-Get a summary of tickets by departments
+	-Get a summary of tickets created by channel
+
+
 
 Add Ticket Support system in your wordpress website so you can help your customer in professional way. Delivering enterprise-level quality and features, backed by a name you can trust.
 
