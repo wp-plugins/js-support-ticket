@@ -161,7 +161,7 @@ wp_enqueue_script('formvalidate.js', jssupportticket::$_pluginpath . 'includes/j
                 <div id="username-div"><input type="text" value="<?php echo jssupportticket::$_data[0]->firstname . ' ' . jssupportticket::$_data[0]->lastname; ?>" id="username-text" readonly="readonly" data-validation="required"/></div>
                 <?php } else {
                 ?>
-                <div id="username-div"></div><input type="text" value="" id="username-text" readonly="readonly" data-validation="required"/><a href="#" id="userpopup"><?php echo __('Select User', 'js-support-ticket'); ?></a>
+                <div id="username-div"></div><input type="text" value="" id="username-text" readonly="readonly" /><a href="#" id="userpopup"><?php echo __('Select User', 'js-support-ticket'); ?></a>
                 <?php
             }
             ?>              
