@@ -415,6 +415,7 @@ class JSSTticketModel {
         if ($data['id']) {
             $sendEmail = false;
             $updated = date('Y-m-d H:i:s');
+            $created = $data['created'];            
         } else {
             $data['ticketid'] = $this->getRandomTicketId();
             $created = date('Y-m-d H:i:s');
