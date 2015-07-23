@@ -1,0 +1,3 @@
+INSERT INTO `#__js_ticket_config` (`configname`, `configvalue`, `configfor`) VALUES ('versioncode','1.0.7','default') ON DUPLICATE KEY UPDATE configvalue = '1.0.6';
+INSERT INTO `#__js_ticket_config` (`configname`, `configvalue`, `configfor`) VALUES (' 	productversion','107','default') ON DUPLICATE KEY UPDATE configvalue = '106';
+INSERT INTO `#__js_ticket_config` (`configname`, `configvalue`, `configfor`) VALUES ('productcode','jsticket','default') ON DUPLICATE KEY UPDATE configvalue = 'jsticket';
