@@ -4,7 +4,7 @@ Donate link: http://joomsky.com/index.php/products/js-support-ticket-1/js-suppro
 Tags: support ticket,support, ticket,helpdesk, help, desk, ticketing system, ticket system, monitor desk
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
