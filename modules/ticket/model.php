@@ -423,7 +423,7 @@ class JSSTticketModel {
         }
         $data['status'] = isset($data['status']) ? $data['status'] : '';
         $data['lastreply'] = isset($data['lastreply']) ? $data['lastreply'] : '';
-        $data['message'] = wpautop(wptexturize(stripslashes($data['message'])));
+        $data['message'] = wpautop(wptexturize(stripslashes($data['jsticket_message'])));
         if(empty($data['message'])){
             JSSTmessage::setMessage(__('Message field cannot be empty', 'js-support-ticket'), 'error');
             return false;

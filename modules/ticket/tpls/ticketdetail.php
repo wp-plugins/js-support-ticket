@@ -340,7 +340,7 @@ if (jssupportticket::$_config['offline'] == 2) {
                     </div>
                     <form class="js-col-xs-12 js-col-md-12 post-reply-textarea"  method="post" action="<?php echo site_url("?page_id=".jssupportticket::$_pageid."&module=reply&task=savereply"); ?>" enctype="multipart/form-data">
                           <div class="js-form-wrapper">
-                            <div class="js-col-xs-12 js-col-md-12"><?php echo wp_editor('','message',array( 'media_buttons' => false ));?></div>
+                            <div class="js-col-xs-12 js-col-md-12"><?php echo wp_editor('','jsticket_message',array( 'media_buttons' => false ));?></div>
                           </div>
                                         <div class="js-col-xs-12 js-form-title-position-reletive-left"><?php echo __('Attachments', 'js-support-ticket'); ?></div>
                                         <div class="js-col-xs-12 js-form-field">

@@ -351,7 +351,7 @@ if (!empty(jssupportticket::$_data[0])) {
                     <span class="js-admin-title"><?php echo __('Post Reply', 'js-support-ticket'); ?></span>
                     <div class="js-form-wrapper">
                         <div class="js-form-title"><label id="responcemsg" for="responce"><?php echo __('Response', 'js-support-ticket'); ?><font color="red">*</font></label></div>
-                        <div class="js-form-field"><?php echo wp_editor('', 'message', array('media_buttons' => false)); ?></div>
+                        <div class="js-form-field"><?php echo wp_editor('', 'jsticket_message', array('media_buttons' => false)); ?></div>
                     </div>
                     <div class="js-form-wrapper">
                         <div class="js-form-title"><?php echo __('Attachments', 'js-support-ticket'); ?></div>

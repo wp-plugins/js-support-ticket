@@ -302,7 +302,7 @@ wp_enqueue_script('formvalidate.js', jssupportticket::$_pluginpath . 'includes/j
                                     if(isset($formdata['message'])) $message = wpautop(wptexturize(stripslashes($formdata['message'])));
                                     elseif(isset(jssupportticket::$_data[0]->message)) $message = jssupportticket::$_data[0]->message;
                                     else $message = '';
-                                    echo wp_editor($message, 'message', array('media_buttons' => false));
+                                    echo wp_editor($message, 'jsticket_message', array('media_buttons' => false));
                                 ?>
                             </div>
                         </div>
