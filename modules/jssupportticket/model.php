@@ -114,7 +114,7 @@ class JSSTjssupportticketModel {
             $canloadresult = true;
         }
         if (strlen($username) > 0) {
-            $query .= " AND user.user_name LIKE '%$username%'";
+           $query .= " AND user.user_login LIKE '%$username%'";
             $canloadresult = true;
         }
         if($canloadresult){
@@ -134,7 +134,7 @@ class JSSTjssupportticketModel {
                             </div>                            
                             <div class="js-col-xs-12 js-col-md-3">
                                 <span class="js-user-title-xs">'.__('Username','js-support-ticket').' : </span>';
-                                    $result .='<a href="#" class="js-userpopup-link" data-id="'.$user->userid.'" data-email="'.$user->email.'" data-name="'.$user->displayname.'">'.$user->username.'</a> </div>';
+                                    $result .='<a href="#" class="js-userpopup-link" data-id="'.$user->userid.'" data-email="'.$user->useremail.'" data-name="'.$user->userdisplayname.'">'.$user->username.'</a> </div>';
                             $result .=
                             '<div class="js-col-xs-12 js-col-md-4">
                                 <span class="js-user-title-xs">'.__('Email address','js-support-ticket').' : </span>'.$user->useremail.'
