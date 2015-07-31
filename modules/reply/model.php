@@ -72,7 +72,7 @@ class JSSTreplyModel {
             'uid' => $data['uid'],
             'ticketid' => $data['ticketid'],
             'name' => $currentUserName,
-            'message' => wpautop(wptexturize(stripslashes($data['message']))),
+            'message' => wpautop(wptexturize(stripslashes($data['jsticket_message']))),
             'status' => $data['status'],
             'created' => date_i18n('Y-m-d H:i:s')
         );
