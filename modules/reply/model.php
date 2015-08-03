@@ -13,7 +13,7 @@ class JSSTreplyModel {
         $query = "SELECT replies.*,replies.id AS replyid,tickets.id
 					FROM `" . jssupportticket::$_db->prefix . "js_ticket_replies` AS replies 
 					JOIN `" . jssupportticket::$_db->prefix . "js_ticket_tickets` AS tickets ON  replies.ticketid = tickets.id 
-					WHERE tickets.id = " . $id;
+					WHERE tickets.id = " . $id ." ORDER BY replies.id ASC ";
         jssupportticket::$_data[4] = jssupportticket::$_db->get_results($query);
         if (jssupportticket::$_db->last_error != null) {
             JSSTincluder::getJSModel('systemerror')->addSystemError();
