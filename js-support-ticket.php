@@ -37,7 +37,7 @@ class jssupportticket {
         self::$_path = plugin_dir_path(__FILE__);
         self::$_pluginpath = plugins_url('/', __FILE__);
         self::$_data = '';
-		self::$_currentversion = '106';
+		self::$_currentversion = '107';
         global $wpdb;
         self::$_db = $wpdb;
         JSSTincluder::getJSModel('configuration')->getConfiguration();
